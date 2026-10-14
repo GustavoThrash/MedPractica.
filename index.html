@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#081a3a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Práctica Anatómica">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png">
+<title>Práctica Anatómica — Simulador de examen</title>
+<style>
+:root{--bg:#050f24;--card:#0c1f45;--card2:#122c5e;--line:#1f3f7a;--tx:#eaf1ff;--mu:#8ea6d1;--ac:#4da3ff;--ac2:#9dd0ff;--ok:#34d399;--bad:#fb7185}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;min-height:100vh;color:var(--tx);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,system-ui,sans-serif;background:radial-gradient(900px 520px at 85% -10%,#18438f,transparent 60%),radial-gradient(700px 500px at -10% 105%,#0f2f6b,transparent 55%),var(--bg);background-attachment:fixed}
+button,input,textarea{font:inherit;color:inherit}button{cursor:pointer}button:disabled{opacity:.45;cursor:not-allowed}
+.hidden{display:none!important}
+.top{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:calc(env(safe-area-inset-top) + 12px) clamp(14px,4vw,44px) 12px;background:#050f24d9;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #ffffff14}
+.brand{display:flex;align-items:center;gap:12px;background:none;border:0;padding:0;text-align:left}
+.logo{width:44px;height:44px;border-radius:13px;box-shadow:0 6px 18px #0a4fd066}
+.brand h1{margin:0;font-size:18px;letter-spacing:-.02em}.brand p{margin:0;font-size:12px;color:var(--mu)}
+.chip{font-size:12px;color:var(--ac2);border:1px solid var(--line);background:#0d2756;border-radius:99px;padding:7px 12px;white-space:nowrap}
+.shell{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,38px) clamp(14px,3vw,28px) calc(48px + env(safe-area-inset-bottom))}
+.eye{margin:0;font-size:12px;font-weight:700;color:var(--ac)}
+h2{margin:6px 0 0;font-size:clamp(28px,4.4vw,42px);letter-spacing:-.035em;line-height:1.1}
+h3{margin:0;font-size:17px}
+.mu{color:var(--mu)}.sm{font-size:12px}
+.hero{border:1px solid var(--line);border-radius:28px;padding:clamp(22px,4vw,40px);background:linear-gradient(135deg,#123778,#0a1d42 72%);box-shadow:0 20px 50px #0006}
+.hero p:last-child{color:var(--mu);max-width:540px;margin:12px 0 0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:20px}
+.rc{border:1px solid var(--line);background:linear-gradient(160deg,var(--card2),var(--card));border-radius:24px;padding:24px 14px 20px;display:flex;flex-direction:column;align-items:center;gap:5px;transition:transform .18s,border-color .18s,box-shadow .18s;box-shadow:0 10px 28px #0006;-webkit-tap-highlight-color:transparent}
+.rc:hover{transform:translateY(-4px);border-color:var(--ac);box-shadow:0 16px 36px #0a56d055}.rc:active{transform:scale(.98)}
+.rc:focus-visible,.tab:focus-visible,.b:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+.rc strong{font-size:20px;margin-top:10px}.rc span{font-size:13px;color:var(--mu);text-align:center}
+.rc em{font-style:normal;font-size:12px;font-weight:700;color:var(--ac2);background:#4da3ff22;border-radius:99px;padding:4px 11px;margin-top:8px}
+.ico{width:122px;height:122px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 25%,#2f73de,#0b2a63 72%);border:1px solid #3d7fe0;box-shadow:inset 0 0 0 7px #ffffff0a,0 0 34px #2d7bf055}
+.ico svg{width:68%;height:68%;fill:none;stroke:#dcebff;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.ico .f{fill:#6db3ff44}.ico .s{stroke-width:2.6}
+.ico.sm{width:58px;height:58px;box-shadow:0 0 18px #2d7bf055}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.rt{display:flex;align-items:center;gap:14px}.rt h2{font-size:28px;margin:0}
+.tabs{display:flex;gap:6px;background:#081938;border:1px solid var(--line);padding:5px;border-radius:14px;width:max-content;max-width:100%;margin-bottom:18px}
+.tab{border:0;background:none;color:var(--mu);border-radius:10px;padding:10px 16px;font-weight:700;white-space:nowrap}
+.tab.on{background:linear-gradient(180deg,#3a8cf0,#1f64cc);color:#fff;box-shadow:0 4px 14px #1f64cc66}
+.pn{background:linear-gradient(180deg,#0f2753,#0b1e44);border:1px solid var(--line);border-radius:20px;box-shadow:0 12px 34px #0006}
+.lay{display:grid;grid-template-columns:minmax(290px,.85fr) minmax(0,1.4fr);gap:18px;align-items:start}
+.fp,.bp{padding:20px;min-width:0}.fp{position:sticky;top:84px}
+.sh{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:16px}
+.pill{font-size:12px;font-weight:700;color:var(--ac2);background:#4da3ff22;border-radius:99px;padding:5px 11px;white-space:nowrap}
+.fd{margin-bottom:14px}.fd>label,.lb{display:block;font-size:13px;font-weight:700;margin-bottom:6px;color:#c3d6f7}
+.in{width:100%;border:1px solid var(--line);background:#071733;border-radius:12px;padding:12px;outline:0;transition:border-color .15s,box-shadow .15s}
+.in::placeholder{color:#5f77a3}.in:focus{border-color:var(--ac);box-shadow:0 0 0 3px #4da3ff33}
+textarea.in{resize:vertical;min-height:64px}
+.dz{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;border:1.5px dashed #3b64a8;border-radius:14px;padding:16px;min-height:130px;background:#071733;cursor:pointer;transition:background .15s,border-color .15s}
+.dz.drag,.dz:hover{background:#0c2656;border-color:var(--ac)}
+.dz img{max-height:170px;max-width:100%;border-radius:10px;object-fit:contain}
+.dz small{color:var(--mu);font-size:12px}.up{width:38px;height:38px;border-radius:12px;background:#4da3ff22;color:var(--ac2);display:grid;place-items:center;font-size:20px}
+.row{display:flex;gap:8px}
+.b{border:1px solid transparent;border-radius:12px;padding:12px 16px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:transform .12s,filter .15s}
+.b:not(:disabled):active{transform:translateY(1px)}
+.b1{background:linear-gradient(180deg,#3a8cf0,#1f64cc);color:#fff;box-shadow:0 6px 18px #1f64cc55}.b1:not(:disabled):hover{filter:brightness(1.1)}
+.b2{background:#0d2756;border-color:var(--line);color:var(--tx)}.b2:not(:disabled):hover{background:#123067}
+.blk{width:100%;margin-top:14px}
+.note{border-radius:12px;padding:12px 14px;background:#4da3ff17;color:#b9d4fb;font-size:13px;margin-top:14px}
+.note .b{margin-top:8px;padding:8px 12px;font-size:13px}
+#list{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.qc{display:grid;grid-template-columns:80px minmax(0,1fr) auto;gap:12px;align-items:center;border:1px solid var(--line);background:#0a1c40;border-radius:14px;padding:10px}
+.qc img{width:80px;height:70px;object-fit:cover;border-radius:10px;background:#050f24}
+.qc p{margin:0;overflow-wrap:anywhere}.qn{font-weight:700}.qm{font-size:12px;color:var(--mu);margin-top:3px!important}
+.ib{width:38px;height:38px;border-radius:10px;border:1px solid var(--line);background:#0d2756;display:grid;place-items:center;font-size:16px}
+.ib:hover{background:#163a7c}.ib.del:hover{background:#4a1a2a;color:var(--bad);border-color:#7a2b40}
+.empty{border:1.5px dashed var(--line);border-radius:14px;padding:30px 18px;text-align:center;color:var(--mu);margin-top:14px}.empty strong{display:block;color:var(--tx);margin-bottom:4px}
+.ew{max-width:860px;margin:0 auto}
+.es{display:grid;grid-template-columns:1.2fr .8fr;gap:26px;align-items:center;padding:clamp(20px,4vw,36px)}
+.es h3{font-size:24px;letter-spacing:-.03em;line-height:1.2;margin:6px 0 10px}.es p.mu{margin:0 0 18px}
+.stat{min-height:200px;border-radius:18px;background:radial-gradient(circle at 70% 20%,#2a6bd6,#0b2a63 70%);border:1px solid #3d7fe0;display:flex;flex-direction:column;justify-content:flex-end;padding:20px}
+.stat strong{font-size:52px;line-height:1;letter-spacing:-.05em}.stat span{color:var(--ac2);font-size:13px}
+.et{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px}
+.tmr{text-align:right}.tmr small{display:block;color:var(--mu);font-size:12px}
+.tmr b{font-size:28px;letter-spacing:-.04em;font-variant-numeric:tabular-nums;transition:color .2s}.tmr b.dg{color:var(--bad)}
+.trk{height:5px;background:#0a1c40}.trk i{display:block;height:100%;width:100%;background:var(--ac);transition:width .25s linear}.trk i.dg{background:var(--bad)}
+.eb{padding:20px}
+.stage{height:clamp(240px,44vw,440px);display:grid;place-items:center;background:#040b1c;border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:18px}
+.stage img{width:100%;height:100%;object-fit:contain}
+.pr{font-weight:700;margin:0 0 10px}
+.dots{display:flex;gap:5px;margin-top:18px}.dots i{flex:1;height:5px;border-radius:9px;background:#18346b}.dots .d{background:var(--ac)}.dots .c{background:#f5b942}
+.rh{padding:26px;text-align:center;border-bottom:1px solid var(--line)}
+.rs{width:62px;height:62px;margin:0 auto 12px;border-radius:50%;background:#4da3ff22;border:1px solid var(--ac);display:grid;place-items:center;color:var(--ac2);font-size:28px}
+.rh h3{font-size:26px;letter-spacing:-.03em}.rh p{color:var(--mu);margin:6px auto 0;max-width:520px}
+.sg{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:18px 20px}
+.sb{border:1px solid var(--line);background:#0a1c40;border-radius:14px;padding:14px 6px;text-align:center}.sb strong{display:block;font-size:28px;letter-spacing:-.03em}.sb span{font-size:12px;color:var(--mu)}
+.sb.g strong{color:var(--ok)}.sb.r strong{color:var(--bad)}
+.rl{padding:0 20px 8px}.rl h4{margin:6px 0 4px}
+.ri{display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:12px;align-items:center;border-top:1px solid #1a3667;padding:12px 0}
+.ri img{width:64px;height:56px;object-fit:cover;border-radius:9px}.ri p{margin:2px 0;font-size:13px;overflow-wrap:anywhere}.ri .mu b{color:var(--tx)}
+.tg{font-size:12px;font-weight:700;border-radius:99px;padding:5px 10px;white-space:nowrap}
+.tg.ok{background:#0f3d34;color:var(--ok)}.tg.bad{background:#4a1a2a;color:var(--bad)}.tg.em{background:#1a2f5c;color:var(--mu)}
+.ra{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;padding:12px 20px 24px}
+.toast{position:fixed;left:50%;bottom:calc(22px + env(safe-area-inset-bottom));transform:translate(-50%,16px);background:#17387a;border:1px solid #3d7fe0;color:#fff;padding:11px 16px;border-radius:12px;opacity:0;pointer-events:none;transition:.2s;z-index:30;max-width:calc(100vw - 24px);text-align:center;font-size:14px}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:850px){.lay,.es{grid-template-columns:1fr}.fp{position:static}.stat{min-height:120px}}
+@media(max-width:520px){.chip{display:none}.grid{gap:12px}.rc{padding:18px 8px 16px;border-radius:20px}.ico{width:94px;height:94px}.rc strong{font-size:18px}.rc span{font-size:12px}.tabs{width:100%}.tab{flex:1;padding:10px 6px}.fp,.bp{padding:16px}.qc{grid-template-columns:62px minmax(0,1fr);gap:10px}.qc img{width:62px;height:58px}.qc .row{grid-column:1/-1;justify-content:flex-end}.stage{height:290px}.eb .row{flex-direction:column}.ri{grid-template-columns:52px minmax(0,1fr)}.ri img{width:52px;height:48px}.ri .tg{grid-column:2;justify-self:start}.sg,.rl,.ra{padding-left:14px;padding-right:14px}}
+.pg{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;padding:16px;margin-bottom:18px}.pg>div{text-align:center}.pg strong{display:block;font-size:24px;letter-spacing:-.03em}.pg span{font-size:12px;color:var(--mu)}.pg .bar2,.pg p{grid-column:1/-1;margin:0}.bar2{height:6px;border-radius:9px;background:#18346b;overflow:hidden}.bar2 i{display:block;height:100%;background:linear-gradient(90deg,#3a8cf0,#34d399)}
+.lv{font-size:11px;font-weight:700;border-radius:99px;padding:2px 8px;margin-right:6px;white-space:nowrap}.ln{background:#1a2f5c;color:var(--ac2)}.lr{background:#4a1a2a;color:var(--bad)}.la{background:#3d3210;color:#f5b942}.ld{background:#0f3d34;color:var(--ok)}
+.stk{position:sticky;top:calc(env(safe-area-inset-top) + 69px);z-index:5;background:#0f2753;border-radius:20px 20px 0 0}
+@media(max-width:520px){.pg{grid-template-columns:repeat(3,1fr)}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top">
+  <button class="brand" id="logo" type="button" aria-label="Ir al inicio"><img class="logo" src="icons/icon-192.png" alt=""><div><h1>Práctica Anatómica</h1><p>Simulador de examen práctico</p></div></button>
+  <span class="chip">30 s por estructura · 10 preguntas</span>
+</header>
+<main class="shell">
+  <section id="home">
+    <div class="hero"><p class="eye">Tu laboratorio de anatomía</p><h2>Entrena. Identifica. Domina.</h2><p>Elige una región, sube las imágenes de sus estructuras y practica con simulacros cronometrados como en el examen real.</p></div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="work" class="hidden">
+    <div class="bar"><div class="rt"><div class="ico sm" id="rico"></div><div><p class="eye">Región</p><h2 id="rname"></h2></div></div><button class="b b2" id="back" type="button">← Todas las regiones</button></div>
+    <div class="pn pg" id="pg"></div>
+    <nav class="tabs"><button class="tab on" id="t-bank" type="button">Banco de imágenes</button><button class="tab" id="t-exam" type="button">Examen práctico</button></nav>
+
+    <div id="v-bank">
+      <div class="lay">
+        <form class="pn fp" id="form">
+          <div class="sh"><h3 id="ftitle">Añadir estructura</h3></div>
+          <input type="hidden" id="eid">
+          <div class="fd"><label for="nm">Nombre correcto *</label><input class="in" id="nm" required maxlength="150" placeholder="Ej.: Músculo esternocleidomastoideo"></div>
+          <div class="fd"><label for="al">Sinónimos aceptados</label><textarea class="in" id="al" placeholder="Separados por punto y coma"></textarea></div>
+          <div class="fd"><span class="lb">Imagen *</span>
+            <label class="dz" id="dz" for="file"><img id="pv" class="hidden" alt="Vista previa"><span class="up">↑</span><strong id="ut">Toca o arrastra una imagen</strong><small>JPG, PNG o WEBP · se optimiza para ahorrar espacio</small></label>
+            <input type="file" id="file" accept="image/*" hidden>
+          </div>
+          <div class="row"><button class="b b1" id="save" type="submit" style="flex:1">＋ Guardar estructura</button><button class="b b2 hidden" id="cancel" type="button">Cancelar</button></div>
+        </form>
+        <section class="pn bp">
+          <div class="sh"><h3>Banco de preguntas</h3><span class="pill" id="bc">0 estructuras</span></div>
+          <div class="row"><input class="in" id="q" placeholder="Buscar estructura…" aria-label="Buscar"><button class="b b2" id="clr" type="button">Limpiar</button></div>
+          <div class="note hidden" id="orph"></div>
+          <div id="list"></div>
+          <div class="empty hidden" id="empty"></div>
+          <div class="note" id="hint"></div>
+          <button class="b b1 blk" id="go" type="button">Iniciar examen</button>
+        </section>
+      </div>
+    </div>
+
+    <div id="v-exam" class="hidden">
+      <div class="ew">
+        <section class="pn es" id="p-start">
+          <div><p class="eye">Modo examen</p><h3>Diez estructuras.<br>Treinta segundos cada una.</h3>
+            <p class="mu">Se eligen 10 preguntas al azar de esta región. Escribe el nombre de cada estructura y confírmalo antes de que llegue a cero: si no lo confirmas, cuenta como sin responder. Las que falles tendrán prioridad en los siguientes exámenes.</p>
+            <button class="b b1" id="start" type="button">Iniciar examen</button><p class="mu sm" id="notice" style="margin:12px 0 0"></p></div>
+          <div class="stat"><strong id="sc">0</strong><span>estructuras en esta región</span></div>
+        </section>
+        <section class="pn hidden" id="p-stage">
+          <div class="stk"><div class="et"><div><p class="eye" id="cnt">Pregunta 1 de 10</p><span class="mu sm" id="acnt"></span></div><div class="tmr"><small>Tiempo restante</small><b id="tt">00:30</b></div></div>
+          <div class="trk"><i id="tf"></i></div></div>
+          <div class="eb">
+            <div class="stage"><img id="eimg" alt="Estructura a identificar"></div>
+            <form id="aform"><p class="pr">Identifica la estructura señalada:</p>
+              <div class="row"><input class="in" id="ans" autocomplete="off" autocapitalize="off" maxlength="200" placeholder="Escribe el nombre anatómico…" aria-label="Respuesta"><button class="b b1" id="sub" type="submit">Confirmar →</button></div></form>
+            <div class="dots" id="dots"></div>
+          </div>
+        </section>
+        <section class="pn hidden" id="p-res">
+          <div class="rh"><div class="rs" id="rsym">✓</div><h3 id="rtit"></h3><p id="rsub"></p></div>
+          <div class="sg"><div class="sb g"><strong id="nok">0</strong><span>Correctas</span></div><div class="sb r"><strong id="nbad">0</strong><span>Incorrectas</span></div><div class="sb"><strong id="nemp">0</strong><span>Sin responder</span></div></div>
+          <div class="rl"><h4>Detalle del examen</h4><div id="rlist"></div></div>
+          <div class="ra"><button class="b b1" id="again" type="button">Nuevo examen ↻</button><button class="b b2" id="tobank" type="button">Volver al banco</button></div>
+        </section>
+      </div>
+    </div>
+  </section>
+  <p class="mu sm" style="text-align:center;margin-top:26px">Tus estructuras se guardan en este navegador. No se guarda historial de resultados.</p>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(() => {
+'use strict';
+const REG = {
+  torax:{n:'Tórax',d:'Caja torácica, pulmones y corazón',i:'<svg viewBox="0 0 64 64"><path class="f" d="M30 20C20 20 12 27 11 40c0 5 3 8 7 8 6 0 11-4 12-10ZM34 20c10 0 18 7 19 20 0 5-3 8-7 8-6 0-11-4-12-10Z"/><path d="M32 14v31M32 45l-2 5h4zM31 18C22 18 15 23 14 32M31 25c-8 1-14 6-14 14M31 32c-7 1-11 5-12 11M33 18c9 0 16 5 17 14M33 25c8 1 14 6 14 14M33 32c7 1 11 5 12 11M32 14c-6-2-13-2-20 1M32 14c6-2 13-2 20 1"/><path class="f s" d="M32 33c-3-3-7-1-7 2 0 3 4 6 7 8 3-2 7-5 7-8 0-3-4-5-7-2Z"/></svg>'},
+  cuello:{n:'Cuello',d:'Tiroides, laringe y tráquea',i:'<svg viewBox="0 0 64 64"><path d="M23 6v14c0 5-3 8-6 12l-5 7M41 6v14c0 5 3 8 6 12l5 7"/><path d="M28 8h8v46h-8zM28 14h8M28 20h8M28 40h8M28 46h8"/><path class="f s" d="M28 25c-7-3-13 0-13 6s6 8 13 5ZM36 25c7-3 13 0 13 6s-6 8-13 5Z"/><path d="M12 44c8 3 14 4 20 4s12-1 20-4M18 52c5 2 9 3 14 3s9-1 14-3"/></svg>'},
+  cabeza:{n:'Cabeza',d:'Cráneo, huesos faciales y órbitas',i:'<svg viewBox="0 0 64 64"><path class="f" d="M32 6C20 6 12 14 12 25c0 7 3 11 7 14v9h26v-9c4-3 7-7 7-14C52 14 44 6 32 6Z"/><circle class="s" cx="23" cy="28" r="5.5"/><circle class="s" cx="41" cy="28" r="5.5"/><path d="M32 33l-3.5 8h7ZM19 39v9c0 4 3 8 7 8h12c4 0 7-4 7-8v-9M26 48h12M29 48v6M35 48v6M32 12v8"/></svg>'},
+  abdomen:{n:'Abdomen',d:'Vísceras, peritoneo y vasos',i:'<svg viewBox="0 0 64 64"><path d="M18 6c1 9-1 15-5 22l2 17c1 7 6 13 17 13s16-6 17-13l2-17c-4-7-6-13-5-22"/><path class="f" d="M16 21c9-3 17-1 22 5l-3 6c-7 2-14-1-19-6Z"/><path class="f s" d="M39 22c6 0 9 3 9 7s-4 7-8 6c-3-1-4-3-3-5"/><path d="M20 42h24c4 0 4 6 0 6H22c-4 0-4 6 0 6h18"/></svg>'}
+};
+const LEN = 10, SEC = 30, RK = 'practica-anatomica-review-ids-v1';
+let db, Q = [], region = null, img = '', exam = [], idx = 0, endAt = 0, tm = null, live = false, tt = null;
+const $ = id => document.getElementById(id);
+const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const norm = v => String(v || '').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[.,;:¿?¡!()[\]{}\-_/]/g,' ').replace(/\s+/g,' ').trim();
+const toast = m => { const t = $('toast'); t.textContent = m; t.classList.add('show'); clearTimeout(tt); tt = setTimeout(() => t.classList.remove('show'), 3000); };
+const makeId = () => (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : 'q-' + Date.now() + '-' + Math.random().toString(16).slice(2);
+const rq = () => Q.filter(q => q.region === region);
+const plural = (n, s) => `${n} ${s}${n === 1 ? '' : 's'}`;
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const inferRegion = c => Object.keys(REG).find(k => norm(c).includes(k)) || '';
+
+/* ---------- Almacenamiento ---------- */
+const openDB = () => new Promise((res, rej) => {
+  const r = indexedDB.open('PracticaAnatomicaDB', 1);
+  r.onupgradeneeded = () => { if (!r.result.objectStoreNames.contains('questions')) r.result.createObjectStore('questions', {keyPath:'id'}); };
+  r.onsuccess = () => res(r.result);
+  r.onerror = () => rej(r.error);
+});
+const op = (mode, fn) => new Promise((res, rej) => {
+  const t = db.transaction('questions', mode); const r = fn(t.objectStore('questions'));
+  t.oncomplete = () => res(r.result); t.onerror = t.onabort = () => rej(t.error);
+});
+async function loadQuestions() {
+  Q = (await op('readonly', s => s.getAll()) || []).sort((a,b) => (b.updatedAt||0) - (a.updatedAt||0));
+  const old = new Set(getR());
+  for (const q of Q) {
+    let ch = false;
+    if (q.region === undefined) { q.region = inferRegion(q.category); ch = true; }
+    if (old.has(q.id) && !q.level) { q.level = 'r'; q.errors = q.errors || 1; q.lastErrorAt = q.lastErrorAt || q.updatedAt; ch = true; }
+    if (ch) await op('readwrite', s => s.put(q));
+  }
+  if (old.size) setR([]);
+  region ? (renderBank(), updateAvail()) : renderHome();
+}
+function getR() { try { const v = JSON.parse(localStorage.getItem(RK) || '[]'); return Array.isArray(v) ? [...new Set(v)] : []; } catch (e) { return []; } }
+function setR(ids) { try { localStorage.setItem(RK, JSON.stringify([...new Set(ids)])); } catch (e) { toast('No se pudo guardar la lista de repaso.'); } }
+
+/*LOGIC*/
+const LV = {n:'Nueva', r:'En revisión', a:'En aprendizaje', d:'Dominada'};
+const lvl = q => q.level || 'n';
+function grade(q, ok) { // 3 aciertos seguidos = dominada; cualquier error = en revisión
+  q.attempts = (q.attempts || 0) + 1;
+  if (ok) { q.streak = (q.streak || 0) + 1; q.level = q.streak >= 3 ? 'd' : 'a'; }
+  else { q.streak = 0; q.errors = (q.errors || 0) + 1; q.level = 'r'; q.lastErrorAt = Date.now(); }
+}
+function pick(sc) { // repaso prioritario (máx. 7 si hay otras) + nuevas > en aprendizaje > dominadas
+  const rev = sc.filter(q => lvl(q) === 'r').sort((a, b) => (b.errors || 0) - (a.errors || 0) || (a.lastErrorAt || 0) - (b.lastErrorAt || 0));
+  const o = {n:0, a:1, d:2}, rest = shuffle(sc.filter(q => lvl(q) !== 'r')).sort((a, b) => o[lvl(a)] - o[lvl(b)]);
+  const a = rev.slice(0, Math.min(rev.length, LEN - Math.min(3, rest.length))), b = rest.slice(0, LEN - a.length);
+  return shuffle([...a, ...b, ...rev.slice(a.length, LEN - b.length)]);
+}
+/*END*/
+/* ---------- Navegación ---------- */
+function renderHome() {
+  $('grid').innerHTML = Object.entries(REG).map(([k, r]) => {
+    const l = Q.filter(q => q.region === k), n = l.length, d = l.filter(q => lvl(q) === 'd').length;
+    return `<button class="rc" type="button" data-r="${k}"><div class="ico">${r.i}</div><strong>${r.n}</strong><span>${r.d}</span><em>${plural(n,'estructura')}${n ? ` · ${Math.round(d / n * 100)} % dominio` : ''}</em></button>`;
+  }).join('');
+}
+function route() {
+  const k = location.hash.slice(1);
+  stopExam();
+  if (REG[k]) {
+    region = k;
+    $('home').classList.add('hidden'); $('work').classList.remove('hidden');
+    $('rico').innerHTML = REG[k].i; $('rname').textContent = REG[k].n;
+    resetForm(); $('q').value = ''; pane('start'); tab('bank'); renderBank(); updateAvail();
+  } else {
+    region = null;
+    $('work').classList.add('hidden'); $('home').classList.remove('hidden'); renderHome();
+  }
+  window.scrollTo(0, 0);
+}
+function tab(n) {
+  const bank = n === 'bank';
+  $('v-bank').classList.toggle('hidden', !bank); $('v-exam').classList.toggle('hidden', bank);
+  $('t-bank').classList.toggle('on', bank); $('t-exam').classList.toggle('on', !bank);
+  if (!bank) { updateAvail(); if (!live && $('p-res').classList.contains('hidden')) pane('start'); }
+}
+function pane(n) { ['start','stage','res'].forEach(p => $('p-' + p).classList.toggle('hidden', p !== n)); }
+const leave = () => !live || confirm('Hay un examen en curso. ¿Quieres salir?');
+
+/* ---------- Banco ---------- */
+function resetForm() {
+  $('form').reset(); $('eid').value = ''; img = '';
+  $('pv').classList.add('hidden'); $('pv').removeAttribute('src'); $('ut').textContent = 'Toca o arrastra una imagen';
+  $('save').textContent = '＋ Guardar estructura'; $('ftitle').textContent = 'Añadir estructura'; $('cancel').classList.add('hidden');
+}
+async function compress(file) {
+  if (!file || !file.type.startsWith('image/')) throw new Error('Selecciona un archivo de imagen válido.');
+  if (file.size > 25 * 1024 * 1024) throw new Error('La imagen supera 25 MB. Elige una más pequeña.');
+  const url = URL.createObjectURL(file);
+  const im = await new Promise((res, rej) => { const i = new Image(); i.onload = () => res(i); i.onerror = () => rej(new Error('No se pudo leer la imagen.')); i.src = url; });
+  URL.revokeObjectURL(url);
+  const sc = Math.min(1, 1500 / Math.max(im.naturalWidth, im.naturalHeight)), c = document.createElement('canvas');
+  c.width = Math.max(1, Math.round(im.naturalWidth * sc)); c.height = Math.max(1, Math.round(im.naturalHeight * sc));
+  const x = c.getContext('2d'); x.fillStyle = '#fff'; x.fillRect(0, 0, c.width, c.height); x.drawImage(im, 0, 0, c.width, c.height);
+  return c.toDataURL('image/webp', 0.82);
+}
+function preview(src, label) { $('pv').src = src; $('pv').classList.remove('hidden'); $('ut').textContent = label; }
+async function receive(file) {
+  try { img = await compress(file); preview(img, file.name || 'Imagen lista'); }
+  catch (e) { img = ''; toast(e.message || 'No se pudo cargar la imagen.'); }
+}
+async function onSave(e) {
+  e.preventDefault();
+  const name = $('nm').value.trim(), id = $('eid').value, old = id ? Q.find(q => q.id === id) : null, image = img || (old && old.image) || '';
+  if (!name) { $('nm').focus(); return toast('Escribe el nombre correcto de la estructura.'); }
+  if (!image) return toast('Añade una imagen para esta estructura.');
+  const q = { ...(old || {}), id: id || makeId(), name, aliases: [...new Set($('al').value.split(/[;\n,]/).map(v => v.trim()).filter(Boolean))],
+    region, category: REG[region].n, image, updatedAt: Date.now(), createdAt: old ? old.createdAt : Date.now() };
+  $('save').disabled = true;
+  try { await op('readwrite', s => s.put(q)); await loadQuestions(); resetForm(); toast(old ? 'Estructura actualizada.' : 'Estructura guardada.'); }
+  catch (er) { console.error(er); toast('No se pudo guardar. Prueba una imagen más pequeña o libera espacio.'); }
+  finally { $('save').disabled = false; }
+}
+function renderBank() {
+  const term = norm($('q').value), all = rq();
+  const list = all.filter(q => !term || norm([q.name, ...(q.aliases || [])].join(' ')).includes(term));
+  $('bc').textContent = plural(all.length, 'estructura');
+  $('list').innerHTML = list.map(q => `<article class="qc"><img src="${q.image}" alt=""><div><p class="qn">${esc(q.name)}</p><p class="qm"><span class="lv l${lvl(q)}">${LV[lvl(q)]}</span>${plural((q.aliases||[]).length,'sinónimo')}${q.aliases && q.aliases.length ? ' · ' + esc(q.aliases.join(', ')) : ''}</p></div><div class="row"><button class="ib" type="button" data-edit="${esc(q.id)}" aria-label="Editar ${esc(q.name)}" title="Editar">✎</button><button class="ib del" type="button" data-del="${esc(q.id)}" aria-label="Eliminar ${esc(q.name)}" title="Eliminar">✕</button></div></article>`).join('');
+  const em = $('empty'); em.classList.toggle('hidden', list.length > 0);
+  em.innerHTML = term ? '<strong>Sin coincidencias</strong>Prueba con otro nombre.' : `<strong>Aún no hay estructuras en ${REG[region].n}</strong>Usa el formulario para subir tu primera imagen y escribir su nombre.`;
+  const orphans = Q.filter(q => !q.region).length;
+  $('orph').classList.toggle('hidden', !orphans);
+  $('orph').innerHTML = orphans ? `Tienes ${plural(orphans,'estructura')} antigua${orphans === 1 ? '' : 's'} sin región.<br><button class="b b2" type="button" data-adopt="1">Moverlas a ${REG[region].n}</button>` : '';
+}
+function updateAvail() {
+  if (!region) return;
+  const sc = rq(), enough = sc.length >= LEN, rev = sc.filter(q => lvl(q) === 'r').length, miss = LEN - sc.length;
+  $('go').disabled = $('start').disabled = !enough;
+  $('hint').textContent = !enough ? `Faltan ${plural(miss,'estructura')} en ${REG[region].n} para iniciar un examen de ${LEN} preguntas.`
+    : rev ? `Tienes ${plural(rev,'estructura')} en revisión: tendrán prioridad en el próximo examen.` : `Listo: se elegirán ${LEN} de tus ${sc.length} estructuras al azar.`;
+  $('notice').textContent = !enough ? `Añade ${plural(miss,'estructura')} más para habilitar el examen.` : `Tienes ${plural(sc.length,'estructura')} en ${REG[region].n}.${rev ? ` Pendientes de repaso: ${rev}.` : ''}`;
+  $('sc').textContent = sc.length;
+  const c = {n:0, r:0, a:0, d:0}; sc.forEach(q => c[lvl(q)]++);
+  const pct = sc.length ? Math.round(c.d / sc.length * 100) : 0;
+  $('pg').innerHTML = [['Total', sc.length], ['Nuevas', c.n], ['En revisión', c.r], ['En aprendizaje', c.a], ['Dominadas', c.d]].map(([k, v]) => `<div><strong>${v}</strong><span>${k}</span></div>`).join('')
+    + `<div class="bar2"><i style="width:${pct}%"></i></div><p class="mu sm">Dominio de ${REG[region].n}: <b>${pct} %</b> · Se domina con 3 aciertos seguidos; un error la devuelve a revisión.</p>`;
+}
+
+/* ---------- Examen ---------- */
+const accepted = q => [q.name, ...(q.aliases || [])].map(norm).filter(Boolean);
+function startExam() {
+  const sc = rq();
+  if (sc.length < LEN) { toast(`Añade al menos ${LEN} estructuras en ${REG[region].n}.`); return tab('bank'); }
+  stopExam();
+  exam = pick(sc).map(q => ({...q, ans:'', out:'', prev: lvl(q)}));
+  idx = 0; live = true; tab('exam'); pane('stage'); show();
+}
+function stopExam() { clearInterval(tm); tm = null; live = false; }
+function show() {
+  clearInterval(tm); if (!live) return;
+  if (idx >= exam.length) return finish();
+  const q = exam[idx];
+  $('cnt').textContent = `Pregunta ${idx + 1} de ${LEN}`;
+  $('acnt').textContent = `Respondidas: ${exam.filter(x => x.ans).length} / ${LEN}`;
+  $('eimg').src = q.image; $('ans').value = ''; $('ans').disabled = false; $('sub').disabled = false;
+  $('dots').innerHTML = exam.map((_, i) => `<i class="${i < idx ? 'd' : i === idx ? 'c' : ''}"></i>`).join('');
+  endAt = Date.now() + SEC * 1000; tick(); tm = setInterval(tick, 250);
+  setTimeout(() => $('ans').focus({preventScroll:true}), 60);
+}
+function tick() {
+  const left = Math.max(0, Math.ceil((endAt - Date.now()) / 1000)), dg = left <= 10;
+  $('tt').textContent = '00:' + String(left).padStart(2, '0');
+  $('tf').style.width = Math.max(0, (endAt - Date.now()) / (SEC * 10)) + '%';
+  $('tt').classList.toggle('dg', dg); $('tf').classList.toggle('dg', dg);
+  if (left <= 0) commit(true);
+}
+function commit(timeout) {
+  if (!live || $('sub').disabled) return;
+  clearInterval(tm);
+  const q = exam[idx]; q.ans = timeout ? '' : $('ans').value.trim(); // sin confirmar a tiempo = sin responder
+  q.out = !q.ans ? 'em' : accepted(q).includes(norm(q.ans)) ? 'ok' : 'bad';
+  $('ans').disabled = $('sub').disabled = true; idx++;
+  setTimeout(show, 200);
+}
+function finish() {
+  stopExam(); pane('res');
+  const n = k => exam.filter(q => q.out === k || (k === 'em' && !q.out)).length, ok = n('ok');
+  const recs = exam.map(e => { const r = Q.find(x => x.id === e.id); if (r) { grade(r, e.out === 'ok'); e.now = r.level; } return r; }).filter(Boolean);
+  Promise.all(recs.map(r => op('readwrite', s => s.put(r)))).then(updateAvail).catch(() => toast('No se pudo guardar el progreso.'));
+  const pend = rq().filter(q => lvl(q) === 'r').length;
+  $('nok').textContent = ok; $('nbad').textContent = n('bad'); $('nemp').textContent = n('em');
+  $('rtit').textContent = ok >= 8 ? '¡Muy buen trabajo!' : ok >= 5 ? 'Práctica completada' : 'Sigue practicando';
+  $('rsym').textContent = ok >= 8 ? '★' : ok >= 5 ? '✓' : '↻';
+  $('rsub').textContent = `Acertaste ${ok} de ${LEN} (${Math.round(ok / LEN * 100)} %). ${pend ? `${plural(pend,'estructura')} en revisión tendrán prioridad en el próximo examen.` : 'No tienes preguntas pendientes de repaso.'}`;
+  const row = q => { const i = exam.indexOf(q), t = {ok:['Correcta','ok'], bad:['Incorrecta','bad'], em:['Sin responder','em']}[q.out || 'em'];
+    const lv = q.out === 'ok' ? (q.now === 'd' ? 'Dominada' : 'En aprendizaje · sale de la revisión prioritaria') : (q.prev === 'r' ? 'Sigue en revisión prioritaria' : 'Añadida a la revisión prioritaria');
+    return `<div class="ri"><img src="${q.image}" alt=""><div><p><b>${i + 1}. ${esc(q.name)}</b></p><p class="mu">Tu respuesta: <b>${q.ans ? esc(q.ans) : '—'}</b></p>${(q.aliases||[]).length ? `<p class="mu">También válido: ${esc(q.aliases.join(', '))}</p>` : ''}<p class="mu">${lv}</p></div><span class="tg ${t[1]}">${t[0]}</span></div>`; };
+  const bad = exam.filter(q => q.out !== 'ok'), good = exam.filter(q => q.out === 'ok');
+  $('rlist').innerHTML = (bad.length ? `<h4>Para repasar (${bad.length})</h4>` + bad.map(row).join('') : '') + (good.length ? `<h4>Identificadas correctamente (${good.length})</h4>` + good.map(row).join('') : '');
+}
+
+/* ---------- Eventos (se registran antes de abrir la base de datos) ---------- */
+$('grid').addEventListener('click', e => { const b = e.target.closest('[data-r]'); if (b) location.hash = b.dataset.r; });
+$('back').addEventListener('click', () => { if (leave()) location.hash = ''; });
+$('logo').addEventListener('click', () => { if (leave()) { if (location.hash) location.hash = ''; else route(); } });
+window.addEventListener('hashchange', route);
+$('t-bank').addEventListener('click', () => { if (leave()) { stopExam(); tab('bank'); } });
+$('t-exam').addEventListener('click', () => tab('exam'));
+$('form').addEventListener('submit', onSave);
+$('cancel').addEventListener('click', resetForm);
+$('file').addEventListener('change', async e => { const f = e.target.files && e.target.files[0]; if (f) await receive(f); e.target.value = ''; });
+const dz = $('dz');
+dz.addEventListener('dragover', e => { e.preventDefault(); dz.classList.add('drag'); });
+dz.addEventListener('dragleave', () => dz.classList.remove('drag'));
+dz.addEventListener('drop', async e => { e.preventDefault(); dz.classList.remove('drag'); const f = e.dataTransfer.files && e.dataTransfer.files[0]; if (f) await receive(f); });
+$('q').addEventListener('input', renderBank);
+$('clr').addEventListener('click', () => { $('q').value = ''; renderBank(); });
+$('list').addEventListener('click', async e => {
+  const ed = e.target.closest('[data-edit]'), dl = e.target.closest('[data-del]');
+  if (ed) {
+    const q = Q.find(x => x.id === ed.dataset.edit); if (!q) return;
+    $('eid').value = q.id; $('nm').value = q.name; $('al').value = (q.aliases || []).join('; '); img = q.image; preview(q.image, 'Imagen guardada');
+    $('ftitle').textContent = 'Editar estructura'; $('save').textContent = '✓ Guardar cambios'; $('cancel').classList.remove('hidden');
+    $('nm').focus(); window.scrollTo({top:0, behavior:'smooth'});
+  } else if (dl) {
+    const q = Q.find(x => x.id === dl.dataset.del);
+    if (!q || !confirm(`¿Eliminar “${q.name}” del banco?`)) return;
+    try { await op('readwrite', s => s.delete(q.id)); if ($('eid').value === q.id) resetForm(); await loadQuestions(); toast('Estructura eliminada.'); }
+    catch (er) { toast('No se pudo eliminar.'); }
+  }
+});
+$('orph').addEventListener('click', async e => {
+  if (!e.target.closest('[data-adopt]')) return;
+  try { for (const q of Q.filter(x => !x.region)) { q.region = region; q.category = REG[region].n; await op('readwrite', s => s.put(q)); } await loadQuestions(); toast('Estructuras movidas a ' + REG[region].n + '.'); }
+  catch (er) { toast('No se pudieron mover.'); }
+});
+$('go').addEventListener('click', startExam);
+$('start').addEventListener('click', startExam);
+$('again').addEventListener('click', startExam);
+$('tobank').addEventListener('click', () => { stopExam(); tab('bank'); });
+$('aform').addEventListener('submit', e => { e.preventDefault(); commit(); });
+window.addEventListener('beforeunload', () => clearInterval(tm));
+
+route();
+(async () => {
+  try { db = await openDB(); if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {}); await loadQuestions(); }
+  catch (e) { console.error(e); toast('El navegador no permitió abrir el almacenamiento local. Usa Safari o Chrome actualizados.'); }
+})();
+})();
+if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(e => console.warn('Sin modo offline:', e)));
+}
+</script>
+</body>
+</html>
