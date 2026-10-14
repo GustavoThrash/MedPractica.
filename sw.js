@@ -1,5 +1,5 @@
 'use strict';
-const CACHE_NAME = 'practica-anatomica-v5';
+const CACHE_NAME = 'practica-anatomica-v6';
 const BASE_URL = new URL('./', self.registration.scope);
 const APP_SHELL = [
   BASE_URL.href,
@@ -7,7 +7,12 @@ const APP_SHELL = [
   new URL('manifest.webmanifest', BASE_URL).href,
   new URL('icons/icon-192.png', BASE_URL).href,
   new URL('icons/icon-512.png', BASE_URL).href,
-  new URL('icons/apple-touch-icon.png', BASE_URL).href
+  new URL('icons/apple-touch-icon.png', BASE_URL).href,
+  new URL('icons/torax.webp', BASE_URL).href,
+  new URL('icons/cuello.webp', BASE_URL).href,
+  new URL('icons/cabeza.webp', BASE_URL).href,
+  new URL('icons/abdomen.webp', BASE_URL).href,
+  new URL('icons/icon-maskable-512.png', BASE_URL).href
 ];
 
 self.addEventListener('install', (event) => {

@@ -21,7 +21,7 @@ button,input,textarea{font:inherit;color:inherit}button{cursor:pointer}button:di
 .hidden{display:none!important}
 .top{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:calc(env(safe-area-inset-top) + 12px) clamp(14px,4vw,44px) 12px;background:#050f24d9;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #ffffff14}
 .brand{display:flex;align-items:center;gap:12px;background:none;border:0;padding:0;text-align:left}
-.logo{width:44px;height:44px;border-radius:13px;box-shadow:0 6px 18px #0a4fd066}
+.logo{width:44px;height:44px;border-radius:50%;box-shadow:0 6px 18px #0a4fd066}
 .brand h1{margin:0;font-size:18px;letter-spacing:-.02em}.brand p{margin:0;font-size:12px;color:var(--mu)}
 .chip{font-size:12px;color:var(--ac2);border:1px solid var(--line);background:#0d2756;border-radius:99px;padding:7px 12px;white-space:nowrap}
 .shell{max-width:1080px;margin:0 auto;padding:clamp(18px,4vw,38px) clamp(14px,3vw,28px) calc(48px + env(safe-area-inset-bottom))}
@@ -37,10 +37,10 @@ h3{margin:0;font-size:17px}
 .rc:focus-visible,.tab:focus-visible,.b:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
 .rc strong{font-size:20px;margin-top:10px}.rc span{font-size:13px;color:var(--mu);text-align:center}
 .rc em{font-style:normal;font-size:12px;font-weight:700;color:var(--ac2);background:#4da3ff22;border-radius:99px;padding:4px 11px;margin-top:8px}
-.ico{width:122px;height:122px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 25%,#2f73de,#0b2a63 72%);border:1px solid #3d7fe0;box-shadow:inset 0 0 0 7px #ffffff0a,0 0 34px #2d7bf055}
-.ico svg{width:68%;height:68%;fill:none;stroke:#dcebff;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-.ico .f{fill:#6db3ff44}.ico .s{stroke-width:2.6}
-.ico.sm{width:58px;height:58px;box-shadow:0 0 18px #2d7bf055}
+.ico{width:150px;height:150px;border-radius:50%;box-shadow:0 0 32px #2d7bf044,0 10px 24px #0008;transition:transform .18s}
+.rc:hover .ico{transform:scale(1.04)}
+.ico img{width:100%;height:100%;display:block;border-radius:50%;pointer-events:none;-webkit-user-drag:none}
+.ico.sm{width:62px;height:62px;box-shadow:0 0 18px #2d7bf055}
 .bar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:18px}
 .rt{display:flex;align-items:center;gap:14px}.rt h2{font-size:28px;margin:0}
 .tabs{display:flex;gap:6px;background:#081938;border:1px solid var(--line);padding:5px;border-radius:14px;width:max-content;max-width:100%;margin-bottom:18px}
@@ -103,11 +103,13 @@ textarea.in{resize:vertical;min-height:64px}
 .toast{position:fixed;left:50%;bottom:calc(22px + env(safe-area-inset-bottom));transform:translate(-50%,16px);background:#17387a;border:1px solid #3d7fe0;color:#fff;padding:11px 16px;border-radius:12px;opacity:0;pointer-events:none;transition:.2s;z-index:30;max-width:calc(100vw - 24px);text-align:center;font-size:14px}
 .toast.show{opacity:1;transform:translate(-50%,0)}
 @media(max-width:850px){.lay,.es{grid-template-columns:1fr}.fp{position:static}.stat{min-height:120px}}
-@media(max-width:520px){.chip{display:none}.grid{gap:12px}.rc{padding:18px 8px 16px;border-radius:20px}.ico{width:94px;height:94px}.rc strong{font-size:18px}.rc span{font-size:12px}.tabs{width:100%}.tab{flex:1;padding:10px 6px}.fp,.bp{padding:16px}.qc{grid-template-columns:62px minmax(0,1fr);gap:10px}.qc img{width:62px;height:58px}.qc .row{grid-column:1/-1;justify-content:flex-end}.stage{height:290px}.eb .row{flex-direction:column}.ri{grid-template-columns:52px minmax(0,1fr)}.ri img{width:52px;height:48px}.ri .tg{grid-column:2;justify-self:start}.sg,.rl,.ra{padding-left:14px;padding-right:14px}}
+@media(max-width:520px){.chip{display:none}.grid{gap:12px}.rc{padding:18px 8px 16px;border-radius:20px}.ico{width:112px;height:112px}.rc strong{font-size:18px}.rc span{font-size:12px}.tabs{width:100%}.tab{flex:1;padding:10px 6px}.fp,.bp{padding:16px}.qc{grid-template-columns:62px minmax(0,1fr);gap:10px}.qc img{width:62px;height:58px}.qc .row{grid-column:1/-1;justify-content:flex-end}.stage{height:290px}.eb .row{flex-direction:column}.ri{grid-template-columns:52px minmax(0,1fr)}.ri img{width:52px;height:48px}.ri .tg{grid-column:2;justify-self:start}.sg,.rl,.ra{padding-left:14px;padding-right:14px}}
 .pg{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;padding:16px;margin-bottom:18px}.pg>div{text-align:center}.pg strong{display:block;font-size:24px;letter-spacing:-.03em}.pg span{font-size:12px;color:var(--mu)}.pg .bar2,.pg p{grid-column:1/-1;margin:0}.bar2{height:6px;border-radius:9px;background:#18346b;overflow:hidden}.bar2 i{display:block;height:100%;background:linear-gradient(90deg,#3a8cf0,#34d399)}
 .lv{font-size:11px;font-weight:700;border-radius:99px;padding:2px 8px;margin-right:6px;white-space:nowrap}.ln{background:#1a2f5c;color:var(--ac2)}.lr{background:#4a1a2a;color:var(--bad)}.la{background:#3d3210;color:#f5b942}.ld{background:#0f3d34;color:var(--ok)}
 .stk{position:sticky;top:calc(env(safe-area-inset-top) + 69px);z-index:5;background:#0f2753;border-radius:20px 20px 0 0}
 @media(max-width:520px){.pg{grid-template-columns:repeat(3,1fr)}}
+.ft{text-align:center;margin-top:28px}.ft p{margin:12px 0 0}
+.ig{display:inline-flex;align-items:center;gap:9px;padding:9px 16px;border:1px solid var(--line);background:#0d2756;border-radius:99px;color:var(--ac2);text-decoration:none;font-size:13px;transition:background .15s,border-color .15s}.ig:hover{background:#123067;border-color:var(--ac)}.ig svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8}.ig b{color:var(--tx)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
@@ -179,7 +181,7 @@ textarea.in{resize:vertical;min-height:64px}
       </div>
     </div>
   </section>
-  <p class="mu sm" style="text-align:center;margin-top:26px">Tus estructuras se guardan en este navegador. No se guarda historial de resultados.</p>
+  <footer class="ft"><a class="ig" href="https://instagram.com/gustavohelenox?dlrf=MTkyN3FiZmN4eGtpNQ%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".7"/></svg><span>Aplicación desarrollada por <b>@gustavohelenox</b></span></a><p class="mu sm">Tus estructuras se guardan en este navegador. No se guarda historial de resultados.</p></footer>
 </main>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
@@ -187,10 +189,10 @@ textarea.in{resize:vertical;min-height:64px}
 (() => {
 'use strict';
 const REG = {
-  torax:{n:'Tórax',d:'Caja torácica, pulmones y corazón',i:'<svg viewBox="0 0 64 64"><path class="f" d="M30 20C20 20 12 27 11 40c0 5 3 8 7 8 6 0 11-4 12-10ZM34 20c10 0 18 7 19 20 0 5-3 8-7 8-6 0-11-4-12-10Z"/><path d="M32 14v31M32 45l-2 5h4zM31 18C22 18 15 23 14 32M31 25c-8 1-14 6-14 14M31 32c-7 1-11 5-12 11M33 18c9 0 16 5 17 14M33 25c8 1 14 6 14 14M33 32c7 1 11 5 12 11M32 14c-6-2-13-2-20 1M32 14c6-2 13-2 20 1"/><path class="f s" d="M32 33c-3-3-7-1-7 2 0 3 4 6 7 8 3-2 7-5 7-8 0-3-4-5-7-2Z"/></svg>'},
-  cuello:{n:'Cuello',d:'Tiroides, laringe y tráquea',i:'<svg viewBox="0 0 64 64"><path d="M23 6v14c0 5-3 8-6 12l-5 7M41 6v14c0 5 3 8 6 12l5 7"/><path d="M28 8h8v46h-8zM28 14h8M28 20h8M28 40h8M28 46h8"/><path class="f s" d="M28 25c-7-3-13 0-13 6s6 8 13 5ZM36 25c7-3 13 0 13 6s-6 8-13 5Z"/><path d="M12 44c8 3 14 4 20 4s12-1 20-4M18 52c5 2 9 3 14 3s9-1 14-3"/></svg>'},
-  cabeza:{n:'Cabeza',d:'Cráneo, huesos faciales y órbitas',i:'<svg viewBox="0 0 64 64"><path class="f" d="M32 6C20 6 12 14 12 25c0 7 3 11 7 14v9h26v-9c4-3 7-7 7-14C52 14 44 6 32 6Z"/><circle class="s" cx="23" cy="28" r="5.5"/><circle class="s" cx="41" cy="28" r="5.5"/><path d="M32 33l-3.5 8h7ZM19 39v9c0 4 3 8 7 8h12c4 0 7-4 7-8v-9M26 48h12M29 48v6M35 48v6M32 12v8"/></svg>'},
-  abdomen:{n:'Abdomen',d:'Vísceras, peritoneo y vasos',i:'<svg viewBox="0 0 64 64"><path d="M18 6c1 9-1 15-5 22l2 17c1 7 6 13 17 13s16-6 17-13l2-17c-4-7-6-13-5-22"/><path class="f" d="M16 21c9-3 17-1 22 5l-3 6c-7 2-14-1-19-6Z"/><path class="f s" d="M39 22c6 0 9 3 9 7s-4 7-8 6c-3-1-4-3-3-5"/><path d="M20 42h24c4 0 4 6 0 6H22c-4 0-4 6 0 6h18"/></svg>'}
+  torax:{n:'Tórax',d:'Caja torácica, pulmones y corazón',i:'<img src="icons/torax.webp" alt="" draggable="false">'},
+  cuello:{n:'Cuello',d:'Tiroides, laringe y tráquea',i:'<img src="icons/cuello.webp" alt="" draggable="false">'},
+  cabeza:{n:'Cabeza',d:'Cráneo, huesos faciales y órbitas',i:'<img src="icons/cabeza.webp" alt="" draggable="false">'},
+  abdomen:{n:'Abdomen',d:'Vísceras, peritoneo y vasos',i:'<img src="icons/abdomen.webp" alt="" draggable="false">'}
 };
 const LEN = 10, SEC = 30, RK = 'practica-anatomica-review-ids-v1';
 let db, Q = [], region = null, img = '', exam = [], idx = 0, endAt = 0, tm = null, live = false, tt = null;
