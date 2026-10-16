@@ -1,0 +1,114 @@
+[
+ {
+  "id": "022a7b9e-3e06-4d09-bd97-063f1063ca97",
+  "region": "cabeza",
+  "name": "Vómer",
+  "aliases": [],
+  "image_path": "data/img/022a7b9e-3e06-4d09-bd97-063f1063ca97-1792109732115.webp",
+  "updated_at": "2026-10-16T00:15:32.115Z"
+ },
+ {
+  "id": "bb91228e-10c1-4bea-a32d-8c64a9ba47cc",
+  "region": "cabeza",
+  "name": "Maxila",
+  "aliases": [],
+  "image_path": "data/img/bb91228e-10c1-4bea-a32d-8c64a9ba47cc-1792064791080.webp",
+  "updated_at": "2026-10-15T11:46:31.080Z"
+ },
+ {
+  "id": "0cbcf445-1de1-43ae-aefa-2c09ea5e78aa",
+  "region": "cabeza",
+  "name": "Mandibula",
+  "aliases": [],
+  "image_path": "data/img/0cbcf445-1de1-43ae-aefa-2c09ea5e78aa-1792064774800.webp",
+  "updated_at": "2026-10-15T11:46:14.800Z"
+ },
+ {
+  "id": "fe1b3557-6f6b-4f28-9ade-0dc4def34eab",
+  "region": "cabeza",
+  "name": "Hueso Palatino",
+  "aliases": [],
+  "image_path": "data/img/fe1b3557-6f6b-4f28-9ade-0dc4def34eab-1792064754296.webp",
+  "updated_at": "2026-10-15T11:45:54.296Z"
+ },
+ {
+  "id": "fc707793-12f8-45ec-8157-15924a6fbe8e",
+  "region": "cabeza",
+  "name": "Hueso Nasal",
+  "aliases": [],
+  "image_path": "data/img/fc707793-12f8-45ec-8157-15924a6fbe8e-1792064729567.webp",
+  "updated_at": "2026-10-15T11:45:29.567Z"
+ },
+ {
+  "id": "9fa38d03-04ed-41ec-a25a-22609005ccd3",
+  "region": "cabeza",
+  "name": "Hueso Lacrimal",
+  "aliases": [],
+  "image_path": "data/img/9fa38d03-04ed-41ec-a25a-22609005ccd3-1792064711068.webp",
+  "updated_at": "2026-10-15T11:45:11.068Z"
+ },
+ {
+  "id": "1aa7469b-be65-4475-8c99-5abe7612365c",
+  "region": "cabeza",
+  "name": "Hueso Cigomático",
+  "aliases": [],
+  "image_path": "data/img/1aa7469b-be65-4475-8c99-5abe7612365c-1792064694944.webp",
+  "updated_at": "2026-10-15T11:44:54.944Z"
+ },
+ {
+  "id": "8ae69115-ab3a-4c58-9deb-a089876da70b",
+  "region": "cabeza",
+  "name": "Concha nasal inferior",
+  "aliases": [],
+  "image_path": "data/img/8ae69115-ab3a-4c58-9deb-a089876da70b-1792064675588.webp",
+  "updated_at": "2026-10-15T11:44:35.588Z"
+ },
+ {
+  "id": "6240f4ae-d89c-486f-b744-23c1aa59782e",
+  "region": "cabeza",
+  "name": "Hueso Temporal",
+  "aliases": [],
+  "image_path": "data/img/6240f4ae-d89c-486f-b744-23c1aa59782e-1792064623261.webp",
+  "updated_at": "2026-10-15T11:43:43.261Z"
+ },
+ {
+  "id": "b1ecd664-46f5-4525-82f9-d4b6588871f5",
+  "region": "cabeza",
+  "name": "Hueso Parietal",
+  "aliases": [],
+  "image_path": "data/img/b1ecd664-46f5-4525-82f9-d4b6588871f5-1792064601735.webp",
+  "updated_at": "2026-10-15T11:43:21.735Z"
+ },
+ {
+  "id": "35176762-039f-4ad8-8051-d71934b97579",
+  "region": "cabeza",
+  "name": "Hueso Occipital",
+  "aliases": [],
+  "image_path": "data/img/35176762-039f-4ad8-8051-d71934b97579-1792064579261.webp",
+  "updated_at": "2026-10-15T11:42:59.261Z"
+ },
+ {
+  "id": "0e36e0c7-7ae5-4faf-a4a6-b0d4c26f563c",
+  "region": "cabeza",
+  "name": "Hueso Frontal",
+  "aliases": [],
+  "image_path": "data/img/0e36e0c7-7ae5-4faf-a4a6-b0d4c26f563c-1792064557669.webp",
+  "updated_at": "2026-10-15T11:42:37.669Z"
+ },
+ {
+  "id": "bc4d29ed-9aef-4e0b-b206-a34080ae02e8",
+  "region": "cabeza",
+  "name": "Hueso Etmoide",
+  "aliases": [],
+  "image_path": "data/img/bc4d29ed-9aef-4e0b-b206-a34080ae02e8-1792064537318.webp",
+  "updated_at": "2026-10-15T11:42:17.318Z"
+ },
+ {
+  "id": "f4d27623-3d62-4e61-bcb8-7acd9fbbfad6",
+  "region": "cabeza",
+  "name": "Hueso Esfenoide",
+  "aliases": [],
+  "image_path": "data/img/f4d27623-3d62-4e61-bcb8-7acd9fbbfad6-1792064514696.webp",
+  "updated_at": "2026-10-15T11:41:54.696Z"
+ }
+]
