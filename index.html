@@ -220,6 +220,7 @@ const norm = v => String(v || '').normalize('NFD').replace(/[\u0300-\u036f]/g,''
 const toast = m => { const t = $('toast'); t.textContent = m; t.classList.add('show'); clearTimeout(tt); tt = setTimeout(() => t.classList.remove('show'), 3000); };
 const makeId = () => (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : 'q-' + Date.now() + '-' + Math.random().toString(16).slice(2);
 const hasS = () => { try { return !!localStorage.getItem(SK); } catch (e) { return false; } };
+const AP = String(CFG.ADMIN_PASSWORD || '').trim(), AH = String(CFG.ADMIN_HASH || '').trim().toLowerCase(), sha = async t => [...new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode('pa:' + t)))].map(b => b.toString(16).padStart(2, '0')).join('');
 const GK = 'pa-gh-admin', ghAdmin = () => { try { return localStorage.getItem(GK) === '1'; } catch (e) { return false; } };
 const isOff = k => !!REG[k].off && (SB.on || !ghAdmin()), isAdmin = () => SB.on ? hasS() : ghAdmin(), canEdit = () => !isOff(region) || isAdmin();
 const inReg = k => Q.filter(q => q.region === k && (!isOff(k) || q.official)), rq = () => inReg(region);
@@ -531,8 +532,10 @@ $('orph').addEventListener('click', async e => {
     await syncOfficial(true); toast(`${plural(items.length,'estructura')} subida${items.length === 1 ? '' : 's'} al servidor.`);
   } catch (er) { console.error(er); toast('No se pudo subir. Revisa tu sesión y la configuración.'); }
 });
-$('adm').addEventListener('click', () => {
-  if (!SB.on) { const on = ghAdmin(); if (confirm(on ? '¿Desactivar el modo administrador en este dispositivo?' : 'Modo administrador: sirve para preparar las estructuras oficiales en ESTE dispositivo y exportarlas a GitHub. Lo que ven los demás depende solo de lo que publiques en GitHub. ¿Activarlo?')) { try { on ? localStorage.removeItem(GK) : localStorage.setItem(GK, '1'); } catch (e) {} route(); syncOfficial(true); } return; }
+$('adm').addEventListener('click', async () => {
+  if (!SB.on) { const on = ghAdmin();
+    if (!on && (AP || AH)) { const pw = prompt('Contraseña de administrador:'); if (pw === null) return; try { if (AP ? pw.trim() !== AP : await sha(pw) !== AH) return toast('Contraseña incorrecta.'); } catch (e) { return toast('Para usar contraseña abre el app desde su enlace https.'); } }
+    if (confirm(on ? '¿Desactivar el modo administrador en este dispositivo?' : 'Modo administrador: sirve para preparar las estructuras oficiales en ESTE dispositivo y exportarlas a GitHub. Lo que ven los demás depende solo de lo que publiques en GitHub. ¿Activarlo?')) { try { on ? localStorage.removeItem(GK) : localStorage.setItem(GK, '1'); } catch (e) {} route(); syncOfficial(true); } return; }
   if (isAdmin()) { if (confirm('¿Cerrar la sesión de administrador?')) { localStorage.removeItem(SK); route(); } } else { $('ov').classList.remove('hidden'); $('le').focus(); } });
 $('lc').addEventListener('click', () => $('ov').classList.add('hidden'));
 $('lf').addEventListener('submit', async e => {
