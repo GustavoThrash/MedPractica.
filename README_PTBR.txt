@@ -43,3 +43,9 @@ Ao terminar cada simulado, as questões erradas ou não respondidas ficam penden
 
 
 REVISÃO ATIVA (v5): o progresso de cada estrutura (Nueva / En revisión / En aprendizaje / Dominada, acertos seguidos e erros) agora fica salvo junto com a própria estrutura no IndexedDB. Dominada = 3 acertos seguidos; qualquer erro volta para En revisión. Resposta não confirmada até o tempo acabar conta como sem responder. Substitua index.html e sw.js no GitHub.
+
+
+NOVA FUNÇÃO — MODO CUESTIONES
+O aplicativo agora oferece um terceiro modo em cada região: questões de múltipla escolha, com correção imediata, explicação, resultado final e revisão prioritária de erros. O progresso das questões fica separado do progresso das estruturas práticas.
+
+Para cadastrar questões e publicar o mesmo banco para todos, consulte GUIA_MODO_CUESTIONES.md. O banco oficial é data/preguntas.json; as alterações feitas pelo gerenciador ficam locais até que o administrador exporte o banco completo e substitua esse arquivo no GitHub. O service worker foi atualizado para v12 e mantém o banco de questões disponível offline depois da primeira carga.

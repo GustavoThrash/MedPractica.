@@ -1,0 +1,302 @@
+[
+  {
+    "id": "mcq-torax-001",
+    "region": "torax",
+    "topic": "Músculos respiratorios",
+    "prompt": "¿Cuál es el principal músculo de la inspiración tranquila?",
+    "options": [
+      "Músculo recto del abdomen",
+      "Diafragma",
+      "Músculo transverso del tórax",
+      "Músculo dorsal ancho"
+    ],
+    "correctIndex": 1,
+    "explanation": "La contracción del diafragma aumenta los diámetros de la cavidad torácica y es el principal motor de la inspiración tranquila.",
+    "updatedAt": 1792100000001
+  },
+  {
+    "id": "mcq-torax-002",
+    "region": "torax",
+    "topic": "Pleuras",
+    "prompt": "¿Qué porción de la pleura está adherida directamente a la superficie del pulmón?",
+    "options": [
+      "Pleura parietal costal",
+      "Pleura mediastínica",
+      "Pleura visceral",
+      "Pleura cervical parietal"
+    ],
+    "correctIndex": 2,
+    "explanation": "La pleura visceral recubre íntimamente la superficie pulmonar y se introduce en las fisuras entre los lóbulos.",
+    "updatedAt": 1792100000002
+  },
+  {
+    "id": "mcq-torax-003",
+    "region": "torax",
+    "topic": "Corazón",
+    "prompt": "¿Qué válvula se encuentra entre el ventrículo derecho y el tronco pulmonar?",
+    "options": [
+      "Válvula mitral",
+      "Válvula aórtica",
+      "Válvula tricúspide",
+      "Válvula pulmonar"
+    ],
+    "correctIndex": 3,
+    "explanation": "La válvula pulmonar regula la salida de sangre del ventrículo derecho hacia el tronco pulmonar.",
+    "updatedAt": 1792100000003
+  },
+  {
+    "id": "mcq-torax-004",
+    "region": "torax",
+    "topic": "Mediastino",
+    "prompt": "¿Cuál de estas estructuras atraviesa el mediastino posterior?",
+    "options": [
+      "Esófago",
+      "Timo en el adulto",
+      "Tronco pulmonar",
+      "Vena cava superior"
+    ],
+    "correctIndex": 0,
+    "explanation": "El esófago desciende por el mediastino posterior antes de atravesar el diafragma por el hiato esofágico.",
+    "updatedAt": 1792100000004
+  },
+  {
+    "id": "mcq-torax-005",
+    "region": "torax",
+    "topic": "Pared torácica",
+    "prompt": "En el surco costal, el paquete vasculonervioso intercostal principal discurre cerca de qué borde de la costilla?",
+    "options": [
+      "Borde superior",
+      "Borde inferior",
+      "Extremo anterior solamente",
+      "Cuello de la costilla solamente"
+    ],
+    "correctIndex": 1,
+    "explanation": "La vena, la arteria y el nervio intercostales principales suelen recorrer el surco costal en el borde inferior de la costilla superior.",
+    "updatedAt": 1792100000005
+  },
+  {
+    "id": "mcq-cuello-001",
+    "region": "cuello",
+    "topic": "Músculos del cuello",
+    "prompt": "La contracción unilateral del músculo esternocleidomastoideo gira la cabeza principalmente hacia qué lado?",
+    "options": [
+      "Hacia el mismo lado",
+      "Hacia el lado opuesto",
+      "No produce rotación",
+      "Solo produce extensión"
+    ],
+    "correctIndex": 1,
+    "explanation": "La acción unilateral del esternocleidomastoideo inclina la cabeza hacia el mismo lado y la rota hacia el lado contrario.",
+    "updatedAt": 1792100000011
+  },
+  {
+    "id": "mcq-cuello-002",
+    "region": "cuello",
+    "topic": "Laringe",
+    "prompt": "¿Cuál es el cartílago más grande de la laringe?",
+    "options": [
+      "Cartílago aritenoides",
+      "Cartílago corniculado",
+      "Cartílago tiroides",
+      "Cartílago cuneiforme"
+    ],
+    "correctIndex": 2,
+    "explanation": "El cartílago tiroides es el mayor cartílago laríngeo y forma gran parte de la pared anterior y lateral de la laringe.",
+    "updatedAt": 1792100000012
+  },
+  {
+    "id": "mcq-cuello-003",
+    "region": "cuello",
+    "topic": "Venas del cuello",
+    "prompt": "La vena yugular interna se une habitualmente con cuál vena para formar la vena braquiocefálica?",
+    "options": [
+      "Vena subclavia",
+      "Vena yugular externa",
+      "Vena vertebral",
+      "Vena facial"
+    ],
+    "correctIndex": 0,
+    "explanation": "La vena yugular interna se une a la vena subclavia detrás de la articulación esternoclavicular para formar la vena braquiocefálica.",
+    "updatedAt": 1792100000013
+  },
+  {
+    "id": "mcq-cuello-004",
+    "region": "cuello",
+    "topic": "Músculos prevertebrales",
+    "prompt": "¿En qué costilla se inserta el músculo escaleno anterior?",
+    "options": [
+      "Segunda costilla",
+      "Primera costilla",
+      "Tercera costilla",
+      "Manubrio del esternón"
+    ],
+    "correctIndex": 1,
+    "explanation": "El escaleno anterior se inserta en el tubérculo del escaleno de la primera costilla.",
+    "updatedAt": 1792100000014
+  },
+  {
+    "id": "mcq-cuello-005",
+    "region": "cuello",
+    "topic": "Inervación de la laringe",
+    "prompt": "¿Qué músculo intrínseco de la laringe recibe inervación motora de la rama externa del nervio laríngeo superior?",
+    "options": [
+      "Cricoaritenoideo posterior",
+      "Aritenoideo transverso",
+      "Tiroaritenoideo",
+      "Cricotiroideo"
+    ],
+    "correctIndex": 3,
+    "explanation": "El cricotiroideo es la excepción clásica: recibe inervación de la rama externa del nervio laríngeo superior; la mayoría de los demás músculos intrínsecos dependen del nervio laríngeo recurrente.",
+    "updatedAt": 1792100000015
+  },
+  {
+    "id": "mcq-cabeza-001",
+    "region": "cabeza",
+    "topic": "Nervios craneales",
+    "prompt": "¿Qué nervio craneal inerva los músculos de la expresión facial?",
+    "options": [
+      "Nervio trigémino (V)",
+      "Nervio facial (VII)",
+      "Nervio vago (X)",
+      "Nervio hipogloso (XII)"
+    ],
+    "correctIndex": 1,
+    "explanation": "El nervio facial (VII par craneal) proporciona la inervación motora a los músculos de la expresión facial.",
+    "updatedAt": 1792100000021
+  },
+  {
+    "id": "mcq-cabeza-002",
+    "region": "cabeza",
+    "topic": "Órbita",
+    "prompt": "¿Por qué abertura de la base del cráneo pasa el nervio óptico?",
+    "options": [
+      "Foramen oval",
+      "Foramen yugular",
+      "Conducto óptico",
+      "Fisura orbitaria inferior"
+    ],
+    "correctIndex": 2,
+    "explanation": "El nervio óptico atraviesa el conducto óptico junto con la arteria oftálmica.",
+    "updatedAt": 1792100000022
+  },
+  {
+    "id": "mcq-cabeza-003",
+    "region": "cabeza",
+    "topic": "Músculos de la masticación",
+    "prompt": "¿Qué división del nervio trigémino lleva la inervación motora de los músculos de la masticación?",
+    "options": [
+      "División oftálmica (V1)",
+      "División maxilar (V2)",
+      "División mandibular (V3)",
+      "Nervio facial (VII)"
+    ],
+    "correctIndex": 2,
+    "explanation": "La división mandibular (V3) del trigémino contiene fibras motoras para los músculos de la masticación.",
+    "updatedAt": 1792100000023
+  },
+  {
+    "id": "mcq-cabeza-004",
+    "region": "cabeza",
+    "topic": "Huesos del cráneo",
+    "prompt": "¿Qué hueso forma la frente y contribuye al techo de las órbitas?",
+    "options": [
+      "Hueso frontal",
+      "Hueso occipital",
+      "Hueso esfenoides",
+      "Hueso temporal"
+    ],
+    "correctIndex": 0,
+    "explanation": "El hueso frontal forma la región de la frente y parte del techo de cada órbita.",
+    "updatedAt": 1792100000024
+  },
+  {
+    "id": "mcq-cabeza-005",
+    "region": "cabeza",
+    "topic": "Articulación temporomandibular",
+    "prompt": "¿Qué parte de la mandíbula participa directamente en la articulación temporomandibular?",
+    "options": [
+      "Apófisis coronoides",
+      "Ángulo mandibular",
+      "Cabeza de la mandíbula",
+      "Protuberancia mentoniana"
+    ],
+    "correctIndex": 2,
+    "explanation": "La cabeza de la mandíbula se articula con la fosa mandibular y el tubérculo articular del hueso temporal.",
+    "updatedAt": 1792100000025
+  },
+  {
+    "id": "mcq-abdomen-001",
+    "region": "abdomen",
+    "topic": "Intestino delgado",
+    "prompt": "¿Cuál es la primera porción del intestino delgado?",
+    "options": [
+      "Íleon",
+      "Yeyuno",
+      "Ciego",
+      "Duodeno"
+    ],
+    "correctIndex": 3,
+    "explanation": "El intestino delgado comienza en el duodeno, que recibe el contenido gástrico a través del píloro.",
+    "updatedAt": 1792100000031
+  },
+  {
+    "id": "mcq-abdomen-002",
+    "region": "abdomen",
+    "topic": "Sistema urinario",
+    "prompt": "¿Qué estructura transporta la orina desde la pelvis renal hasta la vejiga urinaria?",
+    "options": [
+      "Uretra",
+      "Uréter",
+      "Conducto deferente",
+      "Conducto colédoco"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cada uréter conduce la orina desde la pelvis renal hasta la vejiga mediante movimientos peristálticos.",
+    "updatedAt": 1792100000032
+  },
+  {
+    "id": "mcq-abdomen-003",
+    "region": "abdomen",
+    "topic": "Irrigación abdominal",
+    "prompt": "¿Qué arteria es la rama impar de la aorta abdominal que irriga gran parte de las estructuras derivadas del intestino anterior?",
+    "options": [
+      "Arteria mesentérica inferior",
+      "Arteria ilíaca común",
+      "Tronco celíaco",
+      "Arteria renal"
+    ],
+    "correctIndex": 2,
+    "explanation": "El tronco celíaco da origen a las arterias gástrica izquierda, esplénica y hepática común, e irriga gran parte de los órganos del intestino anterior.",
+    "updatedAt": 1792100000033
+  },
+  {
+    "id": "mcq-abdomen-004",
+    "region": "abdomen",
+    "topic": "Topografía abdominal",
+    "prompt": "¿Por qué el riñón derecho suele estar situado algo más inferior que el izquierdo?",
+    "options": [
+      "Por la presencia del hígado",
+      "Por la presencia del bazo",
+      "Por el páncreas",
+      "Por la vejiga urinaria"
+    ],
+    "correctIndex": 0,
+    "explanation": "El gran volumen del hígado desplaza habitualmente el riñón derecho a una posición algo más baja.",
+    "updatedAt": 1792100000034
+  },
+  {
+    "id": "mcq-abdomen-005",
+    "region": "abdomen",
+    "topic": "Vías biliares",
+    "prompt": "¿En qué parte del duodeno desemboca habitualmente la papila duodenal mayor?",
+    "options": [
+      "Primera porción",
+      "Segunda porción",
+      "Tercera porción",
+      "Cuarta porción"
+    ],
+    "correctIndex": 1,
+    "explanation": "La papila duodenal mayor se localiza habitualmente en la segunda porción del duodeno y recibe la desembocadura de la vía biliar principal y, con frecuencia, del conducto pancreático principal.",
+    "updatedAt": 1792100000035
+  }
+]

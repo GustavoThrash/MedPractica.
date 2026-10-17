@@ -1,11 +1,12 @@
 'use strict';
-const CACHE_NAME = 'practica-anatomica-v11';
+const CACHE_NAME = 'practica-anatomica-v12';
 const BASE_URL = new URL('./', self.registration.scope);
 const APP_SHELL = [
   BASE_URL.href,
   new URL('index.html', BASE_URL).href,
   new URL('manifest.webmanifest', BASE_URL).href,
   new URL('config.js', BASE_URL).href,
+  new URL('data/preguntas.json', BASE_URL).href,
   new URL('icons/icon-192.png', BASE_URL).href,
   new URL('icons/icon-512.png', BASE_URL).href,
   new URL('icons/apple-touch-icon.png', BASE_URL).href,
@@ -32,7 +33,14 @@ self.addEventListener('fetch', (event) => {
   const request = event.request;
   if (request.method !== 'GET' || new URL(request.url).origin !== self.location.origin) return;
 
-  if (request.url.includes('/data/estructuras.json')) return; // siempre fresco desde la red
+  if (request.url.includes('/data/estructuras.json')) return; // catálogo de estructuras: comportamiento original
+  if (request.url.includes('/data/preguntas.json')) {
+    event.respondWith(fetch(request).then((response) => {
+      if (response && response.ok) caches.open(CACHE_NAME).then((cache) => cache.put(request, response.clone()));
+      return response;
+    }).catch(async () => (await caches.match(request)) || Response.error()));
+    return;
+  }
   if (request.mode === 'navigate' || request.url.includes('/config.js')) {
     event.respondWith(
       fetch(request)
