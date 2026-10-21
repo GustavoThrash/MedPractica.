@@ -1,14 +1,14 @@
 {
   "id": "./",
-  "name": "Práctica Anatómica — Simulador de examen práctico",
-  "short_name": "Práctica Anatómica",
-  "description": "Practica Anatomía con imágenes, 30 segundos por pregunta, exámenes aleatorios y repaso automático de errores.",
+  "name": "MedPráctica — Simulador de examen práctico",
+  "short_name": "MedPráctica",
+  "description": "Practica Anatomía e Histología con imágenes, exámenes cronometrados de 10 preguntas y repaso automático de errores.",
   "lang": "es",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait-primary",
-  "background_color": "#000000",
+  "background_color": "#050b1c",
   "theme_color": "#081a3a",
   "icons": [
     {

@@ -22,7 +22,7 @@ ADICIONAR AO IPHONE
 2. Toque em Compartilhar.
 3. Escolha Adicionar à Tela de Início.
 4. Se aparecer, ative “Abrir como App da Web”.
-5. Toque em Adicionar. O ícone Práctica Anatómica aparecerá na tela inicial.
+5. Toque em Adicionar. O ícone MedPráctica aparecerá na tela inicial.
 
 USO E DADOS
 - Cadastre pelo menos 10 estruturas antes de iniciar uma prova.
