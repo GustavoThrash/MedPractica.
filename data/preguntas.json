@@ -1,0 +1,1172 @@
+[
+  {
+    "id": "mcq-torax-001",
+    "region": "torax",
+    "topic": "Músculos respiratorios",
+    "prompt": "¿Cuál es el principal músculo de la inspiración tranquila?",
+    "options": [
+      "Músculo recto del abdomen",
+      "Diafragma",
+      "Músculo transverso del tórax",
+      "Músculo dorsal ancho"
+    ],
+    "correctIndex": 1,
+    "explanation": "La contracción del diafragma aumenta los diámetros de la cavidad torácica y es el principal motor de la inspiración tranquila.",
+    "updatedAt": 1792100000001
+  },
+  {
+    "id": "mcq-torax-002",
+    "region": "torax",
+    "topic": "Pleuras",
+    "prompt": "¿Qué porción de la pleura está adherida directamente a la superficie del pulmón?",
+    "options": [
+      "Pleura parietal costal",
+      "Pleura mediastínica",
+      "Pleura visceral",
+      "Pleura cervical parietal"
+    ],
+    "correctIndex": 2,
+    "explanation": "La pleura visceral recubre íntimamente la superficie pulmonar y se introduce en las fisuras entre los lóbulos.",
+    "updatedAt": 1792100000002
+  },
+  {
+    "id": "mcq-torax-003",
+    "region": "torax",
+    "topic": "Corazón",
+    "prompt": "¿Qué válvula se encuentra entre el ventrículo derecho y el tronco pulmonar?",
+    "options": [
+      "Válvula mitral",
+      "Válvula aórtica",
+      "Válvula tricúspide",
+      "Válvula pulmonar"
+    ],
+    "correctIndex": 3,
+    "explanation": "La válvula pulmonar regula la salida de sangre del ventrículo derecho hacia el tronco pulmonar.",
+    "updatedAt": 1792100000003
+  },
+  {
+    "id": "mcq-torax-004",
+    "region": "torax",
+    "topic": "Mediastino",
+    "prompt": "¿Cuál de estas estructuras atraviesa el mediastino posterior?",
+    "options": [
+      "Esófago",
+      "Timo en el adulto",
+      "Tronco pulmonar",
+      "Vena cava superior"
+    ],
+    "correctIndex": 0,
+    "explanation": "El esófago desciende por el mediastino posterior antes de atravesar el diafragma por el hiato esofágico.",
+    "updatedAt": 1792100000004
+  },
+  {
+    "id": "mcq-torax-005",
+    "region": "torax",
+    "topic": "Pared torácica",
+    "prompt": "En el surco costal, el paquete vasculonervioso intercostal principal discurre cerca de qué borde de la costilla?",
+    "options": [
+      "Borde superior",
+      "Borde inferior",
+      "Extremo anterior solamente",
+      "Cuello de la costilla solamente"
+    ],
+    "correctIndex": 1,
+    "explanation": "La vena, la arteria y el nervio intercostales principales suelen recorrer el surco costal en el borde inferior de la costilla superior.",
+    "updatedAt": 1792100000005
+  },
+  {
+    "id": "mcq-cuello-001",
+    "region": "cuello",
+    "topic": "Músculos del cuello",
+    "prompt": "La contracción unilateral del músculo esternocleidomastoideo gira la cabeza principalmente hacia qué lado?",
+    "options": [
+      "Hacia el mismo lado",
+      "Hacia el lado opuesto",
+      "No produce rotación",
+      "Solo produce extensión"
+    ],
+    "correctIndex": 1,
+    "explanation": "La acción unilateral del esternocleidomastoideo inclina la cabeza hacia el mismo lado y la rota hacia el lado contrario.",
+    "updatedAt": 1792100000011
+  },
+  {
+    "id": "mcq-cuello-002",
+    "region": "cuello",
+    "topic": "Laringe",
+    "prompt": "¿Cuál es el cartílago más grande de la laringe?",
+    "options": [
+      "Cartílago aritenoides",
+      "Cartílago corniculado",
+      "Cartílago tiroides",
+      "Cartílago cuneiforme"
+    ],
+    "correctIndex": 2,
+    "explanation": "El cartílago tiroides es el mayor cartílago laríngeo y forma gran parte de la pared anterior y lateral de la laringe.",
+    "updatedAt": 1792100000012
+  },
+  {
+    "id": "mcq-cuello-003",
+    "region": "cuello",
+    "topic": "Venas del cuello",
+    "prompt": "La vena yugular interna se une habitualmente con cuál vena para formar la vena braquiocefálica?",
+    "options": [
+      "Vena subclavia",
+      "Vena yugular externa",
+      "Vena vertebral",
+      "Vena facial"
+    ],
+    "correctIndex": 0,
+    "explanation": "La vena yugular interna se une a la vena subclavia detrás de la articulación esternoclavicular para formar la vena braquiocefálica.",
+    "updatedAt": 1792100000013
+  },
+  {
+    "id": "mcq-cuello-004",
+    "region": "cuello",
+    "topic": "Músculos prevertebrales",
+    "prompt": "¿En qué costilla se inserta el músculo escaleno anterior?",
+    "options": [
+      "Segunda costilla",
+      "Primera costilla",
+      "Tercera costilla",
+      "Manubrio del esternón"
+    ],
+    "correctIndex": 1,
+    "explanation": "El escaleno anterior se inserta en el tubérculo del escaleno de la primera costilla.",
+    "updatedAt": 1792100000014
+  },
+  {
+    "id": "mcq-cuello-005",
+    "region": "cuello",
+    "topic": "Inervación de la laringe",
+    "prompt": "¿Qué músculo intrínseco de la laringe recibe inervación motora de la rama externa del nervio laríngeo superior?",
+    "options": [
+      "Cricoaritenoideo posterior",
+      "Aritenoideo transverso",
+      "Tiroaritenoideo",
+      "Cricotiroideo"
+    ],
+    "correctIndex": 3,
+    "explanation": "El cricotiroideo es la excepción clásica: recibe inervación de la rama externa del nervio laríngeo superior; la mayoría de los demás músculos intrínsecos dependen del nervio laríngeo recurrente.",
+    "updatedAt": 1792100000015
+  },
+  {
+    "id": "mcq-cabeza-001",
+    "region": "cabeza",
+    "topic": "Nervios craneales",
+    "prompt": "¿Qué nervio craneal inerva los músculos de la expresión facial?",
+    "options": [
+      "Nervio trigémino (V)",
+      "Nervio facial (VII)",
+      "Nervio vago (X)",
+      "Nervio hipogloso (XII)"
+    ],
+    "correctIndex": 1,
+    "explanation": "El nervio facial (VII par craneal) proporciona la inervación motora a los músculos de la expresión facial.",
+    "updatedAt": 1792100000021
+  },
+  {
+    "id": "mcq-cabeza-002",
+    "region": "cabeza",
+    "topic": "Órbita",
+    "prompt": "¿Por qué abertura de la base del cráneo pasa el nervio óptico?",
+    "options": [
+      "Foramen oval",
+      "Foramen yugular",
+      "Conducto óptico",
+      "Fisura orbitaria inferior"
+    ],
+    "correctIndex": 2,
+    "explanation": "El nervio óptico atraviesa el conducto óptico junto con la arteria oftálmica.",
+    "updatedAt": 1792100000022
+  },
+  {
+    "id": "mcq-cabeza-003",
+    "region": "cabeza",
+    "topic": "Músculos de la masticación",
+    "prompt": "¿Qué división del nervio trigémino lleva la inervación motora de los músculos de la masticación?",
+    "options": [
+      "División oftálmica (V1)",
+      "División maxilar (V2)",
+      "División mandibular (V3)",
+      "Nervio facial (VII)"
+    ],
+    "correctIndex": 2,
+    "explanation": "La división mandibular (V3) del trigémino contiene fibras motoras para los músculos de la masticación.",
+    "updatedAt": 1792100000023
+  },
+  {
+    "id": "mcq-cabeza-004",
+    "region": "cabeza",
+    "topic": "Huesos del cráneo",
+    "prompt": "¿Qué hueso forma la frente y contribuye al techo de las órbitas?",
+    "options": [
+      "Hueso frontal",
+      "Hueso occipital",
+      "Hueso esfenoides",
+      "Hueso temporal"
+    ],
+    "correctIndex": 0,
+    "explanation": "El hueso frontal forma la región de la frente y parte del techo de cada órbita.",
+    "updatedAt": 1792100000024
+  },
+  {
+    "id": "mcq-cabeza-005",
+    "region": "cabeza",
+    "topic": "Articulación temporomandibular",
+    "prompt": "¿Qué parte de la mandíbula participa directamente en la articulación temporomandibular?",
+    "options": [
+      "Apófisis coronoides",
+      "Ángulo mandibular",
+      "Cabeza de la mandíbula",
+      "Protuberancia mentoniana"
+    ],
+    "correctIndex": 2,
+    "explanation": "La cabeza de la mandíbula se articula con la fosa mandibular y el tubérculo articular del hueso temporal.",
+    "updatedAt": 1792100000025
+  },
+  {
+    "id": "mcq-abdomen-001",
+    "region": "abdomen",
+    "topic": "Intestino delgado",
+    "prompt": "¿Cuál es la primera porción del intestino delgado?",
+    "options": [
+      "Íleon",
+      "Yeyuno",
+      "Ciego",
+      "Duodeno"
+    ],
+    "correctIndex": 3,
+    "explanation": "El intestino delgado comienza en el duodeno, que recibe el contenido gástrico a través del píloro.",
+    "updatedAt": 1792100000031
+  },
+  {
+    "id": "mcq-abdomen-002",
+    "region": "abdomen",
+    "topic": "Sistema urinario",
+    "prompt": "¿Qué estructura transporta la orina desde la pelvis renal hasta la vejiga urinaria?",
+    "options": [
+      "Uretra",
+      "Uréter",
+      "Conducto deferente",
+      "Conducto colédoco"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cada uréter conduce la orina desde la pelvis renal hasta la vejiga mediante movimientos peristálticos.",
+    "updatedAt": 1792100000032
+  },
+  {
+    "id": "mcq-abdomen-003",
+    "region": "abdomen",
+    "topic": "Irrigación abdominal",
+    "prompt": "¿Qué arteria es la rama impar de la aorta abdominal que irriga gran parte de las estructuras derivadas del intestino anterior?",
+    "options": [
+      "Arteria mesentérica inferior",
+      "Arteria ilíaca común",
+      "Tronco celíaco",
+      "Arteria renal"
+    ],
+    "correctIndex": 2,
+    "explanation": "El tronco celíaco da origen a las arterias gástrica izquierda, esplénica y hepática común, e irriga gran parte de los órganos del intestino anterior.",
+    "updatedAt": 1792100000033
+  },
+  {
+    "id": "mcq-abdomen-004",
+    "region": "abdomen",
+    "topic": "Topografía abdominal",
+    "prompt": "¿Por qué el riñón derecho suele estar situado algo más inferior que el izquierdo?",
+    "options": [
+      "Por la presencia del hígado",
+      "Por la presencia del bazo",
+      "Por el páncreas",
+      "Por la vejiga urinaria"
+    ],
+    "correctIndex": 0,
+    "explanation": "El gran volumen del hígado desplaza habitualmente el riñón derecho a una posición algo más baja.",
+    "updatedAt": 1792100000034
+  },
+  {
+    "id": "mcq-abdomen-005",
+    "region": "abdomen",
+    "topic": "Vías biliares",
+    "prompt": "¿En qué parte del duodeno desemboca habitualmente la papila duodenal mayor?",
+    "options": [
+      "Primera porción",
+      "Segunda porción",
+      "Tercera porción",
+      "Cuarta porción"
+    ],
+    "correctIndex": 1,
+    "explanation": "La papila duodenal mayor se localiza habitualmente en la segunda porción del duodeno y recibe la desembocadura de la vía biliar principal y, con frecuencia, del conducto pancreático principal.",
+    "updatedAt": 1792100000035
+  },
+  {
+    "id": "mcq-cabeza-doc-001",
+    "region": "cabeza",
+    "topic": "Huesos de la cara y mandíbula",
+    "prompt": "¿Cuál NO forma parte de las apófisis del hueso maxilar?",
+    "options": [
+      "Apófisis cigomática",
+      "Apófisis palatina",
+      "Apófisis frontal",
+      "Apófisis piramidal"
+    ],
+    "correctIndex": 3,
+    "explanation": "El maxilar presenta apófisis frontal, cigomática, palatina y alveolar. La apófisis piramidal corresponde al hueso palatino.",
+    "updatedAt": 1792100001001
+  },
+  {
+    "id": "mcq-cabeza-doc-002",
+    "region": "cabeza",
+    "topic": "Huesos de la cara y mandíbula",
+    "prompt": "El hiato maxilar está cubierto parcialmente por los siguientes huesos, EXCEPTO:",
+    "options": [
+      "Masa lateral del etmoides",
+      "Hueso cigomático",
+      "Cornete nasal inferior",
+      "Hueso lagrimal"
+    ],
+    "correctIndex": 1,
+    "explanation": "El hiato maxilar se reduce por la relación con el etmoides, el cornete nasal inferior, el lagrimal y el palatino. El cigomático no es uno de los huesos que lo cubren.",
+    "updatedAt": 1792100001002
+  },
+  {
+    "id": "mcq-cabeza-doc-003",
+    "region": "cabeza",
+    "topic": "Huesos de la cara y mandíbula",
+    "prompt": "La unión de las dos apófisis palatinas del maxilar origina todas estas estructuras, EXCEPTO:",
+    "options": [
+      "Cresta nasal",
+      "Conducto incisivo",
+      "Espina nasal posterior",
+      "Espina nasal anterior"
+    ],
+    "correctIndex": 2,
+    "explanation": "La espina nasal posterior se forma por la unión de las láminas horizontales de los huesos palatinos, no por las apófisis palatinas del maxilar.",
+    "updatedAt": 1792100001003
+  },
+  {
+    "id": "mcq-cabeza-doc-004",
+    "region": "cabeza",
+    "topic": "Huesos de la cara y mandíbula",
+    "prompt": "El conducto incisivo o palatino anterior da paso al paquete vasculonervioso:",
+    "options": [
+      "Nasopalatino",
+      "Palatino mayor",
+      "Esfenopalatino",
+      "Infraorbitario"
+    ],
+    "correctIndex": 0,
+    "explanation": "El conducto incisivo comunica la cavidad nasal con la región anterior del paladar duro y transmite el nervio nasopalatino y vasos acompañantes.",
+    "updatedAt": 1792100001004
+  },
+  {
+    "id": "mcq-cabeza-doc-005",
+    "region": "cabeza",
+    "topic": "Huesos de la cara y mandíbula",
+    "prompt": "La escotadura esfenopalatina del hueso palatino se encuentra entre:",
+    "options": [
+      "Apófisis piramidal y apófisis orbitaria",
+      "Apófisis esfenoidal por delante y apófisis piramidal por detrás",
+      "Apófisis orbitaria por delante y apófisis esfenoidal por detrás",
+      "Lámina horizontal y lámina perpendicular"
+    ],
+    "correctIndex": 2,
+    "explanation": "La escotadura esfenopalatina está situada entre las apófisis orbitaria y esfenoidal del hueso palatino; al articular con el esfenoides forma el foramen esfenopalatino.",
+    "updatedAt": 1792100001005
+  },
+  {
+    "id": "mcq-cabeza-doc-006",
+    "region": "cabeza",
+    "topic": "Huesos de la cara y mandíbula",
+    "prompt": "El foramen esfenopalatino se forma por la escotadura esfenopalatina del palatino y:",
+    "options": [
+      "El ala mayor del esfenoides",
+      "El cuerpo del esfenoides",
+      "La apófisis pterigoides",
+      "La tuberosidad del maxilar"
+    ],
+    "correctIndex": 1,
+    "explanation": "La escotadura esfenopalatina del palatino se convierte en foramen cuando articula con el cuerpo del esfenoides.",
+    "updatedAt": 1792100001006
+  },
+  {
+    "id": "mcq-cabeza-doc-007",
+    "region": "cabeza",
+    "topic": "Huesos de la cara y mandíbula",
+    "prompt": "La espina nasal posterior se forma por la unión de:",
+    "options": [
+      "Las apófisis palatinas de ambos maxilares",
+      "Las láminas perpendiculares de ambos palatinos",
+      "Las alas del vómer",
+      "Las láminas horizontales de ambos palatinos"
+    ],
+    "correctIndex": 3,
+    "explanation": "La espina nasal posterior se forma en la línea media por la unión de las láminas horizontales de los huesos palatinos.",
+    "updatedAt": 1792100001007
+  },
+  {
+    "id": "mcq-cabeza-doc-008",
+    "region": "cabeza",
+    "topic": "Huesos de la cara y mandíbula",
+    "prompt": "La cara lateral (maxilar) de la lámina perpendicular del palatino articula por delante con la tuberosidad del maxilar y contribuye a formar el:",
+    "options": [
+      "Surco palatino mayor",
+      "Surco lagrimal",
+      "Surco infraorbitario",
+      "Surco vomeriano"
+    ],
+    "correctIndex": 0,
+    "explanation": "La articulación del palatino con el maxilar contribuye al surco palatino mayor, que participa en la formación del conducto palatino mayor.",
+    "updatedAt": 1792100001008
+  },
+  {
+    "id": "mcq-cabeza-doc-009",
+    "region": "cabeza",
+    "topic": "Huesos de la cara y mandíbula",
+    "prompt": "La cara medial (nasal) de la lámina perpendicular del palatino presenta:",
+    "options": [
+      "Arriba la cresta de la concha para el cornete inferior y abajo la cresta etmoidal para el cornete medio",
+      "Arriba la cresta etmoidal para el cornete medio y abajo la cresta de la concha para el cornete inferior",
+      "Arriba el gancho lagrimal y abajo la espina nasal posterior",
+      "Arriba la apófisis esfenoidal y abajo la apófisis piramidal"
+    ],
+    "correctIndex": 1,
+    "explanation": "La cresta etmoidal, superior, articula con el cornete medio; la cresta de la concha, inferior, articula con el cornete nasal inferior.",
+    "updatedAt": 1792100001009
+  },
+  {
+    "id": "mcq-cabeza-doc-010",
+    "region": "cabeza",
+    "topic": "Huesos de la cara y mandíbula",
+    "prompt": "El nervio cigomático, rama de V2, penetra en el foramen cigomaticoorbitario y se divide en:",
+    "options": [
+      "Infraorbitario y alveolar superior posterior",
+      "Nasopalatino y palatino mayor",
+      "Cigomaticofacial y cigomaticotemporal",
+      "Lagrimal y frontal"
+    ],
+    "correctIndex": 2,
+    "explanation": "El nervio cigomático se divide en los nervios cigomaticofacial y cigomaticotemporal.",
+    "updatedAt": 1792100001010
+  },
+  {
+    "id": "mcq-cabeza-doc-011",
+    "region": "cabeza",
+    "topic": "Huesos de la cara y mandíbula",
+    "prompt": "¿Qué borde del vómer separa las coanas?",
+    "options": [
+      "El anterior, que articula con la lámina perpendicular del etmoides",
+      "El inferior, que articula con maxilar y palatino",
+      "El superior, con dos alas que articulan con el esfenoides",
+      "El posterior"
+    ],
+    "correctIndex": 3,
+    "explanation": "El borde posterior del vómer forma la separación medial entre las dos coanas.",
+    "updatedAt": 1792100001011
+  },
+  {
+    "id": "mcq-cabeza-doc-012",
+    "region": "cabeza",
+    "topic": "Huesos de la cara y mandíbula",
+    "prompt": "El foramen mentoniano suele encontrarse a la altura del:",
+    "options": [
+      "Segundo premolar",
+      "Canino",
+      "Primer molar",
+      "Incisivo lateral"
+    ],
+    "correctIndex": 0,
+    "explanation": "El foramen mentoniano suele localizarse cerca del ápice del segundo premolar mandibular, aunque puede variar ligeramente.",
+    "updatedAt": 1792100001012
+  },
+  {
+    "id": "mcq-cabeza-doc-013",
+    "region": "cabeza",
+    "topic": "Huesos de la cara y mandíbula",
+    "prompt": "La língula de la mandíbula o espina de Spix da inserción al:",
+    "options": [
+      "Ligamento estilomandibular",
+      "Ligamento pterigomandibular",
+      "Ligamento esfenomandibular",
+      "Músculo pterigoideo medial"
+    ],
+    "correctIndex": 2,
+    "explanation": "El ligamento esfenomandibular se inserta en la língula mandibular.",
+    "updatedAt": 1792100001013
+  },
+  {
+    "id": "mcq-cabeza-doc-014",
+    "region": "cabeza",
+    "topic": "Huesos de la cara y mandíbula",
+    "prompt": "Las espinas mentonianas superiores o apófisis geni dan inserción a los músculos:",
+    "options": [
+      "Geniohioideos",
+      "Genioglosos",
+      "Milohioideos",
+      "Digástricos"
+    ],
+    "correctIndex": 1,
+    "explanation": "Las espinas mentonianas superiores sirven de inserción a los músculos genioglosos; las inferiores, a los geniohioideos.",
+    "updatedAt": 1792100001014
+  },
+  {
+    "id": "mcq-cabeza-doc-015",
+    "region": "cabeza",
+    "topic": "Huesos de la cara y mandíbula",
+    "prompt": "¿Cuál de los siguientes pares músculo–inserción mandibular es INCORRECTO?",
+    "options": [
+      "Temporal — apófisis coronoides",
+      "Masetero — cara lateral de la rama y del ángulo",
+      "Pterigoideo medial — cara medial del ángulo",
+      "Pterigoideo lateral — cara medial del ángulo"
+    ],
+    "correctIndex": 3,
+    "explanation": "El pterigoideo lateral se inserta principalmente en la fóvea pterigoidea del cuello del cóndilo mandibular y en estructuras de la articulación temporomandibular, no en la cara medial del ángulo.",
+    "updatedAt": 1792100001015
+  },
+  {
+    "id": "mcq-cabeza-doc-016",
+    "region": "cabeza",
+    "topic": "Huesos de la cara y mandíbula",
+    "prompt": "La línea oblicua de la mandíbula da inserción a los músculos:",
+    "options": [
+      "Depresor del labio inferior y depresor del ángulo de la boca",
+      "Milohioideo y constrictor superior de la faringe",
+      "Masetero y temporal",
+      "Mentoniano y geniohioideo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Los músculos depresor del labio inferior y depresor del ángulo de la boca se originan en la región de la línea oblicua mandibular.",
+    "updatedAt": 1792100001016
+  },
+  {
+    "id": "mcq-cabeza-doc-017",
+    "region": "cabeza",
+    "topic": "Arterias de la cabeza y el cuello",
+    "prompt": "Son ramas colaterales anteriores de la arteria carótida externa, EXCEPTO:",
+    "options": [
+      "Tiroidea superior",
+      "Faríngea ascendente",
+      "Lingual",
+      "Facial"
+    ],
+    "correctIndex": 1,
+    "explanation": "Las ramas anteriores clásicas son tiroidea superior, lingual y facial. La faríngea ascendente nace de la cara medial de la carótida externa.",
+    "updatedAt": 1792100001017
+  },
+  {
+    "id": "mcq-cabeza-doc-018",
+    "region": "cabeza",
+    "topic": "Arterias de la cabeza y el cuello",
+    "prompt": "En la región submandibular, la arteria lingual se encuentra entre:",
+    "options": [
+      "Milohioideo (lateral) y geniohioideo (medial)",
+      "Hiogloso y geniogloso",
+      "Hiogloso (lateral) y constrictor medio de la faringe (medial)",
+      "Digástrico y estilohioideo"
+    ],
+    "correctIndex": 1,
+    "explanation": "La arteria lingual discurre profunda al músculo hiogloso y superficial al geniogloso; por eso se localiza entre estos músculos.",
+    "updatedAt": 1792100001018
+  },
+  {
+    "id": "mcq-cabeza-doc-019",
+    "region": "cabeza",
+    "topic": "Arterias de la cabeza y el cuello",
+    "prompt": "Son ramas colaterales de la arteria lingual, EXCEPTO:",
+    "options": [
+      "Arteria submentoniana",
+      "Rama suprahioidea",
+      "Arterias linguales dorsales",
+      "Arteria de la glándula sublingual"
+    ],
+    "correctIndex": 0,
+    "explanation": "La arteria submentoniana es una rama de la arteria facial, no de la lingual. La lingual da ramas suprahioideas, dorsales linguales y sublingual.",
+    "updatedAt": 1792100001019
+  },
+  {
+    "id": "mcq-cabeza-doc-020",
+    "region": "cabeza",
+    "topic": "Arterias de la cabeza y el cuello",
+    "prompt": "¿Cuál NO es un límite clásico del triángulo de Béclard?",
+    "options": [
+      "Borde posterior del músculo hiogloso",
+      "Asta mayor del hueso hioides",
+      "Vientre posterior del músculo digástrico",
+      "Borde posterior del músculo milohioideo"
+    ],
+    "correctIndex": 3,
+    "explanation": "El triángulo de Béclard está limitado por el borde posterior del hiogloso, el vientre posterior del digástrico y el asta mayor del hioides. El borde posterior del milohioideo se relaciona con el triángulo de Pirogoff. Se ajustó la redacción para dejar una única respuesta correcta.",
+    "updatedAt": 1792100001020
+  },
+  {
+    "id": "mcq-cabeza-doc-021",
+    "region": "cabeza",
+    "topic": "Arterias de la cabeza y el cuello",
+    "prompt": "Las ramas terminales de las arterias lingual y facial son, respectivamente:",
+    "options": [
+      "Angular y ranina",
+      "Lingual profunda (ranina) y angular",
+      "Sublingual y labial superior",
+      "Suprahioidea y nasal lateral"
+    ],
+    "correctIndex": 1,
+    "explanation": "La arteria lingual continúa como arteria lingual profunda (ranina); la arteria facial termina como arteria angular.",
+    "updatedAt": 1792100001021
+  },
+  {
+    "id": "mcq-cabeza-doc-022",
+    "region": "cabeza",
+    "topic": "Arterias de la cabeza y el cuello",
+    "prompt": "La arteria angular, rama terminal de la facial, se anastomosa con la arteria:",
+    "options": [
+      "Infraorbitaria",
+      "Esfenopalatina",
+      "Nasal dorsal, rama de la oftálmica",
+      "Occipital"
+    ],
+    "correctIndex": 2,
+    "explanation": "La arteria angular se anastomosa con la arteria nasal dorsal, rama de la arteria oftálmica.",
+    "updatedAt": 1792100001022
+  },
+  {
+    "id": "mcq-cabeza-doc-023",
+    "region": "cabeza",
+    "topic": "Arterias de la cabeza y el cuello",
+    "prompt": "Son ramas colaterales cervicales de la arteria facial, EXCEPTO:",
+    "options": [
+      "Palatina ascendente",
+      "Ramas para la glándula submandibular",
+      "Submentoniana",
+      "Maseterina inferior"
+    ],
+    "correctIndex": 3,
+    "explanation": "La arteria maseterina inferior no se considera una rama cervical clásica de la facial. Entre las ramas cervicales están la palatina ascendente, las glandulares y la submentoniana.",
+    "updatedAt": 1792100001023
+  },
+  {
+    "id": "mcq-cabeza-doc-024",
+    "region": "cabeza",
+    "topic": "Arterias de la cabeza y el cuello",
+    "prompt": "Son ramas colaterales de la arteria temporal superficial, EXCEPTO:",
+    "options": [
+      "Auricular posterior",
+      "Facial transversa",
+      "Auriculares anteriores",
+      "Temporal media"
+    ],
+    "correctIndex": 0,
+    "explanation": "La arteria auricular posterior nace habitualmente de la carótida externa; la facial transversa, las auriculares anteriores y la temporal media son ramas de la temporal superficial.",
+    "updatedAt": 1792100001024
+  },
+  {
+    "id": "mcq-cabeza-doc-025",
+    "region": "cabeza",
+    "topic": "Arterias de la cabeza y el cuello",
+    "prompt": "Son ramas colaterales ASCENDENTES de la arteria maxilar, EXCEPTO:",
+    "options": [
+      "Timpánica anterior",
+      "Meníngea media",
+      "Alveolar inferior",
+      "Temporal profunda media"
+    ],
+    "correctIndex": 2,
+    "explanation": "La arteria alveolar inferior es una rama descendente de la arteria maxilar. Las otras opciones pertenecen al grupo de ramas ascendentes.",
+    "updatedAt": 1792100001025
+  },
+  {
+    "id": "mcq-cabeza-doc-026",
+    "region": "cabeza",
+    "topic": "Arterias de la cabeza y el cuello",
+    "prompt": "La arteria meníngea media ingresa al cráneo por el ______ y su lesión a nivel del pterion puede producir ______:",
+    "options": [
+      "Foramen oval — hematoma subdural",
+      "Foramen espinoso — hematoma epidural",
+      "Foramen redondo — hematoma epidural",
+      "Foramen espinoso — hemorragia subaracnoidea"
+    ],
+    "correctIndex": 1,
+    "explanation": "La arteria meníngea media entra por el foramen espinoso. Una fractura en la región del pterion puede lesionarla y causar un hematoma epidural.",
+    "updatedAt": 1792100001026
+  },
+  {
+    "id": "mcq-cabeza-doc-027",
+    "region": "cabeza",
+    "topic": "Arterias de la cabeza y el cuello",
+    "prompt": "¿Cuál de los siguientes pares rama de la arteria maxilar–orificio de entrada es INCORRECTO?",
+    "options": [
+      "Timpánica anterior — fisura petrotimpánica de Glaser",
+      "Meníngea accesoria — foramen oval",
+      "Alveolar inferior — foramen mandibular",
+      "Infraorbitaria — foramen redondo"
+    ],
+    "correctIndex": 3,
+    "explanation": "La arteria infraorbitaria entra en la órbita por la fisura orbitaria inferior y continúa por el surco y conducto infraorbitarios; no entra por el foramen redondo.",
+    "updatedAt": 1792100001027
+  },
+  {
+    "id": "mcq-cabeza-doc-028",
+    "region": "cabeza",
+    "topic": "Arterias de la cabeza y el cuello",
+    "prompt": "El ojal retrocondíleo de Juvara da paso a los siguientes elementos, EXCEPTO:",
+    "options": [
+      "Nervio alveolar inferior",
+      "Nervio auriculotemporal",
+      "Vena maxilar",
+      "Arteria maxilar"
+    ],
+    "correctIndex": 0,
+    "explanation": "El ojal retrocondíleo de Juvara da paso a la arteria maxilar, la vena maxilar y el nervio auriculotemporal; el nervio alveolar inferior no es uno de sus contenidos clásicos.",
+    "updatedAt": 1792100001028
+  },
+  {
+    "id": "mcq-cabeza-doc-029",
+    "region": "cabeza",
+    "topic": "Arterias de la cabeza y el cuello",
+    "prompt": "La arteria maxilar termina en la fosa pterigopalatina continuándose como arteria:",
+    "options": [
+      "Infraorbitaria",
+      "Palatina descendente",
+      "Esfenopalatina",
+      "Alveolar superior posterior"
+    ],
+    "correctIndex": 2,
+    "explanation": "La arteria esfenopalatina es la rama terminal de la arteria maxilar y atraviesa el foramen esfenopalatino hacia la cavidad nasal.",
+    "updatedAt": 1792100001029
+  },
+  {
+    "id": "mcq-cabeza-doc-030",
+    "region": "cabeza",
+    "topic": "Venas de la cabeza y la cara",
+    "prompt": "¿Cómo se inicia la vena facial?",
+    "options": [
+      "Como continuación de la vena angular, formada por la unión de las venas supratroclear y supraorbitaria",
+      "Por la unión de las venas temporal superficial y maxilar",
+      "Por la unión de las venas linguales dorsales, sublingual y lingual profunda",
+      "Por la unión de las venas oftálmicas superior e inferior"
+    ],
+    "correctIndex": 0,
+    "explanation": "La vena facial comienza como continuación de la vena angular; la vena angular se forma a partir de venas de la región frontal, incluidas la supratroclear y la supraorbitaria. Se corrigió la alternativa original para expresar esta relación con claridad.",
+    "updatedAt": 1792100001030
+  },
+  {
+    "id": "mcq-cabeza-doc-031",
+    "region": "cabeza",
+    "topic": "Venas de la cabeza y la cara",
+    "prompt": "La vena lingual recibe los siguientes grupos venosos, EXCEPTO:",
+    "options": [
+      "Venas linguales profundas",
+      "Venas dorsales de la lengua",
+      "Vena submentoniana",
+      "Vena sublingual (ranina)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Las venas linguales incluyen tributarias profundas, dorsales y sublinguales. La vena submentoniana drena habitualmente en la vena facial.",
+    "updatedAt": 1792100001031
+  },
+  {
+    "id": "mcq-cabeza-doc-032",
+    "region": "cabeza",
+    "topic": "Venas de la cabeza y la cara",
+    "prompt": "La vena retromandibular se forma, dentro de la parótida, por la unión de:",
+    "options": [
+      "Vena facial y vena lingual",
+      "Vena supratroclear y vena angular",
+      "Vena yugular interna y vena yugular externa",
+      "Vena temporal superficial y venas maxilares"
+    ],
+    "correctIndex": 3,
+    "explanation": "La vena retromandibular se forma por la unión de la vena temporal superficial y la vena maxilar dentro de la glándula parótida.",
+    "updatedAt": 1792100001032
+  },
+  {
+    "id": "mcq-cabeza-doc-033",
+    "region": "cabeza",
+    "topic": "Músculos de la cabeza y ATM",
+    "prompt": "Los músculos de la masticación y los músculos de la expresión facial están inervados, respectivamente, por:",
+    "options": [
+      "Nervio facial (VII) y nervio mandibular (V3)",
+      "Nervio mandibular (V3) y nervio facial (VII)",
+      "Nervio maxilar (V2) y nervio facial (VII)",
+      "Nervio mandibular (V3) y nervio oftálmico (V1)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Los músculos de la masticación reciben inervación motora de la división mandibular del trigémino (V3); los músculos de la expresión facial, del nervio facial (VII).",
+    "updatedAt": 1792100001033
+  },
+  {
+    "id": "mcq-cabeza-doc-034",
+    "region": "cabeza",
+    "topic": "Músculos de la cabeza y ATM",
+    "prompt": "Realizan la elevación de la mandíbula, EXCEPTO:",
+    "options": [
+      "Temporal",
+      "Masetero",
+      "Digástrico",
+      "Pterigoideo medial"
+    ],
+    "correctIndex": 2,
+    "explanation": "El temporal, el masetero y el pterigoideo medial elevan la mandíbula. El digástrico ayuda a deprimir la mandíbula cuando el hioides está fijado.",
+    "updatedAt": 1792100001034
+  },
+  {
+    "id": "mcq-cabeza-doc-035",
+    "region": "cabeza",
+    "topic": "Músculos de la cabeza y ATM",
+    "prompt": "Son ligamentos extrínsecos o accesorios de la articulación temporomandibular, EXCEPTO:",
+    "options": [
+      "Ligamento lateral",
+      "Ligamento estilomandibular",
+      "Ligamento esfenomandibular",
+      "Ligamento pterigomandibular"
+    ],
+    "correctIndex": 3,
+    "explanation": "El ligamento lateral es el refuerzo intrínseco principal de la ATM; los ligamentos esfenomandibular y estilomandibular son accesorios. El rafe pterigomandibular no es un ligamento de la ATM.",
+    "updatedAt": 1792100001035
+  },
+  {
+    "id": "mcq-cabeza-doc-036",
+    "region": "cabeza",
+    "topic": "Músculos de la cabeza y ATM",
+    "prompt": "¿Cuál de estos músculos eleva y protruye el labio inferior?",
+    "options": [
+      "Depresor del ángulo de la boca",
+      "Depresor del labio inferior",
+      "Mentoniano",
+      "Risorio de Santorini"
+    ],
+    "correctIndex": 2,
+    "explanation": "El mentoniano eleva y protruye el labio inferior. El enunciado se reformuló porque la versión original con “excepto” podía admitir más de una respuesta: el risorio retrae lateralmente la comisura, no deprime el labio inferior.",
+    "updatedAt": 1792100001036
+  },
+  {
+    "id": "mcq-cabeza-doc-037",
+    "region": "cabeza",
+    "topic": "Músculos de la cabeza y ATM",
+    "prompt": "Para realizar un movimiento de diducción hacia la derecha, se contrae principalmente el músculo pterigoideo lateral:",
+    "options": [
+      "Derecho",
+      "Izquierdo",
+      "Ambos por igual",
+      "Ninguno; lo realiza el masetero izquierdo"
+    ],
+    "correctIndex": 1,
+    "explanation": "La contracción del pterigoideo lateral izquierdo desplaza la mandíbula hacia el lado opuesto, es decir, hacia la derecha.",
+    "updatedAt": 1792100001037
+  },
+  {
+    "id": "mcq-cabeza-doc-038",
+    "region": "cabeza",
+    "topic": "Neurocráneo, puntos craneométricos y órbita",
+    "prompt": "Los siguientes huesos forman el punto craneométrico pterion, EXCEPTO:",
+    "options": [
+      "Occipital",
+      "Frontal",
+      "Parietal",
+      "Ala mayor del esfenoides"
+    ],
+    "correctIndex": 0,
+    "explanation": "El pterion es la región de unión del frontal, parietal, porción escamosa del temporal y ala mayor del esfenoides. El occipital no participa.",
+    "updatedAt": 1792100001038
+  },
+  {
+    "id": "mcq-cabeza-doc-039",
+    "region": "cabeza",
+    "topic": "Neurocráneo, puntos craneométricos y órbita",
+    "prompt": "Selecciona la opción correcta sobre los puntos craneométricos:",
+    "options": [
+      "Bregma: unión del occipital y los dos parietales",
+      "Lambda: unión del frontal y los dos parietales",
+      "Bregma: unión del frontal y los dos parietales",
+      "Asterion: unión del frontal, parietal, temporal y esfenoides"
+    ],
+    "correctIndex": 2,
+    "explanation": "El bregma corresponde a la unión de la sutura coronal con la sutura sagital, donde se encuentran el frontal y los dos parietales.",
+    "updatedAt": 1792100001039
+  },
+  {
+    "id": "mcq-cabeza-doc-040",
+    "region": "cabeza",
+    "topic": "Neurocráneo, puntos craneométricos y órbita",
+    "prompt": "¿Qué nervio emerge del cráneo por el foramen oval?",
+    "options": [
+      "Nervio oftálmico (V1)",
+      "Nervio maxilar (V2)",
+      "Nervio facial (VII)",
+      "Nervio mandibular (V3)"
+    ],
+    "correctIndex": 3,
+    "explanation": "La división mandibular del nervio trigémino (V3) pasa por el foramen oval.",
+    "updatedAt": 1792100001040
+  },
+  {
+    "id": "mcq-cabeza-doc-041",
+    "region": "cabeza",
+    "topic": "Neurocráneo, puntos craneométricos y órbita",
+    "prompt": "Forma parte de la pared medial de la órbita, EXCEPTO:",
+    "options": [
+      "Esfenoides",
+      "Lagrimal",
+      "Cigomático",
+      "Etmoides"
+    ],
+    "correctIndex": 2,
+    "explanation": "La pared medial de la órbita incluye principalmente maxilar, lagrimal, etmoides y parte del esfenoides. El cigomático contribuye a la pared lateral.",
+    "updatedAt": 1792100001041
+  },
+  {
+    "id": "mcq-cabeza-doc-042",
+    "region": "cabeza",
+    "topic": "Neurocráneo, puntos craneométricos y órbita",
+    "prompt": "¿Qué nervio atraviesa por dentro del anillo tendinoso común de Zinn?",
+    "options": [
+      "Abducente (VI)",
+      "Troclear (IV)",
+      "Frontal",
+      "Lagrimal"
+    ],
+    "correctIndex": 0,
+    "explanation": "El nervio abducente (VI) atraviesa el anillo tendinoso común. Los nervios troclear, frontal y lagrimal pasan por fuera de él.",
+    "updatedAt": 1792100001042
+  },
+  {
+    "id": "mcq-cabeza-doc-043",
+    "region": "cabeza",
+    "topic": "Cavidad nasal y fosa pterigopalatina",
+    "prompt": "Drenan en el meato nasal medio, EXCEPTO:",
+    "options": [
+      "Seno frontal",
+      "Conducto nasolagrimal",
+      "Seno maxilar",
+      "Celdillas etmoidales anteriores y medias"
+    ],
+    "correctIndex": 1,
+    "explanation": "El conducto nasolagrimal drena en el meato nasal inferior. El seno frontal, el seno maxilar y las celdillas etmoidales anteriores y medias drenan en el meato medio.",
+    "updatedAt": 1792100001043
+  },
+  {
+    "id": "mcq-cabeza-doc-044",
+    "region": "cabeza",
+    "topic": "Cavidad nasal y fosa pterigopalatina",
+    "prompt": "Los límites de las coanas son los siguientes, EXCEPTO:",
+    "options": [
+      "Medial: borde posterior del cornete inferior",
+      "Arriba: cuerpo del esfenoides y ala del vómer",
+      "Abajo: borde posterior de la lámina horizontal del palatino",
+      "Lateral: borde posterior de la lámina medial de la apófisis pterigoides"
+    ],
+    "correctIndex": 0,
+    "explanation": "El límite medial de cada coana lo forma el vómer. Los límites superior, inferior y lateral corresponden al esfenoides/vómer, la lámina horizontal del palatino y la lámina medial de la apófisis pterigoides, respectivamente.",
+    "updatedAt": 1792100001044
+  },
+  {
+    "id": "mcq-cabeza-doc-045",
+    "region": "cabeza",
+    "topic": "Cavidad nasal y fosa pterigopalatina",
+    "prompt": "Forman el tabique nasal, EXCEPTO:",
+    "options": [
+      "Lámina perpendicular del etmoides",
+      "Vómer",
+      "Lámina vertical del palatino",
+      "Cartílago del tabique nasal"
+    ],
+    "correctIndex": 2,
+    "explanation": "El tabique nasal está formado principalmente por la lámina perpendicular del etmoides, el vómer y el cartílago del tabique. La lámina perpendicular del palatino contribuye a la pared lateral, no al tabique nasal.",
+    "updatedAt": 1792100001045
+  },
+  {
+    "id": "mcq-cabeza-doc-046",
+    "region": "cabeza",
+    "topic": "Cavidad nasal y fosa pterigopalatina",
+    "prompt": "¿Cuál es el contenido característico de la fosa pterigopalatina?",
+    "options": [
+      "Nervio mandibular, ganglio ótico y arteria meníngea media",
+      "Nervio maxilar, ganglio pterigopalatino y arteria maxilar",
+      "Nervio maxilar, ganglio trigeminal y arteria facial",
+      "Nervio lingual, ganglio submandibular y arteria lingual"
+    ],
+    "correctIndex": 1,
+    "explanation": "Entre las estructuras principales de la fosa pterigopalatina están el nervio maxilar (V2), el ganglio pterigopalatino y la tercera porción de la arteria maxilar.",
+    "updatedAt": 1792100001046
+  },
+  {
+    "id": "mcq-cabeza-doc-047",
+    "region": "cabeza",
+    "topic": "Correlaciones clínicas",
+    "prompt": "Un traumatismo que lesiona la lámina cribosa del etmoides puede producir:",
+    "options": [
+      "Ptosis palpebral",
+      "Hemianopsia bitemporal",
+      "Parálisis facial",
+      "Anosmia"
+    ],
+    "correctIndex": 3,
+    "explanation": "Los filetes del nervio olfatorio atraviesan la lámina cribosa del etmoides; su lesión puede causar pérdida del olfato (anosmia).",
+    "updatedAt": 1792100001047
+  },
+  {
+    "id": "mcq-cabeza-doc-048",
+    "region": "cabeza",
+    "topic": "Correlaciones clínicas",
+    "prompt": "Una infección de la región nasolabial o del ángulo medial del ojo puede propagarse al interior del cráneo por la comunicación venosa con el:",
+    "options": [
+      "Seno sagital superior",
+      "Seno cavernoso",
+      "Seno sigmoideo",
+      "Seno transverso"
+    ],
+    "correctIndex": 1,
+    "explanation": "La vena angular se comunica con las venas oftálmicas, que drenan hacia el seno cavernoso. Esta conexión explica la posible propagación de infecciones de la región facial al seno cavernoso.",
+    "updatedAt": 1792100001048
+  },
+  {
+    "id": "mcq-cabeza-doc-049",
+    "region": "cabeza",
+    "topic": "Huesos de la cara y mandíbula",
+    "prompt": "¿Cuáles son las tres apófisis del hueso palatino?",
+    "options": [
+      "Piramidal, orbitaria y esfenoidal",
+      "Frontal, cigomática y alveolar",
+      "Coronoides, condilar y angular",
+      "Lagrimal, etmoidal y maxilar"
+    ],
+    "correctIndex": 0,
+    "explanation": "El hueso palatino presenta tres apófisis: piramidal, orbitaria y esfenoidal.",
+    "updatedAt": 1792100001049
+  },
+  {
+    "id": "mcq-cabeza-doc-050",
+    "region": "cabeza",
+    "topic": "Huesos de la cara y mandíbula",
+    "prompt": "¿Cuáles son las tres apófisis de la concha nasal inferior?",
+    "options": [
+      "Frontal, piramidal y esfenoidal",
+      "Lagrimal, etmoidal y maxilar",
+      "Orbitaria, cigomática y palatina",
+      "Coronoides, condilar y mentoniana"
+    ],
+    "correctIndex": 1,
+    "explanation": "La concha nasal inferior presenta apófisis lagrimal, etmoidal y maxilar.",
+    "updatedAt": 1792100001050
+  },
+  {
+    "id": "mcq-cabeza-doc-051",
+    "region": "cabeza",
+    "topic": "Músculos de la cabeza y ATM",
+    "prompt": "¿Cuál opción relaciona correctamente los cuatro músculos de la masticación con su inserción mandibular?",
+    "options": [
+      "Temporal–apófisis coronoides; masetero–cara lateral de la rama y ángulo; pterigoideo medial–cara medial del ángulo y rama; pterigoideo lateral–fóvea pterigoidea del cuello del cóndilo",
+      "Temporal–ángulo medial; masetero–apófisis coronoides; pterigoideo medial–fóvea pterigoidea; pterigoideo lateral–línea oblicua",
+      "Temporal–fóvea pterigoidea; masetero–cara medial del ángulo; pterigoideo medial–apófisis coronoides; pterigoideo lateral–rama lateral",
+      "Temporal–línea milohioidea; masetero–apófisis geni; pterigoideo medial–cóndilo; pterigoideo lateral–apófisis coronoides"
+    ],
+    "correctIndex": 0,
+    "explanation": "El temporal se inserta en la apófisis coronoides y el borde anterior de la rama; el masetero en la cara lateral de la rama y el ángulo; el pterigoideo medial en la cara medial de la rama y el ángulo; el pterigoideo lateral en la fóvea pterigoidea del cuello del cóndilo y estructuras de la ATM.",
+    "updatedAt": 1792100001051
+  },
+  {
+    "id": "mcq-cabeza-doc-052",
+    "region": "cabeza",
+    "topic": "Arterias de la cabeza y el cuello",
+    "prompt": "¿Cuál opción enumera correctamente las tres ramas colaterales anteriores y las dos ramas terminales de la carótida externa?",
+    "options": [
+      "Colaterales anteriores: tiroidea superior, lingual y facial; terminales: maxilar y temporal superficial",
+      "Colaterales anteriores: faríngea ascendente, occipital y auricular posterior; terminales: lingual y facial",
+      "Colaterales anteriores: maxilar, temporal superficial y occipital; terminales: tiroidea superior y lingual",
+      "Colaterales anteriores: facial, maxilar y auricular posterior; terminales: faríngea ascendente y occipital"
+    ],
+    "correctIndex": 0,
+    "explanation": "Las ramas anteriores clásicas de la carótida externa son tiroidea superior, lingual y facial; sus ramas terminales son la maxilar y la temporal superficial.",
+    "updatedAt": 1792100001052
+  },
+  {
+    "id": "mcq-cabeza-doc-053",
+    "region": "cabeza",
+    "topic": "Arterias de la cabeza y el cuello",
+    "prompt": "¿Cuál opción contiene tres ramas cervicales de la arteria facial?",
+    "options": [
+      "Meníngea media, temporal profunda y alveolar inferior",
+      "Occipital, auricular posterior y faríngea ascendente",
+      "Palatina ascendente, ramas glandulares para la submandibular y submentoniana",
+      "Esfenopalatina, infraorbitaria y bucal"
+    ],
+    "correctIndex": 2,
+    "explanation": "Entre las ramas cervicales de la arteria facial se encuentran la palatina ascendente, ramas glandulares para la glándula submandibular y la submentoniana.",
+    "updatedAt": 1792100001053
+  },
+  {
+    "id": "mcq-cabeza-doc-054",
+    "region": "cabeza",
+    "topic": "Arterias de la cabeza y el cuello",
+    "prompt": "¿Qué tres elementos atraviesan clásicamente el ojal retrocondíleo de Juvara?",
+    "options": [
+      "Nervio alveolar inferior, nervio lingual y arteria facial",
+      "Nervio auriculotemporal, arteria maxilar y vena maxilar",
+      "Nervio hipogloso, vena yugular interna y arteria lingual",
+      "Nervio mandibular (V3), arteria meníngea media y vena yugular externa"
+    ],
+    "correctIndex": 1,
+    "explanation": "El ojal retrocondíleo de Juvara transmite la arteria maxilar, la vena maxilar y el nervio auriculotemporal.",
+    "updatedAt": 1792100001054
+  },
+  {
+    "id": "mcq-cabeza-doc-055",
+    "region": "cabeza",
+    "topic": "Neurocráneo, puntos craneométricos y órbita",
+    "prompt": "¿Qué opción identifica correctamente los huesos del pterion y del asterion?",
+    "options": [
+      "Pterion: frontal, parietal, temporal y ala mayor del esfenoides; asterion: parietal, occipital y porción mastoidea del temporal",
+      "Pterion: occipital, frontal y vómer; asterion: maxilar, cigomático y frontal",
+      "Pterion: frontal, etmoides y esfenoides; asterion: parietal, frontal y nasal",
+      "Pterion: parietal, occipital y temporal; asterion: frontal, parietal y esfenoides"
+    ],
+    "correctIndex": 0,
+    "explanation": "El pterion reúne frontal, parietal, porción escamosa del temporal y ala mayor del esfenoides. El asterion une parietal, occipital y porción mastoidea del temporal.",
+    "updatedAt": 1792100001055
+  },
+  {
+    "id": "mcq-cabeza-doc-056",
+    "region": "cabeza",
+    "topic": "Neurocráneo, puntos craneométricos y órbita",
+    "prompt": "¿Qué opción relaciona correctamente tres forámenes del ala mayor del esfenoides con estructuras que los atraviesan?",
+    "options": [
+      "Foramen redondo–V2; foramen oval–V3; foramen espinoso–arteria meníngea media",
+      "Foramen redondo–V3; foramen oval–V1; foramen espinoso–nervio óptico",
+      "Foramen redondo–nervio facial; foramen oval–V2; foramen espinoso–arteria facial",
+      "Foramen redondo–arteria meníngea media; foramen oval–V2; foramen espinoso–V3"
+    ],
+    "correctIndex": 0,
+    "explanation": "El foramen redondo transmite el nervio maxilar (V2), el oval transmite el nervio mandibular (V3) y el espinoso transmite la arteria meníngea media y estructuras acompañantes.",
+    "updatedAt": 1792100001056
+  },
+  {
+    "id": "mcq-cabeza-doc-057",
+    "region": "cabeza",
+    "topic": "Cavidad nasal y fosa pterigopalatina",
+    "prompt": "¿Cuál conjunto corresponde a los tres elementos principales del contenido de la fosa pterigopalatina?",
+    "options": [
+      "Nervio mandibular, ganglio ótico y arteria meníngea media",
+      "Nervio facial, ganglio geniculado y arteria facial",
+      "Nervio maxilar (V2), ganglio pterigopalatino y arteria maxilar",
+      "Nervio lingual, ganglio submandibular y arteria lingual"
+    ],
+    "correctIndex": 2,
+    "explanation": "Los elementos principales solicitados son el nervio maxilar (V2), el ganglio pterigopalatino y la arteria maxilar.",
+    "updatedAt": 1792100001057
+  },
+  {
+    "id": "mcq-cabeza-doc-058",
+    "region": "cabeza",
+    "topic": "Neurocráneo, puntos craneométricos y órbita",
+    "prompt": "¿Qué conjunto de tres estructuras atraviesa la fisura orbitaria superior por fuera del anillo tendinoso común de Zinn?",
+    "options": [
+      "Nervio frontal, nervio troclear (IV) y nervio lagrimal",
+      "Nervio óptico, nervio abducente (VI) y rama superior del oculomotor",
+      "Nervio nasociliar, rama inferior del oculomotor y nervio abducente",
+      "Nervio óptico, arteria oftálmica y nervio nasociliar"
+    ],
+    "correctIndex": 0,
+    "explanation": "Por fuera del anillo tendinoso común pasan, entre otras estructuras, los nervios frontal, troclear y lagrimal. El nervio óptico, el nasociliar y los nervios oculomotores relacionados pasan por dentro del anillo.",
+    "updatedAt": 1792100001058
+  }
+]
