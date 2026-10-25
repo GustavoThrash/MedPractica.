@@ -1,1 +1,425 @@
-[]
+[
+ {
+  "id": "5c51cfc5-d768-47d9-b7cc-e779b79333bc",
+  "region": "cabeza",
+  "name": "Arco cigomático",
+  "aliases": [
+   "Arco zigomático",
+   "Arco malar",
+   "Arco del Hueso Cigomatico"
+  ],
+  "image_path": "data/img/5c51cfc5-d768-47d9-b7cc-e779b79333bc-1792898687402.webp",
+  "updated_at": "2026-10-25T03:24:47.402Z"
+ },
+ {
+  "id": "745aa396-ff21-43eb-bd27-862952eed260",
+  "region": "cabeza",
+  "name": "Apófisis coronoides",
+  "aliases": [
+   "Apófisis coronoidea",
+   "Apófisis coronoides de la mandíbula",
+   "Proceso coronoides de la mandíbula",
+   "Proceso coronoideo mandibular",
+   "Apófisis coronoides mandibular"
+  ],
+  "image_path": "data/img/745aa396-ff21-43eb-bd27-862952eed260-1792898642795.webp",
+  "updated_at": "2026-10-25T03:24:02.795Z"
+ },
+ {
+  "id": "695062c9-4b22-4d65-970d-1f30dd67d4d4",
+  "region": "cabeza",
+  "name": "Músculo nasal transverso",
+  "aliases": [
+   "Porción transversa del músculo nasal",
+   "Músculo transverso de la nariz"
+  ],
+  "image_path": "data/img/695062c9-4b22-4d65-970d-1f30dd67d4d4-1792898591461.webp",
+  "updated_at": "2026-10-25T03:23:11.461Z"
+ },
+ {
+  "id": "d9bd7053-6cc4-43dd-a1bb-d5cbad86a249",
+  "region": "cabeza",
+  "name": "Hueso vómer",
+  "aliases": [
+   "Vómer"
+  ],
+  "image_path": "data/img/d9bd7053-6cc4-43dd-a1bb-d5cbad86a249-1792898522257.webp",
+  "updated_at": "2026-10-25T03:22:02.257Z"
+ },
+ {
+  "id": "a91462f4-3cc6-4147-8c7b-e1803f4abd08",
+  "region": "cabeza",
+  "name": "Sutura sagital",
+  "aliases": [
+   "Sutura interparietal"
+  ],
+  "image_path": "data/img/a91462f4-3cc6-4147-8c7b-e1803f4abd08-1792898496721.webp",
+  "updated_at": "2026-10-25T03:21:36.721Z"
+ },
+ {
+  "id": "990f1d9c-5c1b-49a4-ba7e-ee00b0abb8f5",
+  "region": "cabeza",
+  "name": "Conducto incisivo",
+  "aliases": [
+   "Canal incisivo",
+   "Conducto nasopalatino",
+   "Conducto palatino anterior"
+  ],
+  "image_path": "data/img/990f1d9c-5c1b-49a4-ba7e-ee00b0abb8f5-1792898474261.webp",
+  "updated_at": "2026-10-25T03:21:14.261Z"
+ },
+ {
+  "id": "6ce8d0fb-c21d-4952-87b3-f3b45afb6d21",
+  "region": "cabeza",
+  "name": "Músculo cigomático mayor",
+  "aliases": [
+   "Músculo zigomático mayor"
+  ],
+  "image_path": "data/img/6ce8d0fb-c21d-4952-87b3-f3b45afb6d21-1792898423004.webp",
+  "updated_at": "2026-10-25T03:20:23.004Z"
+ },
+ {
+  "id": "e72789cb-bc42-40ca-a7fd-51d15d4e18af",
+  "region": "cabeza",
+  "name": "Hueso cornete nasal inferior",
+  "aliases": [
+   "Cornete inferior",
+   "Concha nasal inferior",
+   "Hueso conchal inferior"
+  ],
+  "image_path": "data/img/e72789cb-bc42-40ca-a7fd-51d15d4e18af-1792898393859.webp",
+  "updated_at": "2026-10-25T03:19:53.859Z"
+ },
+ {
+  "id": "51e7510b-d054-41c6-bb34-dd1e270cbc4c",
+  "region": "cabeza",
+  "name": "Protuberancia occipital interna",
+  "aliases": [
+   "Eminencia occipital interna"
+  ],
+  "image_path": "data/img/51e7510b-d054-41c6-bb34-dd1e270cbc4c-1792898358891.webp",
+  "updated_at": "2026-10-25T03:19:18.891Z"
+ },
+ {
+  "id": "bd91eb61-29a8-4769-8241-f2d0ba53c8fd",
+  "region": "cabeza",
+  "name": "Espina nasal anterior",
+  "aliases": [
+   "Espina nasal anterior del maxilar",
+   "Espina nasal anterior del hueso maxilar"
+  ],
+  "image_path": "data/img/bd91eb61-29a8-4769-8241-f2d0ba53c8fd-1792898327851.webp",
+  "updated_at": "2026-10-25T03:18:47.851Z"
+ },
+ {
+  "id": "c2f360ed-2220-4b44-8c88-e6fbfcaaa312",
+  "region": "cabeza",
+  "name": "Conducto carotídeo",
+  "aliases": [
+   "Canal carotídeo",
+   "Conducto de la carótida"
+  ],
+  "image_path": "data/img/c2f360ed-2220-4b44-8c88-e6fbfcaaa312-1792898297888.webp",
+  "updated_at": "2026-10-25T03:18:17.888Z"
+ },
+ {
+  "id": "dbb54e3c-7f19-4edc-a462-754e1e613a07",
+  "region": "cabeza",
+  "name": "Músculo mentoniano",
+  "aliases": [
+   "Músculo borla del mentón",
+   "Músculo mentual"
+  ],
+  "image_path": "data/img/dbb54e3c-7f19-4edc-a462-754e1e613a07-1792898251744.webp",
+  "updated_at": "2026-10-25T03:17:31.744Z"
+ },
+ {
+  "id": "2daf3dfd-326e-4c73-ada2-29f8e66f43f4",
+  "region": "cabeza",
+  "name": "Apófisis geni",
+  "aliases": [
+   "Espinas genianas",
+   "Espinas mentonianas",
+   "Apófisis geni del la mandibula"
+  ],
+  "image_path": "data/img/2daf3dfd-326e-4c73-ada2-29f8e66f43f4-1792898211536.webp",
+  "updated_at": "2026-10-25T03:16:51.536Z"
+ },
+ {
+  "id": "e169439d-c400-4d5a-842c-7e172e2235e5",
+  "region": "cabeza",
+  "name": "Bregma",
+  "aliases": [
+   "Punto craneométrico bregma",
+   "Punto bregmático"
+  ],
+  "image_path": "data/img/e169439d-c400-4d5a-842c-7e172e2235e5-1792898157323.webp",
+  "updated_at": "2026-10-25T03:15:57.323Z"
+ },
+ {
+  "id": "9825a252-057f-46e2-814d-4631d051c6ab",
+  "region": "cabeza",
+  "name": "Cóndilo mandibular",
+  "aliases": [
+   "Cóndilo de la mandíbula",
+   "Proceso condilar de la mandíbula",
+   "Apófisis condilar de la mandíbula",
+   "Cabeza de la mandíbula"
+  ],
+  "image_path": "data/img/9825a252-057f-46e2-814d-4631d051c6ab-1792898125631.webp",
+  "updated_at": "2026-10-25T03:15:25.631Z"
+ },
+ {
+  "id": "c2153e8f-61d9-45f6-a4b4-baf47f21bab8",
+  "region": "cabeza",
+  "name": "Apófisis crista galli",
+  "aliases": [
+   "Crista galli",
+   "Apófisis crista galli del hueso etmoides"
+  ],
+  "image_path": "data/img/c2153e8f-61d9-45f6-a4b4-baf47f21bab8-1792898070723.webp",
+  "updated_at": "2026-10-25T03:14:30.723Z"
+ },
+ {
+  "id": "3f132f00-7a02-46d0-810f-126445d4dd62",
+  "region": "cabeza",
+  "name": "Silla turca",
+  "aliases": [
+   "Silla turca del esfenoides"
+  ],
+  "image_path": "data/img/3f132f00-7a02-46d0-810f-126445d4dd62-1792898032672.webp",
+  "updated_at": "2026-10-25T03:13:52.672Z"
+ },
+ {
+  "id": "97c2be32-c080-4076-b667-df90ba2384f3",
+  "region": "cabeza",
+  "name": "Fosa cerebral",
+  "aliases": [
+   "Fosa cerebral del hueso occipital",
+   "Fosa craneal"
+  ],
+  "image_path": "data/img/97c2be32-c080-4076-b667-df90ba2384f3-1792898006325.webp",
+  "updated_at": "2026-10-25T03:13:26.325Z"
+ },
+ {
+  "id": "33bbf611-9c8a-451f-85ed-2b8f2a211c7b",
+  "region": "cabeza",
+  "name": "Foramen infraorbitario",
+  "aliases": [
+   "Agujero infraorbitario"
+  ],
+  "image_path": "data/img/33bbf611-9c8a-451f-85ed-2b8f2a211c7b-1792897944948.webp",
+  "updated_at": "2026-10-25T03:12:24.948Z"
+ },
+ {
+  "id": "a8a1d9a7-76a7-4a5f-bf24-a33ac827429c",
+  "region": "cabeza",
+  "name": "Músculo depresor del labio inferior",
+  "aliases": [],
+  "image_path": "data/img/a8a1d9a7-76a7-4a5f-bf24-a33ac827429c-1792897912967.webp",
+  "updated_at": "2026-10-25T03:11:52.967Z"
+ },
+ {
+  "id": "cf55e531-c08a-43b1-b35b-36ccb566cc28",
+  "region": "cabeza",
+  "name": "Músculo orbicular del ojo porción palpebral",
+  "aliases": [
+   "Porción palpebral del Músculo orbicular del ojo",
+   "Musculo Palpebral"
+  ],
+  "image_path": "data/img/cf55e531-c08a-43b1-b35b-36ccb566cc28-1792897885551.webp",
+  "updated_at": "2026-10-25T03:11:25.551Z"
+ },
+ {
+  "id": "a0f34509-5ce1-4708-ae44-13d1240c6b8b",
+  "region": "cabeza",
+  "name": "Músculo elevador del ángulo de la boca",
+  "aliases": [
+   "Músculo levantador del ángulo de la boca"
+  ],
+  "image_path": "data/img/a0f34509-5ce1-4708-ae44-13d1240c6b8b-1792897820705.webp",
+  "updated_at": "2026-10-25T03:10:20.705Z"
+ },
+ {
+  "id": "80c86480-160b-445d-bce2-6ee3f886dfa4",
+  "region": "cabeza",
+  "name": "Arteria oftálmica",
+  "aliases": [
+   "Arteria oftalmatica"
+  ],
+  "image_path": "data/img/80c86480-160b-445d-bce2-6ee3f886dfa4-1792897777860.webp",
+  "updated_at": "2026-10-25T03:09:37.860Z"
+ },
+ {
+  "id": "39e538e6-2be6-47d1-bf8f-ded8e2b26a69",
+  "region": "cabeza",
+  "name": "Seno esfenoidal",
+  "aliases": [
+   "Seno del esfenoides"
+  ],
+  "image_path": "data/img/39e538e6-2be6-47d1-bf8f-ded8e2b26a69-1792897742588.webp",
+  "updated_at": "2026-10-25T03:09:02.588Z"
+ },
+ {
+  "id": "0c5ac0a5-1353-416d-90b6-ae655bb4dd41",
+  "region": "cabeza",
+  "name": "Línea oblicua de la mandíbula",
+  "aliases": [
+   "Línea oblicua mandibular"
+  ],
+  "image_path": "data/img/0c5ac0a5-1353-416d-90b6-ae655bb4dd41-1792897718856.webp",
+  "updated_at": "2026-10-25T03:08:38.856Z"
+ },
+ {
+  "id": "53363f11-82b6-4f05-a8b5-674b09e98e58",
+  "region": "cabeza",
+  "name": "Foramen mentoniano",
+  "aliases": [
+   "Agujero mentoniano",
+   "Foramen mental",
+   "Agujero mental",
+   "Foramen Mentual"
+  ],
+  "image_path": "data/img/53363f11-82b6-4f05-a8b5-674b09e98e58-1792897690816.webp",
+  "updated_at": "2026-10-25T03:08:10.816Z"
+ },
+ {
+  "id": "94856e6a-50d5-41ef-9e9b-5388f9ebcfcf",
+  "region": "cabeza",
+  "name": "Protuberancia occipital externa",
+  "aliases": [
+   "Inion"
+  ],
+  "image_path": "data/img/94856e6a-50d5-41ef-9e9b-5388f9ebcfcf-1792897636418.webp",
+  "updated_at": "2026-10-25T03:07:16.418Z"
+ },
+ {
+  "id": "89f88555-ac56-41ae-b0b0-7811f17b4229",
+  "region": "cabeza",
+  "name": "Foramen redondo mayor",
+  "aliases": [
+   "Agujero redondo mayor",
+   "Agujero redondo",
+   "Foramen redondo"
+  ],
+  "image_path": "data/img/89f88555-ac56-41ae-b0b0-7811f17b4229-1792897597347.webp",
+  "updated_at": "2026-10-25T03:06:37.347Z"
+ },
+ {
+  "id": "87b73bfb-fce9-4f1e-83a2-1895e7ba3ef0",
+  "region": "cabeza",
+  "name": "Cóndilo del occipital",
+  "aliases": [
+   "Cóndilo occipital"
+  ],
+  "image_path": "data/img/87b73bfb-fce9-4f1e-83a2-1895e7ba3ef0-1792897530468.webp",
+  "updated_at": "2026-10-25T03:05:30.468Z"
+ },
+ {
+  "id": "7f9e310b-4c0f-447d-bb0b-3ab04c679e91",
+  "region": "cabeza",
+  "name": "Músculo risorio",
+  "aliases": [
+   "Músculo risorio de Santorini",
+   "Risorio"
+  ],
+  "image_path": "data/img/7f9e310b-4c0f-447d-bb0b-3ab04c679e91-1792897491268.webp",
+  "updated_at": "2026-10-25T03:04:51.268Z"
+ },
+ {
+  "id": "1ee7be01-efe1-403c-8add-2dea548a7ab9",
+  "region": "cabeza",
+  "name": "Músculo auricular superior",
+  "aliases": [
+   "Músculo elevador de la oreja"
+  ],
+  "image_path": "data/img/1ee7be01-efe1-403c-8add-2dea548a7ab9-1792897452555.webp",
+  "updated_at": "2026-10-25T03:04:12.555Z"
+ },
+ {
+  "id": "5abb5319-747d-45e6-8a33-b887983eee16",
+  "region": "cabeza",
+  "name": "Músculo cigomático menor",
+  "aliases": [
+   "Músculo zigomático menor"
+  ],
+  "image_path": "data/img/5abb5319-747d-45e6-8a33-b887983eee16-1792897425663.webp",
+  "updated_at": "2026-10-25T03:03:45.663Z"
+ },
+ {
+  "id": "95f377c1-9c69-42b8-831f-76c41a7f988a",
+  "region": "cabeza",
+  "name": "Músculo temporal",
+  "aliases": [
+   "M. Temporal",
+   "M Temporal"
+  ],
+  "image_path": "data/img/95f377c1-9c69-42b8-831f-76c41a7f988a-1792897391727.webp",
+  "updated_at": "2026-10-25T03:03:11.727Z"
+ },
+ {
+  "id": "1ede94f1-4ebe-4f3a-9af2-484005dd5ffd",
+  "region": "cabeza",
+  "name": "Sutura escamosa",
+  "aliases": [
+   "Sutura escamosoparietal",
+   "Sutura temporoparietal"
+  ],
+  "image_path": "data/img/1ede94f1-4ebe-4f3a-9af2-484005dd5ffd-1792897346763.webp",
+  "updated_at": "2026-10-25T03:02:26.763Z"
+ },
+ {
+  "id": "a24567fe-ea12-4109-b6c8-817a5145bf8d",
+  "region": "cabeza",
+  "name": "Foramen mandibular",
+  "aliases": [
+   "Agujero mandibular",
+   "Agujero dentario inferior",
+   "Foramen de la Mandibula"
+  ],
+  "image_path": "data/img/a24567fe-ea12-4109-b6c8-817a5145bf8d-1792897310481.webp",
+  "updated_at": "2026-10-25T03:01:50.481Z"
+ },
+ {
+  "id": "0283a261-728c-46e5-8705-d9db6659160e",
+  "region": "cabeza",
+  "name": "Eminencia canina",
+  "aliases": [
+   "Eminencia canina del maxilar"
+  ],
+  "image_path": "data/img/0283a261-728c-46e5-8705-d9db6659160e-1792897267978.webp",
+  "updated_at": "2026-10-25T03:01:07.978Z"
+ },
+ {
+  "id": "b5c0ab14-bad3-4051-9545-279844eceb95",
+  "region": "cabeza",
+  "name": "Apófisis mastoides",
+  "aliases": [
+   "Apófisis mastoidea",
+   "Proceso mastoides",
+   "Proceso mastoideo"
+  ],
+  "image_path": "data/img/b5c0ab14-bad3-4051-9545-279844eceb95-1792897242361.webp",
+  "updated_at": "2026-10-25T03:00:42.361Z"
+ },
+ {
+  "id": "c8e5e1fe-cc61-4af6-9539-1dfd64d7691e",
+  "region": "cabeza",
+  "name": "Foramen oval",
+  "aliases": [
+   "Agujero oval"
+  ],
+  "image_path": "data/img/c8e5e1fe-cc61-4af6-9539-1dfd64d7691e-1792897163853.webp",
+  "updated_at": "2026-10-25T02:59:23.853Z"
+ },
+ {
+  "id": "c6f83335-8df6-4497-8b3a-b64f5da07965",
+  "region": "cabeza",
+  "name": "Foramen lacerum",
+  "aliases": [
+   "Agujero rasgado anterior"
+  ],
+  "image_path": "data/img/c6f83335-8df6-4497-8b3a-b64f5da07965-1792897035352.webp",
+  "updated_at": "2026-10-25T02:57:15.352Z"
+ }
+]
