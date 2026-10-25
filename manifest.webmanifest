@@ -1,0 +1,33 @@
+{
+  "id": "./",
+  "name": "MedPráctica — Simulador de examen práctico",
+  "short_name": "MedPráctica",
+  "description": "Practica Anatomía e Histología con imágenes, exámenes cronometrados de 10 preguntas y repaso automático de errores.",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#050b1c",
+  "theme_color": "#081a3a",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
