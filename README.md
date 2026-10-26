@@ -1,6 +1,6 @@
 # MedPráctica
 
-Simulador de examen práctico de **Anatomía** (30 s por estructura) e **Histología** (1 min por estructura), con exámenes de 10 preguntas, repaso automático de errores y Modo Cuestiones (opción múltiple).
+Simulador de examen práctico de **Anatomía** (30 s por estructura) e **Histología** (1 min por estructura), con exámenes de 10 preguntas en dos modalidades: **Examen escrito** y **Examen de opción múltiple** (tres nombres por imagen), feedback visual inmediato, repaso automático de errores y un **Modo Cuestiones** independiente para practicar teoría.
 
 ## Estructura del proyecto
 

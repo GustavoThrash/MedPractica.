@@ -1,5 +1,5 @@
 'use strict';
-const CACHE_NAME = 'practica-anatomica-v16';
+const CACHE_NAME = 'practica-anatomica-v18';
 const BASE_URL = new URL('./', self.registration.scope);
 const APP_SHELL = [
   BASE_URL.href,

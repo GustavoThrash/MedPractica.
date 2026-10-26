@@ -2,7 +2,7 @@
   "id": "./",
   "name": "MedPráctica — Simulador de examen práctico",
   "short_name": "MedPráctica",
-  "description": "Practica Anatomía e Histología con imágenes, exámenes cronometrados de 10 preguntas y repaso automático de errores.",
+  "description": "Practica Anatomía e Histología con imágenes, exámenes escritos o de múltiple elección, temporizador y repaso automático de errores.",
   "lang": "es",
   "start_url": "./",
   "scope": "./",
