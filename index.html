@@ -120,7 +120,7 @@ textarea.in{resize:vertical;min-height:64px}
 #p-stage .eb{flex:1;min-height:0;display:flex;flex-direction:column;padding:14px 18px}
 #p-stage .stage{flex:1;min-height:0;height:auto;position:relative;display:block;margin-bottom:12px}
 #p-stage .stage img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:contain}
-#p-stage .pr{margin:0 0 8px}#p-stage .dots{margin-top:12px;flex:none}
+#p-stage .pr{margin:0 0 8px}#p-stage .dots{margin-top:12px;flex:none}#aform .row .in{flex:1 1 auto;min-width:0;width:auto}#aform .row .b{flex:0 0 auto;white-space:nowrap}
 
 /* ---------- Modo Cuestiones ---------- */
 .mcq-live .bar,.mcq-live .tabs,.mcq-live .pg{display:none}
@@ -268,7 +268,7 @@ nav.tabs{display:grid;grid-template-columns:1fr 1fr;gap:12px;background:none;bor
           <div class="eb">
             <div class="stage" id="exam-image-stage"><img id="eimg" alt="Estructura a identificar"></div>
             <form id="aform"><p class="pr" id="exam-prompt-label">Identifica la estructura señalada:</p>
-              <div class="row"><input class="in" id="ans" autocomplete="off" autocapitalize="off" maxlength="200" placeholder="Escribe el nombre anatómico…" aria-label="Respuesta"><button class="b b1" id="sub" type="submit">Confirmar →</button></div></form>
+              <div class="row"><input class="in" id="ans" autocomplete="off" autocapitalize="off" maxlength="200" placeholder="Escribe el nombre anatómico…" aria-label="Respuesta"><button class="b b1" id="sub" type="submit">Confirmar →</button><button class="b b2" id="skip-written" type="button">Saltar pregunta →</button></div></form>
             <div id="exam-choice-panel" class="hidden">
               <p class="pr">Selecciona el nombre correcto:</p>
               <div class="exam-choice-options" id="exam-choice-options" role="group" aria-label="Alternativas de respuesta"></div>
@@ -727,7 +727,7 @@ function show() {
   $('cnt').textContent = `Pregunta ${idx + 1} de ${LEN}`;
   $('acnt').textContent = `Respondidas: ${exam.filter(x => x.out === 'ok' || x.out === 'bad').length} / ${LEN}`;
   $('eimg').src = q.image; $('eimg').alt = `Imagen de la pregunta ${idx + 1}`;
-  $('ans').value = ''; $('ans').disabled = false; $('sub').disabled = false;
+  $('ans').value = ''; $('ans').disabled = false; $('sub').disabled = false; $('skip-written').disabled = false;
   $('exam-feedback').className = 'exam-feedback hidden'; $('exam-feedback').textContent = '';
   $('exam-image-stage').classList.remove('flash-ok','flash-bad');
   $('aform').classList.toggle('hidden', examMode !== 'written');
@@ -758,6 +758,19 @@ function selectExamOption(index) {
   });
   $('exam-choice-confirm').disabled = false;
 }
+function skipWrittenQuestion() {
+  if (!live || examAnswerLocked || examMode !== 'written') return;
+  examAnswerLocked = true;
+  clearInterval(tm); tm = null;
+  clearTimeout(answerAdvanceTimer); answerAdvanceTimer = null;
+  const q = exam[idx];
+  q.ans = ''; q.out = 'em';
+  $('ans').disabled = true; $('sub').disabled = true; $('skip-written').disabled = true;
+  const feedback = $('exam-feedback');
+  feedback.className = 'exam-feedback em';
+  feedback.textContent = `Pregunta omitida. Respuesta correcta: ${q.name}`;
+  answerAdvanceTimer = setTimeout(() => { if (!live) return; idx++; show(); }, 700);
+}
 function commit(timeout = false) {
   if (!live || examAnswerLocked) return;
   if (!timeout && examMode === 'written' && !$('ans').value.trim()) {
@@ -770,7 +783,7 @@ function commit(timeout = false) {
   else if (examMode === 'choice') q.ans = $('exam-choice-options').querySelector(`[data-exam-option="${selectedExamOption}"] span:last-child`)?.textContent.trim() || '';
   else q.ans = $('ans').value.trim();
   q.out = !q.ans ? 'em' : accepted(q).includes(norm(q.ans)) ? 'ok' : 'bad';
-  $('ans').disabled = true; $('sub').disabled = true; $('exam-choice-confirm').disabled = true;
+  $('ans').disabled = true; $('sub').disabled = true; $('skip-written').disabled = true; $('exam-choice-confirm').disabled = true;
   $('exam-choice-options').querySelectorAll('button').forEach((button, i) => {
     button.disabled = true;
     button.classList.remove('selected');
@@ -1012,6 +1025,7 @@ $('start-choice').addEventListener('click', () => startExam('choice'));
 $('again').addEventListener('click', () => startExam(examMode));
 $('tobank').addEventListener('click', () => { stopExam(); tab('bank'); });
 $('aform').addEventListener('submit', e => { e.preventDefault(); commit(false); });
+$('skip-written').addEventListener('click', skipWrittenQuestion);
 $('exam-choice-options').addEventListener('click', e => { const b = e.target.closest('[data-exam-option]'); if (b) selectExamOption(Number(b.dataset.examOption)); });
 $('exam-choice-confirm').addEventListener('click', () => commit(false));
 $('mcq-start').addEventListener('click', startMCQ);
