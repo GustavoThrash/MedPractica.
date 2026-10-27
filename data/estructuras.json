@@ -1,5 +1,168 @@
 [
  {
+  "id": "0957e74f-e16f-4d5e-9e60-b02fc2e493c1",
+  "region": "hmusculo",
+  "name": "Capa Molecular",
+  "aliases": [
+   "Molecular"
+  ],
+  "image_path": "data/img/0957e74f-e16f-4d5e-9e60-b02fc2e493c1-1793140623596.webp",
+  "updated_at": "2026-10-27T22:37:03.596Z"
+ },
+ {
+  "id": "80a40d92-e56f-47e1-8e70-2043329b7899",
+  "region": "hmusculo",
+  "name": "Capa Granular",
+  "aliases": [
+   "Granular"
+  ],
+  "image_path": "data/img/80a40d92-e56f-47e1-8e70-2043329b7899-1793140607482.webp",
+  "updated_at": "2026-10-27T22:36:47.482Z"
+ },
+ {
+  "id": "e8a2c187-6fff-4847-a13b-6f47ad9dd22e",
+  "region": "hmusculo",
+  "name": "Celula de Purkinje",
+  "aliases": [
+   "Purkinje",
+   "Celulas de Purkinje"
+  ],
+  "image_path": "data/img/e8a2c187-6fff-4847-a13b-6f47ad9dd22e-1793140568558.webp",
+  "updated_at": "2026-10-27T22:36:08.558Z"
+ },
+ {
+  "id": "9c11606c-91d7-42bb-810f-76353788938f",
+  "region": "hmusculo",
+  "name": "Cuerpos de Nissl",
+  "aliases": [
+   "Granulaciones de Nissl",
+   "Nissl"
+  ],
+  "image_path": "data/img/9c11606c-91d7-42bb-810f-76353788938f-1793140535999.webp",
+  "updated_at": "2026-10-27T22:35:35.999Z"
+ },
+ {
+  "id": "69ee2db0-f886-4c28-ba6c-421747b43a0f",
+  "region": "hmusculo",
+  "name": "Neuronio",
+  "aliases": [
+   "Neurona",
+   "Celula Neuronal"
+  ],
+  "image_path": "data/img/69ee2db0-f886-4c28-ba6c-421747b43a0f-1793140507820.webp",
+  "updated_at": "2026-10-27T22:35:07.820Z"
+ },
+ {
+  "id": "28a1dce2-a67e-47f7-9909-43f5dcd74759",
+  "region": "hmusculo",
+  "name": "Gris",
+  "aliases": [
+   "Sustancia Gris",
+   "Substancia Gris"
+  ],
+  "image_path": "data/img/28a1dce2-a67e-47f7-9909-43f5dcd74759-1793140455018.webp",
+  "updated_at": "2026-10-27T22:34:15.018Z"
+ },
+ {
+  "id": "590b3e7b-cad5-4039-bb22-8334f1765832",
+  "region": "hmusculo",
+  "name": "Blanca",
+  "aliases": [
+   "Sustancia Blanca",
+   "Substancia Blanca"
+  ],
+  "image_path": "data/img/590b3e7b-cad5-4039-bb22-8334f1765832-1793140340642.webp",
+  "updated_at": "2026-10-27T22:32:20.642Z"
+ },
+ {
+  "id": "48eb083f-39ea-45ff-af64-dba796abd559",
+  "region": "hmusculo",
+  "name": "Condrocitos",
+  "aliases": [
+   "Condrocito"
+  ],
+  "image_path": "data/img/48eb083f-39ea-45ff-af64-dba796abd559-1793140309958.webp",
+  "updated_at": "2026-10-27T22:31:49.958Z"
+ },
+ {
+  "id": "aded4673-060d-4b1d-a60b-ca40c91c1ae8",
+  "region": "hmusculo",
+  "name": "Fibras de Purkinje",
+  "aliases": [
+   "Purkinje"
+  ],
+  "image_path": "data/img/aded4673-060d-4b1d-a60b-ca40c91c1ae8-1793140295926.webp",
+  "updated_at": "2026-10-27T22:31:35.926Z"
+ },
+ {
+  "id": "e5ee8cc1-5019-42c3-b569-bf373e4dcf72",
+  "region": "hmusculo",
+  "name": "Músculo Liso",
+  "aliases": [
+   "M Liso",
+   "Musculo Liso"
+  ],
+  "image_path": "data/img/e5ee8cc1-5019-42c3-b569-bf373e4dcf72-1793140267767.webp",
+  "updated_at": "2026-10-27T22:31:07.767Z"
+ },
+ {
+  "id": "d23ad195-9978-447d-bfbf-c3dc8eb5a684",
+  "region": "hmusculo",
+  "name": "Músculo Liso",
+  "aliases": [
+   "Musculo Liso",
+   "M Liso"
+  ],
+  "image_path": "data/img/d23ad195-9978-447d-bfbf-c3dc8eb5a684-1793140242087.webp",
+  "updated_at": "2026-10-27T22:30:42.087Z"
+ },
+ {
+  "id": "9c014706-f12f-4bb3-9d8a-702530bd236f",
+  "region": "hmusculo",
+  "name": "Musculo Estriado Cardiaco",
+  "aliases": [
+   "Músculo Estriado Cardíaco",
+   "M Cardiaco",
+   "Músculo Cardíaco"
+  ],
+  "image_path": "data/img/9c014706-f12f-4bb3-9d8a-702530bd236f-1793140207978.webp",
+  "updated_at": "2026-10-27T22:30:07.978Z"
+ },
+ {
+  "id": "b66f2520-afad-44f8-8fc3-87e98e4983b4",
+  "region": "hmusculo",
+  "name": "Músculo Estriado Cardíaco",
+  "aliases": [
+   "Musculo Estriado Cardiaco",
+   "M Cardiaco",
+   "Musculo Cardiaco"
+  ],
+  "image_path": "data/img/b66f2520-afad-44f8-8fc3-87e98e4983b4-1793140166456.webp",
+  "updated_at": "2026-10-27T22:29:26.456Z"
+ },
+ {
+  "id": "7c076bb0-7602-49c6-b76c-054f71666b38",
+  "region": "hmusculo",
+  "name": "Músculo Estriado Esquelético",
+  "aliases": [
+   "Musculo Estriado Esqueletico",
+   "M Esqueletico"
+  ],
+  "image_path": "data/img/7c076bb0-7602-49c6-b76c-054f71666b38-1793140118275.webp",
+  "updated_at": "2026-10-27T22:28:38.275Z"
+ },
+ {
+  "id": "ef7a943f-75ee-49db-bf51-cea0519c670d",
+  "region": "hmusculo",
+  "name": "Músculo Estriado Esquelético",
+  "aliases": [
+   "Musculo Estriado Esqueletico",
+   "Musculo Esqueletico"
+  ],
+  "image_path": "data/img/ef7a943f-75ee-49db-bf51-cea0519c670d-1793140090905.webp",
+  "updated_at": "2026-10-27T22:28:10.905Z"
+ },
+ {
   "id": "5a35631a-46c5-49e9-b202-40d618cd3300",
   "region": "cabeza",
   "name": "Musculo Orbicular de la Boca",
