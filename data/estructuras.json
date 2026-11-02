@@ -1,5 +1,134 @@
 [
  {
+  "id": "5a1361ee-c9b2-4d6e-99b0-949c040a311c",
+  "region": "hmusculo",
+  "name": "Vena Muscular",
+  "aliases": [
+   "Vena"
+  ],
+  "image_path": "data/img/5a1361ee-c9b2-4d6e-99b0-949c040a311c-1793604682240.webp",
+  "updated_at": "2026-11-02T07:31:22.240Z"
+ },
+ {
+  "id": "bcfd81f5-f502-4cb3-bc45-e9fab746581c",
+  "region": "hmusculo",
+  "name": "Arteria Muscular",
+  "aliases": [
+   "Arteria"
+  ],
+  "image_path": "data/img/bcfd81f5-f502-4cb3-bc45-e9fab746581c-1793604663556.webp",
+  "updated_at": "2026-11-02T07:31:03.556Z"
+ },
+ {
+  "id": "5cea73c2-38fa-4cc0-9a72-52191849dc1f",
+  "region": "hmusculo",
+  "name": "Capilar",
+  "aliases": [
+   "Vaso Capilar"
+  ],
+  "image_path": "data/img/5cea73c2-38fa-4cc0-9a72-52191849dc1f-1793604515660.webp",
+  "updated_at": "2026-11-02T07:28:35.660Z"
+ },
+ {
+  "id": "73939975-97b1-4074-9d84-eb9e329ee229",
+  "region": "hmusculo",
+  "name": "Celula Satelite",
+  "aliases": [
+   "Celulas Satelite",
+   "Celulas Satelites"
+  ],
+  "image_path": "data/img/73939975-97b1-4074-9d84-eb9e329ee229-1793604497770.webp",
+  "updated_at": "2026-11-02T07:28:17.770Z"
+ },
+ {
+  "id": "536422aa-3964-41ab-87aa-a4e1e27e125f",
+  "region": "hmusculo",
+  "name": "Neuronio Piramidal",
+  "aliases": [
+   "Piramidal",
+   "Celula Piramidal",
+   "Neurona Piramidal"
+  ],
+  "image_path": "data/img/536422aa-3964-41ab-87aa-a4e1e27e125f-1793604462800.webp",
+  "updated_at": "2026-11-02T07:27:42.800Z"
+ },
+ {
+  "id": "6e1bf832-3c5f-4e7e-af62-4853f95840fb",
+  "region": "hmusculo",
+  "name": "Neuronio Ganglionar",
+  "aliases": [
+   "Celula Ganglionar",
+   "Ganglionar",
+   "Neurona Ganglionar"
+  ],
+  "image_path": "data/img/6e1bf832-3c5f-4e7e-af62-4853f95840fb-1793604444120.webp",
+  "updated_at": "2026-11-02T07:27:24.120Z"
+ },
+ {
+  "id": "308b7b56-c28d-4a18-946e-a0235d48b50a",
+  "region": "hmusculo",
+  "name": "Arteriola",
+  "aliases": [],
+  "image_path": "data/img/308b7b56-c28d-4a18-946e-a0235d48b50a-1793604328701.webp",
+  "updated_at": "2026-11-02T07:25:28.701Z"
+ },
+ {
+  "id": "01a52fd8-f979-4020-a854-92eb3f10a616",
+  "region": "hmusculo",
+  "name": "Fibras de Purkinje",
+  "aliases": [
+   "Fibra de Purkinje"
+  ],
+  "image_path": "data/img/01a52fd8-f979-4020-a854-92eb3f10a616-1793604309461.webp",
+  "updated_at": "2026-11-02T07:25:09.461Z"
+ },
+ {
+  "id": "191b35cf-0efb-41a6-95fc-fa1d173b1696",
+  "region": "hmusculo",
+  "name": "Microglia",
+  "aliases": [],
+  "image_path": "data/img/191b35cf-0efb-41a6-95fc-fa1d173b1696-1793604280503.webp",
+  "updated_at": "2026-11-02T07:24:40.503Z"
+ },
+ {
+  "id": "6ff3c23d-9b1f-41ae-a08c-3584aee71aa8",
+  "region": "hmusculo",
+  "name": "Ependimocito",
+  "aliases": [
+   "Ependimocitos"
+  ],
+  "image_path": "data/img/6ff3c23d-9b1f-41ae-a08c-3584aee71aa8-1793604259357.webp",
+  "updated_at": "2026-11-02T07:24:19.357Z"
+ },
+ {
+  "id": "75c19d79-c529-4c95-bc33-946a87d31cbf",
+  "region": "hmusculo",
+  "name": "Disco Intercalar",
+  "aliases": [],
+  "image_path": "data/img/75c19d79-c529-4c95-bc33-946a87d31cbf-1793604211995.webp",
+  "updated_at": "2026-11-02T07:23:31.995Z"
+ },
+ {
+  "id": "e6cebcd7-d148-43cd-9e38-98cb6165b9c0",
+  "region": "hmusculo",
+  "name": "Astrocito",
+  "aliases": [
+   "Astrocitos"
+  ],
+  "image_path": "data/img/e6cebcd7-d148-43cd-9e38-98cb6165b9c0-1793604129799.webp",
+  "updated_at": "2026-11-02T07:22:09.799Z"
+ },
+ {
+  "id": "776b8c6f-a07c-414c-bc52-7d49505d0117",
+  "region": "hmusculo",
+  "name": "Oligodendrocito",
+  "aliases": [
+   "Oligodendrocitos"
+  ],
+  "image_path": "data/img/776b8c6f-a07c-414c-bc52-7d49505d0117-1793604105573.webp",
+  "updated_at": "2026-11-02T07:21:45.573Z"
+ },
+ {
   "id": "0957e74f-e16f-4d5e-9e60-b02fc2e493c1",
   "region": "hmusculo",
   "name": "Capa Molecular",
@@ -73,16 +202,6 @@
   ],
   "image_path": "data/img/590b3e7b-cad5-4039-bb22-8334f1765832-1793140340642.webp",
   "updated_at": "2026-10-27T22:32:20.642Z"
- },
- {
-  "id": "48eb083f-39ea-45ff-af64-dba796abd559",
-  "region": "hmusculo",
-  "name": "Condrocitos",
-  "aliases": [
-   "Condrocito"
-  ],
-  "image_path": "data/img/48eb083f-39ea-45ff-af64-dba796abd559-1793140309958.webp",
-  "updated_at": "2026-10-27T22:31:49.958Z"
  },
  {
   "id": "aded4673-060d-4b1d-a60b-ca40c91c1ae8",
