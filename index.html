@@ -195,6 +195,40 @@ nav.tabs{display:grid;grid-template-columns:1fr 1fr;gap:12px;background:none;bor
 @media(max-width:700px){#work .bar,#mode .bar{flex-direction:column;align-items:flex-start;gap:10px}.bar>.b{order:-1;padding:8px 14px;font-size:13px}}
 @media(max-width:520px){.pg{grid-template-columns:repeat(5,1fr);padding:12px 8px;gap:6px 2px}.pg strong{font-size:19px}.pg span{font-size:10.5px}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+/* ===== Examen en modo enfoque + zoom ===== */
+body.exam-focus .ew{max-width:none}
+body.exam-focus .toast{bottom:auto;top:calc(env(safe-area-inset-top,0px) + 62px)}
+.xbtn{flex:none;width:36px;height:36px;border-radius:10px;border:1px solid var(--line);background:#0d2756;color:var(--tx);font-size:15px}
+.xbtn:hover{background:#163a7c}.et>div:nth-of-type(1){flex:1;min-width:0}
+#exam-image-stage{touch-action:none;user-select:none;-webkit-user-select:none;overflow:hidden}
+#exam-image-stage img{transform-origin:50% 50%;-webkit-user-drag:none;pointer-events:none}
+#exam-image-stage.zoomed{cursor:grab}
+.zbar{position:absolute;right:8px;bottom:8px;display:flex;gap:6px;z-index:3}
+.zbtn{width:40px;height:40px;border-radius:11px;border:1px solid var(--line);background:#0b1f48e6;color:#fff;font-size:19px;line-height:1;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+.zbtn:hover{background:#163a7c}.zbtn:active{transform:scale(.94)}
+.zhint{position:absolute;left:8px;top:8px;z-index:3;padding:6px 11px;border-radius:99px;background:#0b1f48e6;border:1px solid var(--line);font-size:12px;color:var(--ac2);pointer-events:none;animation:zh 5s ease-out forwards}
+@keyframes zh{0%,70%{opacity:1}100%{opacity:0;visibility:hidden}}
+body.exam-focus .top,body.exam-focus .ft,body.exam-focus #offn{display:none}
+body.exam-focus .shell{padding:calc(env(safe-area-inset-top,0px) + 6px) 6px calc(env(safe-area-inset-bottom,0px) + 6px);max-width:1500px}
+body.exam-focus #p-stage{height:calc(var(--vvh,100vh) - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px) - 12px);min-height:300px;border-radius:16px}
+body.exam-focus #p-stage .et{padding:8px 10px;gap:8px}
+body.exam-focus .tmr small{display:none}body.exam-focus .tmr b{font-size:22px}
+body.exam-focus #p-stage .eb{padding:8px}
+body.exam-focus #p-stage .stage{margin-bottom:8px;border-radius:12px}
+body.exam-focus #p-stage .pr{font-size:13px;margin:0 0 6px}
+body.exam-focus #p-stage .dots{margin-top:8px}
+body.exam-focus .exam-choice-options{gap:6px}
+body.exam-focus .exam-choice-option{min-height:44px;padding:8px 11px}
+body.exam-focus #exam-feedback{margin-top:8px;padding:9px 12px}
+body.exam-focus #aform .row{flex-direction:row;flex-wrap:wrap;gap:6px}
+body.exam-focus #aform #ans{flex:1 1 100%}body.exam-focus #aform .b{flex:1;padding:10px}
+@media (orientation:landscape) and (min-width:640px){
+  body.exam-focus #p-stage .eb{display:grid;grid-template-columns:minmax(0,1fr) clamp(270px,32vw,400px);grid-template-rows:minmax(0,1fr) auto auto;column-gap:10px;align-items:start}
+  body.exam-focus #p-stage .stage{grid-column:1;grid-row:1/4;height:auto;min-height:0;align-self:stretch;margin:0}
+  body.exam-focus #aform,body.exam-focus #exam-choice-panel{grid-column:2;grid-row:1;max-height:100%;overflow:auto}
+  body.exam-focus #exam-feedback{grid-column:2;grid-row:2}
+  body.exam-focus #p-stage .dots{grid-column:2;grid-row:3}
+}
 </style>
 </head>
 <body>
@@ -263,7 +297,7 @@ nav.tabs{display:grid;grid-template-columns:1fr 1fr;gap:12px;background:none;bor
           <div class="stat"><strong id="sc">0</strong><span>estructuras disponibles en esta región</span></div>
         </section>
         <section class="pn hidden" id="p-stage">
-          <div class="stk"><div class="et"><div><p class="eye" id="cnt">Pregunta 1 de 10</p><span class="mu sm" id="acnt"></span></div><div class="tmr"><small>Tiempo restante</small><b id="tt">00:30</b></div></div>
+          <div class="stk"><div class="et"><button class="xbtn" id="exam-exit" type="button" aria-label="Salir del examen" title="Salir del examen">✕</button><div><p class="eye" id="cnt">Pregunta 1 de 10</p><span class="mu sm" id="acnt"></span></div><div class="tmr"><small>Tiempo restante</small><b id="tt">00:30</b></div></div>
           <div class="trk"><i id="tf"></i></div></div>
           <div class="eb">
             <div class="stage" id="exam-image-stage"><img id="eimg" alt="Estructura a identificar"></div>
@@ -696,13 +730,13 @@ function startExam(mode = examMode) {
   SECN = MODES[modeOf(region)].sec;
   exam = pick(sc).map(q => ({...q, ans:'', out:'', prev:lvl(q)}));
   idx = 0; live = true; examAnswerLocked = false;
-  $('work').classList.add('exam-live'); tab('exam'); pane('stage'); show(); window.scrollTo(0, 0);
+  $('work').classList.add('exam-live'); document.body.classList.add('exam-focus'); tab('exam'); pane('stage'); show(); window.scrollTo(0, 0);
 }
 function stopExam() {
   clearInterval(tm); tm = null;
   clearTimeout(answerAdvanceTimer); answerAdvanceTimer = null;
   live = false; examAnswerLocked = false;
-  $('work').classList.remove('exam-live');
+  $('work').classList.remove('exam-live'); document.body.classList.remove('exam-focus');
 }
 function makeExamChoices(q) {
   const correct = {name:q.name, correct:true};
@@ -718,6 +752,34 @@ function renderExamChoices(q) {
   selectedExamOption = null;
   $('exam-choice-confirm').disabled = true;
 }
+function makeZoom(stage, img) { // zoom: pellizco, doble toque, rueda del ratón y botones
+  const MAXZ = 6, P = new Map(); let s = 1, x = 0, y = 0, tapT = 0, tapX = 0, tapY = 0, moved = false, pm = null;
+  const box = () => stage.getBoundingClientRect();
+  const apply = () => { const b = box(), mx = Math.max(0, (b.width * s - b.width) / 2), my = Math.max(0, (b.height * s - b.height) / 2); x = Math.min(mx, Math.max(-mx, x)); y = Math.min(my, Math.max(-my, y)); img.style.transform = (s === 1 && !x && !y) ? '' : `translate(${x}px,${y}px) scale(${s})`; stage.classList.toggle('zoomed', s > 1.02); };
+  const zoomAt = (ns, px, py) => { ns = Math.min(MAXZ, Math.max(1, ns)); const b = box(), cx = px - b.left - b.width / 2, cy = py - b.top - b.height / 2, k = ns / s; x = cx - (cx - x) * k; y = cy - (cy - y) * k; s = ns; if (s === 1) { x = 0; y = 0; } apply(); };
+  const reset = () => { s = 1; x = 0; y = 0; P.clear(); pm = null; apply(); };
+  const mid = () => { const a = [...P.values()]; return {x: (a[0].x + a[1].x) / 2, y: (a[0].y + a[1].y) / 2, d: Math.hypot(a[0].x - a[1].x, a[0].y - a[1].y) || 1}; };
+  stage.addEventListener('pointerdown', e => { if (e.target.closest('.zbar')) return; P.set(e.pointerId, {x: e.clientX, y: e.clientY}); try { stage.setPointerCapture(e.pointerId); } catch (_) {} moved = false; if (P.size === 2) pm = mid(); });
+  stage.addEventListener('pointermove', e => {
+    const p = P.get(e.pointerId); if (!p) return; const dx = e.clientX - p.x, dy = e.clientY - p.y; P.set(e.pointerId, {x: e.clientX, y: e.clientY});
+    if (Math.abs(dx) + Math.abs(dy) > 2) moved = true;
+    if (P.size === 2) { const m = mid(); if (pm) { x += m.x - pm.x; y += m.y - pm.y; zoomAt(s * m.d / pm.d, m.x, m.y); } pm = m; }
+    else if (s > 1) { x += dx; y += dy; apply(); }
+  });
+  const up = e => {
+    if (!P.has(e.pointerId)) return; P.delete(e.pointerId); pm = null;
+    if (e.type === 'pointerup' && !moved && P.size === 0) { const now = Date.now(); if (now - tapT < 320 && Math.hypot(e.clientX - tapX, e.clientY - tapY) < 30) { s > 1 ? reset() : zoomAt(2.5, e.clientX, e.clientY); tapT = 0; } else { tapT = now; tapX = e.clientX; tapY = e.clientY; } }
+  };
+  stage.addEventListener('pointerup', up); stage.addEventListener('pointercancel', up);
+  stage.addEventListener('wheel', e => { e.preventDefault(); zoomAt(s * Math.exp(-e.deltaY * (e.ctrlKey ? 0.01 : 0.0018)), e.clientX, e.clientY); }, {passive: false});
+  stage.addEventListener('gesturestart', e => e.preventDefault());
+  const bar = document.createElement('div'); bar.className = 'zbar';
+  bar.innerHTML = '<button type="button" class="zbtn" data-z="in" aria-label="Acercar" title="Acercar">＋</button><button type="button" class="zbtn" data-z="out" aria-label="Alejar" title="Alejar">－</button><button type="button" class="zbtn" data-z="0" aria-label="Tamaño original" title="Tamaño original">↺</button>';
+  bar.addEventListener('click', e => { const b = e.target.closest('[data-z]'); if (!b) return; const r = box(), cx = r.left + r.width / 2, cy = r.top + r.height / 2; b.dataset.z === 'in' ? zoomAt(s * 1.5, cx, cy) : b.dataset.z === 'out' ? zoomAt(s / 1.5, cx, cy) : reset(); });
+  stage.appendChild(bar);
+  const hint = document.createElement('span'); hint.className = 'zhint'; hint.textContent = '🔍 Pellizca o toca 2 veces para ampliar'; stage.appendChild(hint);
+  return {reset};
+}
 function show() {
   clearInterval(tm); clearTimeout(answerAdvanceTimer); answerAdvanceTimer = null;
   if (!live) return;
@@ -726,7 +788,7 @@ function show() {
   examAnswerLocked = false; selectedExamOption = null;
   $('cnt').textContent = `Pregunta ${idx + 1} de ${LEN}`;
   $('acnt').textContent = `Respondidas: ${exam.filter(x => x.out === 'ok' || x.out === 'bad').length} / ${LEN}`;
-  $('eimg').src = q.image; $('eimg').alt = `Imagen de la pregunta ${idx + 1}`;
+  $('eimg').src = q.image; $('eimg').alt = `Imagen de la pregunta ${idx + 1}`; zoomExam.reset();
   $('ans').value = ''; $('ans').disabled = false; $('sub').disabled = false; $('skip-written').disabled = false;
   $('exam-feedback').className = 'exam-feedback hidden'; $('exam-feedback').textContent = '';
   $('exam-image-stage').classList.remove('flash-ok','flash-bad');
@@ -1028,6 +1090,8 @@ $('aform').addEventListener('submit', e => { e.preventDefault(); commit(false); 
 $('skip-written').addEventListener('click', skipWrittenQuestion);
 $('exam-choice-options').addEventListener('click', e => { const b = e.target.closest('[data-exam-option]'); if (b) selectExamOption(Number(b.dataset.examOption)); });
 $('exam-choice-confirm').addEventListener('click', () => commit(false));
+const zoomExam = makeZoom($('exam-image-stage'), $('eimg'));
+$('exam-exit').addEventListener('click', () => { if (leave()) { stopExam(); tab('exam'); } });
 $('mcq-start').addEventListener('click', startMCQ);
 $('mcq-next').addEventListener('click', nextMCQ);
 $('mcq-exit').addEventListener('click', () => { if (!mcqLive || confirm('¿Salir? El cuestionario parcial no contará como sesión completada.')) { stopMCQ(); showMCQPane('start'); renderMCQHome(); window.scrollTo(0, 0); } });
