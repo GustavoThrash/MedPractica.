@@ -1,5 +1,747 @@
 [
  {
+  "id": "b8a99f79-53d7-425d-b501-c8984e87bd93",
+  "region": "abdomen",
+  "name": "Músculo Psoas Mayor",
+  "aliases": [],
+  "image_path": "data/img/b8a99f79-53d7-425d-b501-c8984e87bd93-1794211360017.webp",
+  "updated_at": "2026-11-09T08:02:40.017Z"
+ },
+ {
+  "id": "c78b4510-ba46-4e27-bdf4-09db13f67860",
+  "region": "abdomen",
+  "name": "Músculo ilíaco",
+  "aliases": [],
+  "image_path": "data/img/c78b4510-ba46-4e27-bdf4-09db13f67860-1794211349843.webp",
+  "updated_at": "2026-11-09T08:02:29.843Z"
+ },
+ {
+  "id": "29984803-62d4-4f62-8ee5-9b9806ca469c",
+  "region": "abdomen",
+  "name": "Músculo cuadrado lumbar",
+  "aliases": [],
+  "image_path": "data/img/29984803-62d4-4f62-8ee5-9b9806ca469c-1794211336890.webp",
+  "updated_at": "2026-11-09T08:02:16.890Z"
+ },
+ {
+  "id": "4fa747f3-49cf-4531-87bd-8bd61ee76758",
+  "region": "abdomen",
+  "name": "Receso costodiafragmático",
+  "aliases": [
+   "seno costodiafragmático"
+  ],
+  "image_path": "data/img/4fa747f3-49cf-4531-87bd-8bd61ee76758-1794211325577.webp",
+  "updated_at": "2026-11-09T08:02:05.577Z"
+ },
+ {
+  "id": "05041f11-c852-41f9-8a7f-817a9b51486f",
+  "region": "abdomen",
+  "name": "Vena Renal Izquierda",
+  "aliases": [],
+  "image_path": "data/img/05041f11-c852-41f9-8a7f-817a9b51486f-1794211311919.webp",
+  "updated_at": "2026-11-09T08:01:51.919Z"
+ },
+ {
+  "id": "f37c3ffd-582a-4670-934f-46f2c2100f3b",
+  "region": "abdomen",
+  "name": "Artéria Gonadal Derecha",
+  "aliases": [],
+  "image_path": "data/img/f37c3ffd-582a-4670-934f-46f2c2100f3b-1794211300778.webp",
+  "updated_at": "2026-11-09T08:01:40.778Z"
+ },
+ {
+  "id": "b3985397-022b-4c36-9545-7fdc8724e88a",
+  "region": "abdomen",
+  "name": "Musculo Transverso",
+  "aliases": [
+   "Musculo Transverso del Abdomen"
+  ],
+  "image_path": "data/img/b3985397-022b-4c36-9545-7fdc8724e88a-1794211290116.webp",
+  "updated_at": "2026-11-09T08:01:30.116Z"
+ },
+ {
+  "id": "4386ef5a-b30c-4279-840e-d928ff757956",
+  "region": "abdomen",
+  "name": "Musculo Oblicuo Interno",
+  "aliases": [
+   "Musculo Oblicuo Interno del Abdomen"
+  ],
+  "image_path": "data/img/4386ef5a-b30c-4279-840e-d928ff757956-1794211279284.webp",
+  "updated_at": "2026-11-09T08:01:19.284Z"
+ },
+ {
+  "id": "bc5ea8ab-8643-42d3-9b0a-2edf3a270022",
+  "region": "abdomen",
+  "name": "Musculo Oblicuo Externo",
+  "aliases": [
+   "Musculo Oblicuo Externo del Abdomen"
+  ],
+  "image_path": "data/img/bc5ea8ab-8643-42d3-9b0a-2edf3a270022-1794211267970.webp",
+  "updated_at": "2026-11-09T08:01:07.970Z"
+ },
+ {
+  "id": "a26ba74d-11f5-4057-ae61-97b62dd0a776",
+  "region": "abdomen",
+  "name": "Arteria Ilíaca Externa",
+  "aliases": [],
+  "image_path": "data/img/a26ba74d-11f5-4057-ae61-97b62dd0a776-1794211252219.webp",
+  "updated_at": "2026-11-09T08:00:52.219Z"
+ },
+ {
+  "id": "7be19abb-3dab-4bae-9c99-b865269ffdc7",
+  "region": "abdomen",
+  "name": "Arteria Ilíaca Común",
+  "aliases": [],
+  "image_path": "data/img/7be19abb-3dab-4bae-9c99-b865269ffdc7-1794211238506.webp",
+  "updated_at": "2026-11-09T08:00:38.506Z"
+ },
+ {
+  "id": "728891c4-0dfe-4f98-99c2-f99086de120d",
+  "region": "abdomen",
+  "name": "Glándula suprarrenal Izquierda",
+  "aliases": [
+   "glándula adrenal Izquierda"
+  ],
+  "image_path": "data/img/728891c4-0dfe-4f98-99c2-f99086de120d-1794211223932.webp",
+  "updated_at": "2026-11-09T08:00:23.932Z"
+ },
+ {
+  "id": "9001aeae-b405-404c-909d-9d571f009895",
+  "region": "abdomen",
+  "name": "Glándula suprarrenal Derecha",
+  "aliases": [
+   "glándula adrenal Derecha"
+  ],
+  "image_path": "data/img/9001aeae-b405-404c-909d-9d571f009895-1794211211592.webp",
+  "updated_at": "2026-11-09T08:00:11.592Z"
+ },
+ {
+  "id": "9df6fc9d-fa4b-4171-8bc8-130f6ef356e6",
+  "region": "abdomen",
+  "name": "Arteria Aorta Abdominal",
+  "aliases": [
+   "Arteria Aorta Porción Abdominal"
+  ],
+  "image_path": "data/img/9df6fc9d-fa4b-4171-8bc8-130f6ef356e6-1794211198361.webp",
+  "updated_at": "2026-11-09T07:59:58.361Z"
+ },
+ {
+  "id": "481d2be1-3f17-48dc-910c-80c436e3aea8",
+  "region": "abdomen",
+  "name": "Ureter Derecho",
+  "aliases": [],
+  "image_path": "data/img/481d2be1-3f17-48dc-910c-80c436e3aea8-1794211184830.webp",
+  "updated_at": "2026-11-09T07:59:44.830Z"
+ },
+ {
+  "id": "6a8ddd7d-e169-4361-b7c5-0e113e43615d",
+  "region": "abdomen",
+  "name": "Vena Renal Derecha",
+  "aliases": [],
+  "image_path": "data/img/6a8ddd7d-e169-4361-b7c5-0e113e43615d-1794211170887.webp",
+  "updated_at": "2026-11-09T07:59:30.887Z"
+ },
+ {
+  "id": "68737faf-3b66-408b-988a-5e610fd8bf99",
+  "region": "abdomen",
+  "name": "Ureter Izquierdo",
+  "aliases": [],
+  "image_path": "data/img/68737faf-3b66-408b-988a-5e610fd8bf99-1794211154393.webp",
+  "updated_at": "2026-11-09T07:59:14.393Z"
+ },
+ {
+  "id": "a52ba623-b553-4859-b0de-f765b4638d7a",
+  "region": "abdomen",
+  "name": "Arteria Gonadal Izquierda",
+  "aliases": [],
+  "image_path": "data/img/a52ba623-b553-4859-b0de-f765b4638d7a-1794211142594.webp",
+  "updated_at": "2026-11-09T07:59:02.594Z"
+ },
+ {
+  "id": "f1cf7b3f-c361-4ac3-a6d9-57ec263012ca",
+  "region": "abdomen",
+  "name": "Arteria Sacra Media",
+  "aliases": [],
+  "image_path": "data/img/f1cf7b3f-c361-4ac3-a6d9-57ec263012ca-1794211129767.webp",
+  "updated_at": "2026-11-09T07:58:49.767Z"
+ },
+ {
+  "id": "af9fefed-8b24-45ad-8d36-21e418287409",
+  "region": "abdomen",
+  "name": "Vena Suprarrenal",
+  "aliases": [
+   "Vena Suprarrenal Izquierda"
+  ],
+  "image_path": "data/img/af9fefed-8b24-45ad-8d36-21e418287409-1794211115133.webp",
+  "updated_at": "2026-11-09T07:58:35.133Z"
+ },
+ {
+  "id": "eee3d6dc-0827-4b3f-8cb3-3b1711b55fda",
+  "region": "abdomen",
+  "name": "Vena Testicular Izquierda",
+  "aliases": [],
+  "image_path": "data/img/eee3d6dc-0827-4b3f-8cb3-3b1711b55fda-1794211100101.webp",
+  "updated_at": "2026-11-09T07:58:20.101Z"
+ },
+ {
+  "id": "65800fad-16b5-4edb-8636-0925896172ac",
+  "region": "abdomen",
+  "name": "Vena Testicular Derecha",
+  "aliases": [],
+  "image_path": "data/img/65800fad-16b5-4edb-8636-0925896172ac-1794211080462.webp",
+  "updated_at": "2026-11-09T07:58:00.462Z"
+ },
+ {
+  "id": "11d3cc4e-4d1e-4e3e-a185-1ca0570646f2",
+  "region": "abdomen",
+  "name": "Vena Ilíaca Común Izquierda",
+  "aliases": [],
+  "image_path": "data/img/11d3cc4e-4d1e-4e3e-a185-1ca0570646f2-1794211063099.webp",
+  "updated_at": "2026-11-09T07:57:43.099Z"
+ },
+ {
+  "id": "7eaac908-a14e-45ff-91fb-a4ac058709e2",
+  "region": "abdomen",
+  "name": "Vena Cava Inferior",
+  "aliases": [],
+  "image_path": "data/img/7eaac908-a14e-45ff-91fb-a4ac058709e2-1794211049989.webp",
+  "updated_at": "2026-11-09T07:57:29.989Z"
+ },
+ {
+  "id": "6a2e10e5-2c4b-4324-9047-dd2abac49c77",
+  "region": "abdomen",
+  "name": "Cuerpo Vertebral",
+  "aliases": [],
+  "image_path": "data/img/6a2e10e5-2c4b-4324-9047-dd2abac49c77-1794211014742.webp",
+  "updated_at": "2026-11-09T07:56:54.742Z"
+ },
+ {
+  "id": "1fded5b2-ab13-407a-a518-82cfdadc74f9",
+  "region": "abdomen",
+  "name": "Pedículo",
+  "aliases": [],
+  "image_path": "data/img/1fded5b2-ab13-407a-a518-82cfdadc74f9-1794211002257.webp",
+  "updated_at": "2026-11-09T07:56:42.257Z"
+ },
+ {
+  "id": "91f1d9db-0358-41f5-9afd-7e48a1e56b51",
+  "region": "abdomen",
+  "name": "Apófisis Articular Superior",
+  "aliases": [],
+  "image_path": "data/img/91f1d9db-0358-41f5-9afd-7e48a1e56b51-1794210986598.webp",
+  "updated_at": "2026-11-09T07:56:26.598Z"
+ },
+ {
+  "id": "741261a7-f595-487e-8999-ad52bc0f0e53",
+  "region": "abdomen",
+  "name": "Carilla Articular de la Apófisis Articular Superior",
+  "aliases": [],
+  "image_path": "data/img/741261a7-f595-487e-8999-ad52bc0f0e53-1794210974944.webp",
+  "updated_at": "2026-11-09T07:56:14.944Z"
+ },
+ {
+  "id": "41933c7d-34ba-41ef-acc8-64657a18bfe4",
+  "region": "abdomen",
+  "name": "Apófisis Mamilar",
+  "aliases": [],
+  "image_path": "data/img/41933c7d-34ba-41ef-acc8-64657a18bfe4-1794210963298.webp",
+  "updated_at": "2026-11-09T07:56:03.298Z"
+ },
+ {
+  "id": "ce96b58a-e11e-4719-afcd-4592c3e7a92b",
+  "region": "abdomen",
+  "name": "Lamina",
+  "aliases": [],
+  "image_path": "data/img/ce96b58a-e11e-4719-afcd-4592c3e7a92b-1794210947037.webp",
+  "updated_at": "2026-11-09T07:55:47.037Z"
+ },
+ {
+  "id": "05a55da7-8ad4-456b-a1da-8c3ab3aa83af",
+  "region": "abdomen",
+  "name": "Apófisis Transversa",
+  "aliases": [
+   "Apófisis Costiforme"
+  ],
+  "image_path": "data/img/05a55da7-8ad4-456b-a1da-8c3ab3aa83af-1794210935154.webp",
+  "updated_at": "2026-11-09T07:55:35.154Z"
+ },
+ {
+  "id": "0663a7c0-39a4-4f20-be7b-b95340eb110c",
+  "region": "abdomen",
+  "name": "Apófisis Espinosa",
+  "aliases": [],
+  "image_path": "data/img/0663a7c0-39a4-4f20-be7b-b95340eb110c-1794210912197.webp",
+  "updated_at": "2026-11-09T07:55:12.197Z"
+ },
+ {
+  "id": "89f74b6c-3aee-49ea-9e85-61e79d1edfcb",
+  "region": "abdomen",
+  "name": "Apófisis Articular Inferior",
+  "aliases": [],
+  "image_path": "data/img/89f74b6c-3aee-49ea-9e85-61e79d1edfcb-1794210897212.webp",
+  "updated_at": "2026-11-09T07:54:57.212Z"
+ },
+ {
+  "id": "8bf77576-e95d-45e2-9569-68a9dcf8ca73",
+  "region": "abdomen",
+  "name": "Foramen Vertebral",
+  "aliases": [],
+  "image_path": "data/img/8bf77576-e95d-45e2-9569-68a9dcf8ca73-1794210881525.webp",
+  "updated_at": "2026-11-09T07:54:41.525Z"
+ },
+ {
+  "id": "65d10ffb-bd5f-4d06-a125-bbe98b5224bd",
+  "region": "abdomen",
+  "name": "Apófisis Accesoria",
+  "aliases": [
+   "Apófisis Acesoria"
+  ],
+  "image_path": "data/img/65d10ffb-bd5f-4d06-a125-bbe98b5224bd-1794210864803.webp",
+  "updated_at": "2026-11-09T07:54:24.803Z"
+ },
+ {
+  "id": "0fe2e5a4-20f9-401d-a84b-09bc60ee3a8f",
+  "region": "abdomen",
+  "name": "Fosa Ilíaca Interna",
+  "aliases": [],
+  "image_path": "data/img/0fe2e5a4-20f9-401d-a84b-09bc60ee3a8f-1794210853508.webp",
+  "updated_at": "2026-11-09T07:54:13.508Z"
+ },
+ {
+  "id": "596e2b16-e6af-4816-b1ed-575452c92566",
+  "region": "abdomen",
+  "name": "Cara Auricular",
+  "aliases": [],
+  "image_path": "data/img/596e2b16-e6af-4816-b1ed-575452c92566-1794210836562.webp",
+  "updated_at": "2026-11-09T07:53:56.562Z"
+ },
+ {
+  "id": "1e59da95-54a5-496e-99ac-4b820d4fa3a1",
+  "region": "abdomen",
+  "name": "Tuberosidad Ilíaca",
+  "aliases": [],
+  "image_path": "data/img/1e59da95-54a5-496e-99ac-4b820d4fa3a1-1794210821572.webp",
+  "updated_at": "2026-11-09T07:53:41.572Z"
+ },
+ {
+  "id": "f89e35a5-5ac2-402a-985c-b2ce28ae2c21",
+  "region": "abdomen",
+  "name": "Línea Arcuata",
+  "aliases": [],
+  "image_path": "data/img/f89e35a5-5ac2-402a-985c-b2ce28ae2c21-1794210809343.webp",
+  "updated_at": "2026-11-09T07:53:29.343Z"
+ },
+ {
+  "id": "36bcade0-55b5-4d54-a830-8809b728882e",
+  "region": "abdomen",
+  "name": "Iminencia IleoPububica",
+  "aliases": [],
+  "image_path": "data/img/36bcade0-55b5-4d54-a830-8809b728882e-1794210796662.webp",
+  "updated_at": "2026-11-09T07:53:16.662Z"
+ },
+ {
+  "id": "4ec96cc4-7aa9-42b0-af5c-a38f815ac1cc",
+  "region": "abdomen",
+  "name": "Cresta Pectínea",
+  "aliases": [],
+  "image_path": "data/img/4ec96cc4-7aa9-42b0-af5c-a38f815ac1cc-1794210781718.webp",
+  "updated_at": "2026-11-09T07:53:01.718Z"
+ },
+ {
+  "id": "df0d8b24-52ca-4363-a881-aa1056abeed3",
+  "region": "abdomen",
+  "name": "Superficie Cuadrilatera",
+  "aliases": [
+   "Lámina Cuadrilatera"
+  ],
+  "image_path": "data/img/df0d8b24-52ca-4363-a881-aa1056abeed3-1794210770229.webp",
+  "updated_at": "2026-11-09T07:52:50.229Z"
+ },
+ {
+  "id": "cb1edc39-c393-4205-a147-6ee74c025a32",
+  "region": "abdomen",
+  "name": "Foramen Obturador",
+  "aliases": [],
+  "image_path": "data/img/cb1edc39-c393-4205-a147-6ee74c025a32-1794210756554.webp",
+  "updated_at": "2026-11-09T07:52:36.554Z"
+ },
+ {
+  "id": "fc88badd-e75f-4c3f-bc2a-106ac5860c6e",
+  "region": "abdomen",
+  "name": "Fosa Ilíaca Externa",
+  "aliases": [],
+  "image_path": "data/img/fc88badd-e75f-4c3f-bc2a-106ac5860c6e-1794210743110.webp",
+  "updated_at": "2026-11-09T07:52:23.110Z"
+ },
+ {
+  "id": "5ec7ece4-fc41-48fe-8f9c-0ae7a9829c92",
+  "region": "abdomen",
+  "name": "Línea Glutea Anterior",
+  "aliases": [],
+  "image_path": "data/img/5ec7ece4-fc41-48fe-8f9c-0ae7a9829c92-1794210724722.webp",
+  "updated_at": "2026-11-09T07:52:04.722Z"
+ },
+ {
+  "id": "9f46bcd5-c2dd-4d8d-af49-324725dd1eb1",
+  "region": "abdomen",
+  "name": "Línea Glutea Posterior",
+  "aliases": [],
+  "image_path": "data/img/9f46bcd5-c2dd-4d8d-af49-324725dd1eb1-1794210710303.webp",
+  "updated_at": "2026-11-09T07:51:50.303Z"
+ },
+ {
+  "id": "06a01d3f-a980-497e-af30-2fab1af07796",
+  "region": "abdomen",
+  "name": "Fosa Acetabular",
+  "aliases": [],
+  "image_path": "data/img/06a01d3f-a980-497e-af30-2fab1af07796-1794210689040.webp",
+  "updated_at": "2026-11-09T07:51:29.040Z"
+ },
+ {
+  "id": "5dfa90a7-3382-46f9-9057-38cbd0b7dc0d",
+  "region": "abdomen",
+  "name": "Borde Acetabular",
+  "aliases": [
+   "Borde Cotiloideo"
+  ],
+  "image_path": "data/img/5dfa90a7-3382-46f9-9057-38cbd0b7dc0d-1794210676931.webp",
+  "updated_at": "2026-11-09T07:51:16.931Z"
+ },
+ {
+  "id": "e0288df7-1a7c-4191-a7ad-f39bab7034fa",
+  "region": "abdomen",
+  "name": "Carilla Semilunar",
+  "aliases": [],
+  "image_path": "data/img/e0288df7-1a7c-4191-a7ad-f39bab7034fa-1794210664839.webp",
+  "updated_at": "2026-11-09T07:51:04.839Z"
+ },
+ {
+  "id": "c5c7d17c-2b24-4e9a-8c1e-a2a21d189b5b",
+  "region": "abdomen",
+  "name": "Escotadura",
+  "aliases": [
+   "Escotadura Inominada"
+  ],
+  "image_path": "data/img/c5c7d17c-2b24-4e9a-8c1e-a2a21d189b5b-1794210652462.webp",
+  "updated_at": "2026-11-09T07:50:52.462Z"
+ },
+ {
+  "id": "35c115da-2039-4451-a1c2-4be893673182",
+  "region": "abdomen",
+  "name": "Cresta Ilíaca",
+  "aliases": [],
+  "image_path": "data/img/35c115da-2039-4451-a1c2-4be893673182-1794210627630.webp",
+  "updated_at": "2026-11-09T07:50:27.630Z"
+ },
+ {
+  "id": "f0f4a57b-badc-4c95-8a36-862b7c7b1208",
+  "region": "abdomen",
+  "name": "Espina Ilíaca AnteroSuperior",
+  "aliases": [],
+  "image_path": "data/img/f0f4a57b-badc-4c95-8a36-862b7c7b1208-1794210613718.webp",
+  "updated_at": "2026-11-09T07:50:13.718Z"
+ },
+ {
+  "id": "9ecef325-c2c2-4d80-9dfd-1bc98cc597ec",
+  "region": "abdomen",
+  "name": "Espina Ilíaca AnteroInferior",
+  "aliases": [],
+  "image_path": "data/img/9ecef325-c2c2-4d80-9dfd-1bc98cc597ec-1794210600866.webp",
+  "updated_at": "2026-11-09T07:50:00.866Z"
+ },
+ {
+  "id": "17da7b5c-0a73-4e67-87c5-7e9b95990e32",
+  "region": "abdomen",
+  "name": "Escotadura Inominada",
+  "aliases": [
+   "Escotadura"
+  ],
+  "image_path": "data/img/17da7b5c-0a73-4e67-87c5-7e9b95990e32-1794210585244.webp",
+  "updated_at": "2026-11-09T07:49:45.244Z"
+ },
+ {
+  "id": "626f1997-6388-437c-8933-004e146d26d4",
+  "region": "abdomen",
+  "name": "Espina del Pubis",
+  "aliases": [],
+  "image_path": "data/img/626f1997-6388-437c-8933-004e146d26d4-1794210571462.webp",
+  "updated_at": "2026-11-09T07:49:31.462Z"
+ },
+ {
+  "id": "f21fa68b-a073-41c4-b70c-393c3d980e42",
+  "region": "abdomen",
+  "name": "Rama IsquioPubiana",
+  "aliases": [],
+  "image_path": "data/img/f21fa68b-a073-41c4-b70c-393c3d980e42-1794210558511.webp",
+  "updated_at": "2026-11-09T07:49:18.511Z"
+ },
+ {
+  "id": "4a5061d0-b61f-449f-bafa-ca072de056e4",
+  "region": "abdomen",
+  "name": "Tuberosidad Isquiática",
+  "aliases": [],
+  "image_path": "data/img/4a5061d0-b61f-449f-bafa-ca072de056e4-1794210545734.webp",
+  "updated_at": "2026-11-09T07:49:05.734Z"
+ },
+ {
+  "id": "b9b84041-7cb0-46ef-95b9-07d7c0ed4c5e",
+  "region": "abdomen",
+  "name": "Espina Ilíaca PosteroSuperior",
+  "aliases": [],
+  "image_path": "data/img/b9b84041-7cb0-46ef-95b9-07d7c0ed4c5e-1794210530630.webp",
+  "updated_at": "2026-11-09T07:48:50.630Z"
+ },
+ {
+  "id": "e91b8c96-fa8e-4e13-94ad-77fb46c33586",
+  "region": "abdomen",
+  "name": "Escotadura Inominada",
+  "aliases": [
+   "Escotadura"
+  ],
+  "image_path": "data/img/e91b8c96-fa8e-4e13-94ad-77fb46c33586-1794210518533.webp",
+  "updated_at": "2026-11-09T07:48:38.533Z"
+ },
+ {
+  "id": "b4fa5fca-b041-4277-ad82-4c0866967a13",
+  "region": "abdomen",
+  "name": "Espina Ilíaca PosteroInferior",
+  "aliases": [],
+  "image_path": "data/img/b4fa5fca-b041-4277-ad82-4c0866967a13-1794210506156.webp",
+  "updated_at": "2026-11-09T07:48:26.156Z"
+ },
+ {
+  "id": "c7854aac-f192-406f-893e-b72c211b87af",
+  "region": "abdomen",
+  "name": "Espina Ciática",
+  "aliases": [],
+  "image_path": "data/img/c7854aac-f192-406f-893e-b72c211b87af-1794210494154.webp",
+  "updated_at": "2026-11-09T07:48:14.154Z"
+ },
+ {
+  "id": "619b8017-87e3-449a-8a40-4e859309628a",
+  "region": "abdomen",
+  "name": "Escotadura Ciática Mayor",
+  "aliases": [],
+  "image_path": "data/img/619b8017-87e3-449a-8a40-4e859309628a-1794210482483.webp",
+  "updated_at": "2026-11-09T07:48:02.483Z"
+ },
+ {
+  "id": "8f27cfd1-8db4-4c71-b737-c08e95637510",
+  "region": "abdomen",
+  "name": "Escotadura Ciática Menor",
+  "aliases": [],
+  "image_path": "data/img/8f27cfd1-8db4-4c71-b737-c08e95637510-1794210470700.webp",
+  "updated_at": "2026-11-09T07:47:50.700Z"
+ },
+ {
+  "id": "19fc3837-5176-47ae-9022-65dc1d1c7127",
+  "region": "abdomen",
+  "name": "Líneas Transversales",
+  "aliases": [
+   "Línea Transversal"
+  ],
+  "image_path": "data/img/19fc3837-5176-47ae-9022-65dc1d1c7127-1794210452712.webp",
+  "updated_at": "2026-11-09T07:47:32.712Z"
+ },
+ {
+  "id": "113e69f9-9d33-4f45-95fa-266622d42023",
+  "region": "abdomen",
+  "name": "Foramen Sacro Anterior",
+  "aliases": [],
+  "image_path": "data/img/113e69f9-9d33-4f45-95fa-266622d42023-1794210436012.webp",
+  "updated_at": "2026-11-09T07:47:16.012Z"
+ },
+ {
+  "id": "73ca771d-0cfd-464e-ad17-69e92cd6a523",
+  "region": "abdomen",
+  "name": "Foramen Sacro Posterior",
+  "aliases": [],
+  "image_path": "data/img/73ca771d-0cfd-464e-ad17-69e92cd6a523-1794210422557.webp",
+  "updated_at": "2026-11-09T07:47:02.557Z"
+ },
+ {
+  "id": "c19a6e82-fa68-4dff-bdc7-1c930d2467a5",
+  "region": "abdomen",
+  "name": "Conducto Sacro",
+  "aliases": [
+   "Canal Sacro"
+  ],
+  "image_path": "data/img/c19a6e82-fa68-4dff-bdc7-1c930d2467a5-1794210408580.webp",
+  "updated_at": "2026-11-09T07:46:48.580Z"
+ },
+ {
+  "id": "992ea69f-9e85-4ddc-9a3e-80e4cebda8ae",
+  "region": "abdomen",
+  "name": "Hiato Sacro",
+  "aliases": [],
+  "image_path": "data/img/992ea69f-9e85-4ddc-9a3e-80e4cebda8ae-1794210396732.webp",
+  "updated_at": "2026-11-09T07:46:36.732Z"
+ },
+ {
+  "id": "fc34ad3d-1846-4747-b819-49a0bf00f0a2",
+  "region": "abdomen",
+  "name": "Cresta Sacra Media",
+  "aliases": [],
+  "image_path": "data/img/fc34ad3d-1846-4747-b819-49a0bf00f0a2-1794210373217.webp",
+  "updated_at": "2026-11-09T07:46:13.217Z"
+ },
+ {
+  "id": "599d28e6-4ca8-46b7-a317-fe898ad228b0",
+  "region": "abdomen",
+  "name": "Cresta Sacra Intermedia",
+  "aliases": [],
+  "image_path": "data/img/599d28e6-4ca8-46b7-a317-fe898ad228b0-1794210361556.webp",
+  "updated_at": "2026-11-09T07:46:01.556Z"
+ },
+ {
+  "id": "413b7ee7-0377-432a-acc9-f0c7824d2faa",
+  "region": "abdomen",
+  "name": "Cresta Sacra Lateral",
+  "aliases": [],
+  "image_path": "data/img/413b7ee7-0377-432a-acc9-f0c7824d2faa-1794210350404.webp",
+  "updated_at": "2026-11-09T07:45:50.404Z"
+ },
+ {
+  "id": "9359c627-cc13-4d46-9269-5528ae54d3f9",
+  "region": "abdomen",
+  "name": "Apófisis Articular Superior del Sacro",
+  "aliases": [],
+  "image_path": "data/img/9359c627-cc13-4d46-9269-5528ae54d3f9-1794210336334.webp",
+  "updated_at": "2026-11-09T07:45:36.334Z"
+ },
+ {
+  "id": "75aa497a-ca07-488a-b989-60a0774da876",
+  "region": "abdomen",
+  "name": "Angulo Promontorio",
+  "aliases": [
+   "Ángulo Promontorio"
+  ],
+  "image_path": "data/img/75aa497a-ca07-488a-b989-60a0774da876-1794210316132.webp",
+  "updated_at": "2026-11-09T07:45:16.132Z"
+ },
+ {
+  "id": "3e28d9e5-05ad-4232-a6f1-bba3982791a8",
+  "region": "abdomen",
+  "name": "Ala del Sacro",
+  "aliases": [
+   "Alerón Sacro"
+  ],
+  "image_path": "data/img/3e28d9e5-05ad-4232-a6f1-bba3982791a8-1794210298302.webp",
+  "updated_at": "2026-11-09T07:44:58.302Z"
+ },
+ {
+  "id": "56b6d7ff-17d9-417c-a9bd-f34557c1f2d4",
+  "region": "abdomen",
+  "name": "Carilla Auricular del Sacro",
+  "aliases": [],
+  "image_path": "data/img/56b6d7ff-17d9-417c-a9bd-f34557c1f2d4-1794210282175.webp",
+  "updated_at": "2026-11-09T07:44:42.175Z"
+ },
+ {
+  "id": "0fb8f5a3-3451-4400-b60f-0264cb827013",
+  "region": "abdomen",
+  "name": "Asta del Sacro",
+  "aliases": [],
+  "image_path": "data/img/0fb8f5a3-3451-4400-b60f-0264cb827013-1794210267992.webp",
+  "updated_at": "2026-11-09T07:44:27.992Z"
+ },
+ {
+  "id": "3cb98584-93e6-4953-a855-9a4bf817f4a3",
+  "region": "abdomen",
+  "name": "Asta del Coxis",
+  "aliases": [],
+  "image_path": "data/img/3cb98584-93e6-4953-a855-9a4bf817f4a3-1794210253271.webp",
+  "updated_at": "2026-11-09T07:44:13.271Z"
+ },
+ {
+  "id": "cc366232-8a3b-4b7b-b8a0-9a0dda44e227",
+  "region": "abdomen",
+  "name": "Arteria Esplenica",
+  "aliases": [],
+  "image_path": "data/img/cc366232-8a3b-4b7b-b8a0-9a0dda44e227-1794210241825.webp",
+  "updated_at": "2026-11-09T07:44:01.825Z"
+ },
+ {
+  "id": "5ab178b4-2095-45f7-975c-4a831e9068ad",
+  "region": "abdomen",
+  "name": "Arteria Hepatica Común",
+  "aliases": [],
+  "image_path": "data/img/5ab178b4-2095-45f7-975c-4a831e9068ad-1794210230119.webp",
+  "updated_at": "2026-11-09T07:43:50.119Z"
+ },
+ {
+  "id": "61c0efe2-68b7-41f4-854e-55cf487dcab6",
+  "region": "abdomen",
+  "name": "Arteria Hepatica Propria",
+  "aliases": [],
+  "image_path": "data/img/61c0efe2-68b7-41f4-854e-55cf487dcab6-1794210215772.webp",
+  "updated_at": "2026-11-09T07:43:35.772Z"
+ },
+ {
+  "id": "57abe1bf-00ad-4e73-a1b0-11a08b338abe",
+  "region": "abdomen",
+  "name": "Vena Porta",
+  "aliases": [],
+  "image_path": "data/img/57abe1bf-00ad-4e73-a1b0-11a08b338abe-1794210202540.webp",
+  "updated_at": "2026-11-09T07:43:22.540Z"
+ },
+ {
+  "id": "3ca61df3-75fe-40ef-9d6b-f7c40fbb190e",
+  "region": "abdomen",
+  "name": "Conducto Coledoco",
+  "aliases": [],
+  "image_path": "data/img/3ca61df3-75fe-40ef-9d6b-f7c40fbb190e-1794210190358.webp",
+  "updated_at": "2026-11-09T07:43:10.358Z"
+ },
+ {
+  "id": "0b90680a-6ec0-41ca-b9af-572c13e8c003",
+  "region": "abdomen",
+  "name": "Raiz Hepatica",
+  "aliases": [],
+  "image_path": "data/img/0b90680a-6ec0-41ca-b9af-572c13e8c003-1794210177011.webp",
+  "updated_at": "2026-11-09T07:42:57.011Z"
+ },
+ {
+  "id": "270c35dc-ee01-4817-87dc-1bbaf2bdf0fe",
+  "region": "abdomen",
+  "name": "Arteria Gastroduodenal",
+  "aliases": [],
+  "image_path": "data/img/270c35dc-ee01-4817-87dc-1bbaf2bdf0fe-1794210159089.webp",
+  "updated_at": "2026-11-09T07:42:39.089Z"
+ },
+ {
+  "id": "350806e1-382d-4c88-a02d-5ec27102f2af",
+  "region": "abdomen",
+  "name": "Lobulo Izquierdo del Higado",
+  "aliases": [],
+  "image_path": "data/img/350806e1-382d-4c88-a02d-5ec27102f2af-1794210146903.webp",
+  "updated_at": "2026-11-09T07:42:26.903Z"
+ },
+ {
+  "id": "5954d192-532b-4431-b18a-93aabdfe946b",
+  "region": "abdomen",
+  "name": "Lobulo Derecho del Higado",
+  "aliases": [],
+  "image_path": "data/img/5954d192-532b-4431-b18a-93aabdfe946b-1794210138558.webp",
+  "updated_at": "2026-11-09T07:42:18.558Z"
+ },
+ {
+  "id": "d7587412-8c26-42ad-b9ff-10ec874dbd5f",
+  "region": "abdomen",
+  "name": "Ligamento Falsiforme del Higado",
+  "aliases": [],
+  "image_path": "data/img/d7587412-8c26-42ad-b9ff-10ec874dbd5f-1794210119305.webp",
+  "updated_at": "2026-11-09T07:41:59.305Z"
+ },
+ {
+  "id": "ed8400ca-9d41-48a1-a95b-21cbaff4f2b7",
+  "region": "abdomen",
+  "name": "Ligamento Redondo del Higado",
+  "aliases": [],
+  "image_path": "data/img/ed8400ca-9d41-48a1-a95b-21cbaff4f2b7-1794210086143.webp",
+  "updated_at": "2026-11-09T07:41:26.143Z"
+ },
+ {
   "id": "5a1361ee-c9b2-4d6e-99b0-949c040a311c",
   "region": "hmusculo",
   "name": "Vena Muscular",
