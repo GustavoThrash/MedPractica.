@@ -1,5 +1,374 @@
 [
  {
+  "id": "73508594-a4be-479f-bb01-e73036142202",
+  "region": "abdomen",
+  "name": "Cola del Pancreas",
+  "aliases": [
+   "Cola Pancreatica",
+   "Cola"
+  ],
+  "image_path": "data/img/73508594-a4be-479f-bb01-e73036142202-1794521056175.webp",
+  "updated_at": "2026-11-12T22:04:16.175Z"
+ },
+ {
+  "id": "7faf0168-20fb-414b-8f62-b22391b72cbd",
+  "region": "abdomen",
+  "name": "Tronco Celiaco",
+  "aliases": [],
+  "image_path": "data/img/7faf0168-20fb-414b-8f62-b22391b72cbd-1794521037403.webp",
+  "updated_at": "2026-11-12T22:03:57.403Z"
+ },
+ {
+  "id": "337a7197-a126-445f-9a13-e4ef3bf0384c",
+  "region": "abdomen",
+  "name": "Arterias Jejunales",
+  "aliases": [
+   "Arteria Jejunal"
+  ],
+  "image_path": "data/img/337a7197-a126-445f-9a13-e4ef3bf0384c-1794521016524.webp",
+  "updated_at": "2026-11-12T22:03:36.524Z"
+ },
+ {
+  "id": "88cbf70d-aacb-4a18-8916-40135944c832",
+  "region": "abdomen",
+  "name": "Arteria Colica Media",
+  "aliases": [],
+  "image_path": "data/img/88cbf70d-aacb-4a18-8916-40135944c832-1794520996741.webp",
+  "updated_at": "2026-11-12T22:03:16.741Z"
+ },
+ {
+  "id": "d31dfd6c-30b0-4b78-bcf9-beaf6204e067",
+  "region": "abdomen",
+  "name": "Vena Mesenterica Superior",
+  "aliases": [],
+  "image_path": "data/img/d31dfd6c-30b0-4b78-bcf9-beaf6204e067-1794520985414.webp",
+  "updated_at": "2026-11-12T22:03:05.414Z"
+ },
+ {
+  "id": "bcdaadb7-fdd5-4ed3-8459-5359f2003b49",
+  "region": "abdomen",
+  "name": "Arteria Mesenterica Superior",
+  "aliases": [],
+  "image_path": "data/img/bcdaadb7-fdd5-4ed3-8459-5359f2003b49-1794520973855.webp",
+  "updated_at": "2026-11-12T22:02:53.855Z"
+ },
+ {
+  "id": "1ad90163-e76f-4556-86aa-5c0fd228d666",
+  "region": "abdomen",
+  "name": "Arteria Ileocolica",
+  "aliases": [
+   "Arteria Ileoconica"
+  ],
+  "image_path": "data/img/1ad90163-e76f-4556-86aa-5c0fd228d666-1794520957378.webp",
+  "updated_at": "2026-11-12T22:02:37.378Z"
+ },
+ {
+  "id": "f784505c-13c9-45b4-b436-90587758f040",
+  "region": "abdomen",
+  "name": "Arteria Cistica",
+  "aliases": [],
+  "image_path": "data/img/f784505c-13c9-45b4-b436-90587758f040-1794520933048.webp",
+  "updated_at": "2026-11-12T22:02:13.048Z"
+ },
+ {
+  "id": "2387531a-7389-4e3d-810b-becba0d01d66",
+  "region": "abdomen",
+  "name": "Conducto Pancreatico Acessorio",
+  "aliases": [
+   "Conducto Pancreatico Accessorio"
+  ],
+  "image_path": "data/img/2387531a-7389-4e3d-810b-becba0d01d66-1794520924964.webp",
+  "updated_at": "2026-11-12T22:02:04.964Z"
+ },
+ {
+  "id": "358f1f42-ad44-461d-af0d-69e6cf52f4cd",
+  "region": "abdomen",
+  "name": "Conducto Pancreatico Principal",
+  "aliases": [
+   "Conducto Pancreatico"
+  ],
+  "image_path": "data/img/358f1f42-ad44-461d-af0d-69e6cf52f4cd-1794520904096.webp",
+  "updated_at": "2026-11-12T22:01:44.096Z"
+ },
+ {
+  "id": "ff8344c2-1f52-49e9-b29e-d2e24ac3aac3",
+  "region": "abdomen",
+  "name": "Apendice Epiploico",
+  "aliases": [],
+  "image_path": "data/img/ff8344c2-1f52-49e9-b29e-d2e24ac3aac3-1794520886007.webp",
+  "updated_at": "2026-11-12T22:01:26.007Z"
+ },
+ {
+  "id": "96664cef-f042-487f-8055-bb248e7f4804",
+  "region": "abdomen",
+  "name": "Haustras Colonicas",
+  "aliases": [
+   "Haustras"
+  ],
+  "image_path": "data/img/96664cef-f042-487f-8055-bb248e7f4804-1794520871922.webp",
+  "updated_at": "2026-11-12T22:01:11.922Z"
+ },
+ {
+  "id": "ac5d648c-f4b1-4344-b489-63f187be4da0",
+  "region": "abdomen",
+  "name": "Ciego",
+  "aliases": [],
+  "image_path": "data/img/ac5d648c-f4b1-4344-b489-63f187be4da0-1794520854935.webp",
+  "updated_at": "2026-11-12T22:00:54.935Z"
+ },
+ {
+  "id": "2647d330-3eb4-458c-bbd6-39c7adf8ebdb",
+  "region": "abdomen",
+  "name": "Apendice Cecal",
+  "aliases": [
+   "Apendice Vermiforme"
+  ],
+  "image_path": "data/img/2647d330-3eb4-458c-bbd6-39c7adf8ebdb-1794520842254.webp",
+  "updated_at": "2026-11-12T22:00:42.254Z"
+ },
+ {
+  "id": "ce0cfdbd-771e-4dce-afeb-93e8198bb9fe",
+  "region": "abdomen",
+  "name": "Epiplon Mayor",
+  "aliases": [],
+  "image_path": "data/img/ce0cfdbd-771e-4dce-afeb-93e8198bb9fe-1794520819360.webp",
+  "updated_at": "2026-11-12T22:00:19.360Z"
+ },
+ {
+  "id": "741e025a-bc98-4bfe-855d-e773c91eb18e",
+  "region": "abdomen",
+  "name": "Arco de Riolano",
+  "aliases": [],
+  "image_path": "data/img/741e025a-bc98-4bfe-855d-e773c91eb18e-1794520745372.webp",
+  "updated_at": "2026-11-12T21:59:05.372Z"
+ },
+ {
+  "id": "a39da227-8cf2-4445-9ae9-adbcb645dbb4",
+  "region": "abdomen",
+  "name": "Interseccion Tendinosa",
+  "aliases": [],
+  "image_path": "data/img/a39da227-8cf2-4445-9ae9-adbcb645dbb4-1794520732695.webp",
+  "updated_at": "2026-11-12T21:58:52.695Z"
+ },
+ {
+  "id": "21ccdbcb-f865-4f98-8744-349d3d4a4fdc",
+  "region": "abdomen",
+  "name": "Mesenterio",
+  "aliases": [],
+  "image_path": "data/img/21ccdbcb-f865-4f98-8744-349d3d4a4fdc-1794520716912.webp",
+  "updated_at": "2026-11-12T21:58:36.912Z"
+ },
+ {
+  "id": "6c4c4850-a64c-45a4-8c33-6111dfb8383b",
+  "region": "abdomen",
+  "name": "Arteria Aorta Abdominal",
+  "aliases": [],
+  "image_path": "data/img/6c4c4850-a64c-45a4-8c33-6111dfb8383b-1794520599869.webp",
+  "updated_at": "2026-11-12T21:56:39.869Z"
+ },
+ {
+  "id": "dc9eca39-6ac7-4974-a784-14245fcf95e3",
+  "region": "abdomen",
+  "name": "Arteria Iliaca comun Izquierda",
+  "aliases": [],
+  "image_path": "data/img/dc9eca39-6ac7-4974-a784-14245fcf95e3-1794520588231.webp",
+  "updated_at": "2026-11-12T21:56:28.231Z"
+ },
+ {
+  "id": "4811269d-08c5-47eb-b39d-5a0dd6a4be20",
+  "region": "abdomen",
+  "name": "Arteria Iliaca comun derecha",
+  "aliases": [],
+  "image_path": "data/img/4811269d-08c5-47eb-b39d-5a0dd6a4be20-1794520574359.webp",
+  "updated_at": "2026-11-12T21:56:14.359Z"
+ },
+ {
+  "id": "c1f7d494-7d24-430e-81f8-7c026ab2ea1c",
+  "region": "abdomen",
+  "name": "Musculo Recto del Abdomen",
+  "aliases": [],
+  "image_path": "data/img/c1f7d494-7d24-430e-81f8-7c026ab2ea1c-1794520562242.webp",
+  "updated_at": "2026-11-12T21:56:02.242Z"
+ },
+ {
+  "id": "aa137251-2033-4795-9083-35f0decd799f",
+  "region": "abdomen",
+  "name": "Vaina del Recto del Abdomen",
+  "aliases": [],
+  "image_path": "data/img/aa137251-2033-4795-9083-35f0decd799f-1794520548267.webp",
+  "updated_at": "2026-11-12T21:55:48.267Z"
+ },
+ {
+  "id": "7e03b4df-b959-4f8a-a7d9-4739f6596712",
+  "region": "abdomen",
+  "name": "Fascia de Camper",
+  "aliases": [],
+  "image_path": "data/img/7e03b4df-b959-4f8a-a7d9-4739f6596712-1794520535387.webp",
+  "updated_at": "2026-11-12T21:55:35.387Z"
+ },
+ {
+  "id": "38d7ec43-0d20-46b2-8ae8-f8cfa2a06d71",
+  "region": "abdomen",
+  "name": "Arteria Hepatica Propria",
+  "aliases": [],
+  "image_path": "data/img/38d7ec43-0d20-46b2-8ae8-f8cfa2a06d71-1794520519288.webp",
+  "updated_at": "2026-11-12T21:55:19.288Z"
+ },
+ {
+  "id": "7d436ea1-8ed0-492a-8472-d138fb791dc4",
+  "region": "abdomen",
+  "name": "Vena Porta",
+  "aliases": [],
+  "image_path": "data/img/7d436ea1-8ed0-492a-8472-d138fb791dc4-1794520505514.webp",
+  "updated_at": "2026-11-12T21:55:05.514Z"
+ },
+ {
+  "id": "fe9027a7-0309-49fa-9aa4-33a9028f1200",
+  "region": "abdomen",
+  "name": "Conducto Coledoco",
+  "aliases": [],
+  "image_path": "data/img/fe9027a7-0309-49fa-9aa4-33a9028f1200-1794520437445.webp",
+  "updated_at": "2026-11-12T21:53:57.445Z"
+ },
+ {
+  "id": "cd55c5c1-3383-4b26-a675-4e4adebec12e",
+  "region": "abdomen",
+  "name": "Vesicula Biliar",
+  "aliases": [],
+  "image_path": "data/img/cd55c5c1-3383-4b26-a675-4e4adebec12e-1794520423935.webp",
+  "updated_at": "2026-11-12T21:53:43.935Z"
+ },
+ {
+  "id": "793e5137-ba86-4bd4-a8e7-bb670f326003",
+  "region": "abdomen",
+  "name": "Raiz Hepatica",
+  "aliases": [
+   "Pediculo Hepatico"
+  ],
+  "image_path": "data/img/793e5137-ba86-4bd4-a8e7-bb670f326003-1794520402400.webp",
+  "updated_at": "2026-11-12T21:53:22.400Z"
+ },
+ {
+  "id": "7b2e4b3d-77ed-4964-9a20-2a343b820fb6",
+  "region": "abdomen",
+  "name": "Ligamento Redondo del Higado",
+  "aliases": [],
+  "image_path": "data/img/7b2e4b3d-77ed-4964-9a20-2a343b820fb6-1794520374383.webp",
+  "updated_at": "2026-11-12T21:52:54.383Z"
+ },
+ {
+  "id": "4e27b733-8e7a-4600-b136-11fd3c408b38",
+  "region": "abdomen",
+  "name": "Ligamento triangular Derecho del Higado",
+  "aliases": [],
+  "image_path": "data/img/4e27b733-8e7a-4600-b136-11fd3c408b38-1794520350097.webp",
+  "updated_at": "2026-11-12T21:52:30.097Z"
+ },
+ {
+  "id": "75b51c74-6143-47b7-bbe5-361bcd416981",
+  "region": "abdomen",
+  "name": "Ligamento triangular Izquierdo del Higado",
+  "aliases": [],
+  "image_path": "data/img/75b51c74-6143-47b7-bbe5-361bcd416981-1794520334561.webp",
+  "updated_at": "2026-11-12T21:52:14.561Z"
+ },
+ {
+  "id": "d50e7a11-9e56-41c8-9c60-4fc713be92ad",
+  "region": "abdomen",
+  "name": "Area Desnuda del Higado",
+  "aliases": [],
+  "image_path": "data/img/d50e7a11-9e56-41c8-9c60-4fc713be92ad-1794520320899.webp",
+  "updated_at": "2026-11-12T21:52:00.899Z"
+ },
+ {
+  "id": "36ad6164-1e3a-4817-85cf-cbfa079aa079",
+  "region": "abdomen",
+  "name": "Ligamento Coronario del Higado",
+  "aliases": [],
+  "image_path": "data/img/36ad6164-1e3a-4817-85cf-cbfa079aa079-1794520308340.webp",
+  "updated_at": "2026-11-12T21:51:48.340Z"
+ },
+ {
+  "id": "cc1c0fcd-755b-4b52-a8cf-6041d0a61d2d",
+  "region": "abdomen",
+  "name": "Vena Porta",
+  "aliases": [],
+  "image_path": "data/img/cc1c0fcd-755b-4b52-a8cf-6041d0a61d2d-1794520291824.webp",
+  "updated_at": "2026-11-12T21:51:31.824Z"
+ },
+ {
+  "id": "1f0de260-53c7-4a2d-a0a2-3a513c7c747f",
+  "region": "abdomen",
+  "name": "Arteria Hepatica Propria",
+  "aliases": [],
+  "image_path": "data/img/1f0de260-53c7-4a2d-a0a2-3a513c7c747f-1794520279012.webp",
+  "updated_at": "2026-11-12T21:51:19.012Z"
+ },
+ {
+  "id": "0b0dbc40-609f-40d4-9c60-55fdebd16cce",
+  "region": "abdomen",
+  "name": "Conducto Coledoco",
+  "aliases": [],
+  "image_path": "data/img/0b0dbc40-609f-40d4-9c60-55fdebd16cce-1794520263309.webp",
+  "updated_at": "2026-11-12T21:51:03.309Z"
+ },
+ {
+  "id": "b16dd315-3dad-46a7-bdae-69e276824124",
+  "region": "abdomen",
+  "name": "Conducto Hepatico Comun",
+  "aliases": [],
+  "image_path": "data/img/b16dd315-3dad-46a7-bdae-69e276824124-1794520250639.webp",
+  "updated_at": "2026-11-12T21:50:50.639Z"
+ },
+ {
+  "id": "219dd98f-1ee5-43f2-b48d-900d332c7f06",
+  "region": "abdomen",
+  "name": "Conducto Hepatico Derecho",
+  "aliases": [],
+  "image_path": "data/img/219dd98f-1ee5-43f2-b48d-900d332c7f06-1794520236236.webp",
+  "updated_at": "2026-11-12T21:50:36.236Z"
+ },
+ {
+  "id": "337b0d32-7589-4ead-94c9-51c128b83acf",
+  "region": "abdomen",
+  "name": "Conducto Hepatico Izquierdo",
+  "aliases": [],
+  "image_path": "data/img/337b0d32-7589-4ead-94c9-51c128b83acf-1794520220039.webp",
+  "updated_at": "2026-11-12T21:50:20.039Z"
+ },
+ {
+  "id": "2e82e0c6-2537-40f9-b603-03b4df8dbf75",
+  "region": "abdomen",
+  "name": "Conducto Cistico",
+  "aliases": [],
+  "image_path": "data/img/2e82e0c6-2537-40f9-b603-03b4df8dbf75-1794520207463.webp",
+  "updated_at": "2026-11-12T21:50:07.463Z"
+ },
+ {
+  "id": "c501bd50-c6a3-4f6d-a66f-308bbd824bb7",
+  "region": "abdomen",
+  "name": "Vesicula Biliar",
+  "aliases": [],
+  "image_path": "data/img/c501bd50-c6a3-4f6d-a66f-308bbd824bb7-1794520172856.webp",
+  "updated_at": "2026-11-12T21:49:32.856Z"
+ },
+ {
+  "id": "fce4d8b2-ed8f-4556-b797-213aaa69ff81",
+  "region": "abdomen",
+  "name": "Lobulo Caudado del Higado",
+  "aliases": [],
+  "image_path": "data/img/fce4d8b2-ed8f-4556-b797-213aaa69ff81-1794520151932.webp",
+  "updated_at": "2026-11-12T21:49:11.932Z"
+ },
+ {
+  "id": "3164adf2-ceb8-45ab-bdb2-a5a4f725e94e",
+  "region": "abdomen",
+  "name": "Lobulo Cuadrado del Higado",
+  "aliases": [],
+  "image_path": "data/img/3164adf2-ceb8-45ab-bdb2-a5a4f725e94e-1794520134281.webp",
+  "updated_at": "2026-11-12T21:48:54.281Z"
+ },
+ {
   "id": "b8a99f79-53d7-425d-b501-c8984e87bd93",
   "region": "abdomen",
   "name": "Músculo Psoas Mayor",
